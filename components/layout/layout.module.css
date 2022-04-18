@@ -1,0 +1,7 @@
+.layout {
+  background-color: royalblue;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  grid-template-rows: auto;
+  display: inline;
+}

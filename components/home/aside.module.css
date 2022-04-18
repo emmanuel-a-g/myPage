@@ -1,0 +1,7 @@
+.theAside {
+  background-color: red;
+  grid-column: 1 / span 1;
+}
+.item {
+  color: white;
+}

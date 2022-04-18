@@ -1,8 +1,10 @@
+import Hero from "../components/home/hero";
+import { Fragment } from "react";
 function HomePage() {
   return (
-    <div>
-      <h1>Welcome to My App!</h1>
-    </div>
+    <Fragment>
+      <Hero />
+    </Fragment>
   );
 }
 
