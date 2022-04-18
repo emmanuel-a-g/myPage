@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 }
 .myEmail {
   font-size: 1rem;

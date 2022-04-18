@@ -1,0 +1,19 @@
+.introMe {
+  min-height: 90vh;
+  /* overflow: hidden; */
+}
+.hi {
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.name {
+  color: var(--color-primary);
+  font-size: 4rem;
+  padding: 0;
+  margin: .5rem 0 .5rem 0;
+}
+
+.text {
+  color: var(--color-primary);
+}

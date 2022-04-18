@@ -1,16 +1,92 @@
 .aboutMe {
-  height: 90vh;
+  min-height: 90vh;
+  /* overflow: hidden; */
 }
-.hi {
-  color: chartreuse;
-  font-size: 1rem;
+.theGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 1fr;
 }
-
-.name {
-  color: chartreuse;
-  font-size: 4rem;
+.left {
+  grid-column: 1 / span 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-
+.right {
+  grid-column: 2 / span 1;
+  display: flex;
+  align-items: center;
+  height: 70%;
+}
+.image {
+  width: 400px;
+  height: auto;
+}
+.technologies {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  width: 60%;
+  align-items: center;
+  /* justify-content: center; */
+  column-gap: 5px;
+  row-gap: 10px;
+}
+.number {
+  color: var(--color-primary);
+}
+.item {
+  color: var(--color-primary);
+  background-color: var(--color-light-grey);
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.title {
+  font-size: 2rem;
+}
 .text {
-  color: chartreuse;
+  overflow-wrap: break-word;
+  font-size: 1.15rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
+@media only screen and (max-width: 800px) {
+  .theGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% auto;
+  }
+  .text {
+    font-size: .80rem;
+    display: flex;
+    overflow-wrap: break-word;
+    /* word-break: break-all; */
+  }
+  .item {
+    padding: 0;
+  }
+  .left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: 100%;
+
+    display: grid;
+  }
+  .technologies {
+    display: flex;
+  }
+  .right {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    display: flex;
+    height: 100%;
+  }
+  .image {
+    width: 250px;
+    height: auto;
+  }
 }
