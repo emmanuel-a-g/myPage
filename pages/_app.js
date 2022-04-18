@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta charSet="UTF-8"/>
       </Head>
       <Component {...pageProps} />
     </Layout>

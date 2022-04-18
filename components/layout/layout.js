@@ -1,18 +1,24 @@
-import { Fragment } from "react";
 import Navigation from "../home/navigation";
-import Aside from "../home/aside";
 import Head from "next/head";
 import styles from "./layout.module.css";
+import MyPortal from "../ui/myPortal";
+import { useEffect, useState } from "react";
 
 function Layout(props) {
+  const [show, setShow ] = useState(false);
+  
+  useEffect(() => {
+    setShow(true);
+  }, [])
+
+  // {show && <MyPortal />}
   return (
     <div className={styles.layout}>
       <Head>
       <title>Emmanuel Garcia</title>
       </Head>
-      <Navigation />
-      <Aside/>
-      <main>{props.children}</main>
+      <Navigation className={styles.nav}/>
+      <main className={styles.main}>{props.children}</main>
     </div>
   );
 }

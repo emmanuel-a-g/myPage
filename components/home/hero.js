@@ -1,12 +1,14 @@
-import { Fragment } from "react";
+import Aside from "./aside";
+import AsideRight from "./asideRight";
+import styles from "./hero.module.css";
+import Main from "./main";
 function Hero() {
   return (
-    <Fragment>
-    <h5>Hi, my name is</h5>
-    <h1>Emmanuel Garcia.</h1>
-    <h1>I am a full-stack web developer!</h1>
-    <p>I like to build apps and always seek to learn new technologies!</p>
-  </Fragment>)
+    <section className={styles.hero}>
+    <Aside className={styles.left}/>
+    <Main className={styles.middle}/>
+    <AsideRight className={styles.right}/>
+  </section>)
 }
 
 export default Hero;

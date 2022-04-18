@@ -1,7 +1,11 @@
 .theAside {
-  background-color: red;
-  grid-column: 1 / span 1;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.item {
+.socialMedia {
   color: white;
+  writing-mode: vertical-rl;
 }
