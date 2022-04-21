@@ -19,3 +19,12 @@
 .number {
   color: var(--color-primary);
 }
+
+@media only screen and (max-height: 700px) {
+  .title {
+    margin: 0 0 10px 0;
+  }
+  .theGrid {
+    grid-row-gap: 8px;
+  }
+}

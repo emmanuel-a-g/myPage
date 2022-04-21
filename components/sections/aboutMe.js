@@ -24,13 +24,6 @@ function AboutMe() {
             Firebase SDK.
           </p>
         </div>
-        <div className={styles.right}>
-          <img
-            className={styles.image}
-            src="./arturo.png"
-            alt="A picture of Emmanuel garcia at graduation!"
-          />
-        </div>
         <div className={styles.technologies}>
           <span className={styles.item}>Next.js</span>
           <span className={styles.item}>JavaScript (ES6+)</span>
@@ -39,6 +32,13 @@ function AboutMe() {
           <span className={styles.item}>MongoDb</span>
           <span className={styles.item}>Express</span>
         </div>
+        <div className={styles.right}>
+        <img
+          className={styles.image}
+          src="./arturo.png"
+          alt="A picture of Emmanuel garcia at graduation!"
+        />
+      </div>
       </div>
     </div>
   );
