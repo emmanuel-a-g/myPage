@@ -1,9 +1,9 @@
-import styles from 
+import styles from "./contact.module.css";
 function Contact() {
   return (
-    <div>
+    <div className={styles.contactBox}>
       <h3 className={styles.title}>
-        <span className={styles.number}>02.</span> Work
+        <span className={styles.number}>04.</span> Contact
       </h3>
     </div>
   );
