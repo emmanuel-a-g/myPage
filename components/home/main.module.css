@@ -7,10 +7,14 @@
   align-items: center;
   background-color: var(--color-secondary);
 }
-
+.ref {
+  margin: 0;
+  padding: 0;
+  all: unset;
+}
 .gap {
-  width: 80%;
-  max-width: 700px !important;
+  width: 98%;
+  max-width: 850px !important;
 }
 @media only screen and (max-width: 800px) {
   .middleScroll {

@@ -64,7 +64,6 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--color-dark);
-  text-align: center;
 }
 
 @media only screen and (max-width: 750px) {
@@ -78,6 +77,7 @@
   .text {
     font-size: 1.05rem;
     overflow-wrap: break-word;
+    text-align: center;
   }
   .item {
     padding: 2px;

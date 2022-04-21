@@ -26,13 +26,13 @@ function Main() {
   return (
     <div className={styles.middleScroll}>
       <div className={styles.gap}>
-        <div ref={introRef}>
+        <div className={styles.ref} ref={introRef}>
           <Intro />
         </div>
-        <div ref={aboutRef}>
+        <div className={styles.ref} ref={aboutRef}>
           <AboutMe />
         </div>
-        <div ref={workRef}>
+        <div className={styles.ref} ref={workRef}>
           <Work />
         </div>
       </div>

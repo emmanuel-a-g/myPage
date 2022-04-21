@@ -1,4 +1,5 @@
 .appRec {
+  min-height: 30vh;
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 1fr;
@@ -111,6 +112,9 @@
   margin: 10px 0 0 0;
 }
 @media only screen and (max-width: 700px) {
+  .appRec {
+    min-height: 30vh;
+  }
   .description {
     color: var(--color-light);
     background-color: var(--color-secondary-off);
