@@ -4,8 +4,31 @@ body {
     'Arial', sans-serif; */
   max-width: 100vw;
   margin: 0 auto;
-  background-color: #1878E7;
   max-height: 100vh;
+  /* --color-secondary: #1878E7; */
+  --color-text: rgb(255, 255, 255);
+  --color-primary: chartreuse;
+  --color-secondary: #1878E7;
+  --color-secondary-off: #154682;
+  --color-third: aqua;
+  --color-light-grey: rgb(152, 152, 152);
+  --color-dark: black;
+  --color-dark-grey: rgb(95, 94, 94);
+  --color-light: white;
+  --color-text: white; 
+  --color-text-two: whitesmoke;
+  background-color: var(--color-secondary);
+  --image-two: url("/images/exponent.png");
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
 }
 
   /* Designing for scroll-bar */

@@ -1,0 +1,21 @@
+.app {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.theGrid {
+  /* align-self: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 50px;
+}
+.title {
+  font-size: 2rem;
+  display: flex;
+}
+.number {
+  color: var(--color-primary);
+}

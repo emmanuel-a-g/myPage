@@ -1,12 +1,15 @@
 .middleScroll {
   max-height: 90vh;
   overflow-y: auto;
+  overflow-x: hidden;
   margin-top: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--color-secondary);
 }
 
 .gap {
   width: 80%;
+  max-width: 700px !important;
 }
