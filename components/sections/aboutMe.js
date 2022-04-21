@@ -9,9 +9,10 @@ function AboutMe() {
         <div className={styles.left}>
           <p className={styles.text}>
             Hello my name is Emmanuel and I am an web developer native to El
-            Paso, Texas. My journey started when I first digged into Python back
-            in 2019 when I wrote a small text game, and from then I became so
-            intriged that I learned JavaScript!
+            Paso, Texas. My coding journey began when I first jumped into
+            learning Python back in 2019 in which I wrote a small text game, and
+            from then I became so hooked that I decided to learn the most web
+            important language JavaScript! The rest is history.
           </p>
           <p className={styles.text}>
             Today I enjoy building apps and deploying them to the web, I am
@@ -33,12 +34,12 @@ function AboutMe() {
           <span className={styles.item}>Express</span>
         </div>
         <div className={styles.right}>
-        <img
-          className={styles.image}
-          src="./arturo.png"
-          alt="A picture of Emmanuel garcia at graduation!"
-        />
-      </div>
+          <img
+            className={styles.image}
+            src="./arturo.png"
+            alt="A picture of Emmanuel garcia at graduation!"
+          />
+        </div>
       </div>
     </div>
   );
