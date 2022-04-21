@@ -1,17 +1,20 @@
 .introMe {
   min-height: 90vh;
-  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hi {
   color: var(--color-primary);
   font-size: 1rem;
+  margin: 0;
 }
 
 .name {
   color: var(--color-primary);
   font-size: 4rem;
   padding: 0;
-  margin: .5rem 0 .5rem 0;
+  margin: 0 0 .5rem 0;
 }
 
 .text {

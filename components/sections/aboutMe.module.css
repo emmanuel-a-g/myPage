@@ -37,8 +37,8 @@
   color: var(--color-primary);
 }
 .item {
-  color: var(--color-primary);
-  background-color: var(--color-light-grey);
+  color: var(--color-third);
+  background-color: var(--color-secondary-off);
   font-weight: bold;
   text-align: center;
   padding: 5px;

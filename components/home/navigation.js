@@ -7,9 +7,9 @@ function Navigation() {
       </div>
       <ul className={styles.navList}>
         <li className={styles.navItem}><span className={styles.number}>01.</span> About</li>
-        <li className={styles.navItem}><span className={styles.number}>02.</span> Experience</li>
         <li className={styles.navItem}><span className={styles.number}>03.</span> Work</li>
-        <li className={styles.navItem}><span className={styles.number}>04.</span>Contact</li>
+        <li className={styles.navItem}><span className={styles.number}>02.</span> Education</li>
+        <li className={styles.navItem}><span className={styles.number}>04.</span> Contact</li>
         <li className={styles.navItem}>
         <a href="http://twoamazon.com" target="_blank">
         <button className={styles.button}>Resume</button>
