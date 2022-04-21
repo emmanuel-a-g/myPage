@@ -1,8 +1,11 @@
 .aboutMe {
-  min-height: 90vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .theGrid {
-  min-height: 80vh;
+  min-height: 70vh;
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 85% 15%;
@@ -67,9 +70,6 @@
 }
 
 @media only screen and (max-width: 750px) {
-  .aboutMe {
-    min-height: 70vh;
-  }
   .theGrid {
     display: flex;
     flex-direction: column;

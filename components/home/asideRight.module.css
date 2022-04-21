@@ -1,5 +1,4 @@
 .asideRight {
-  /* background-color: aquamarine; */
   writing-mode: vertical-rl;
   display: flex;
   flex-direction: column;
@@ -12,8 +11,4 @@
   display: flex;
 }
 
-@media only screen and (max-width: 800px) {
-  .asideRight {
-    content: none;
-  }
-}
+/* @media only screen and (max-width: 800px) {} */

@@ -17,7 +17,8 @@ body {
   --color-light: white;
   --color-text: white; 
   --color-text-two: whitesmoke;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
+  --color-background: var(--color-secondary);
   --image-two: url("/images/exponent.png");
   --font-tiny: .50rem;
   --font-small: .75rem;

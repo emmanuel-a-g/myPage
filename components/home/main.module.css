@@ -10,10 +10,9 @@
 .ref {
   margin: 0;
   padding: 0;
-  all: unset;
 }
 .gap {
-  width: 98%;
+  width: 97%;
   max-width: 850px !important;
 }
 @media only screen and (max-width: 800px) {
