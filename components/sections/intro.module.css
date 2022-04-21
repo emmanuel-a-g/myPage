@@ -1,5 +1,5 @@
 .introMe {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,14 +9,41 @@
   font-size: 1rem;
   margin: 0;
 }
-
 .name {
   color: var(--color-primary);
   font-size: 4rem;
   padding: 0;
   margin: 0 0 .5rem 0;
 }
-
+.nameTwo {
+  color: var(--color-dark);
+  font-size: 4rem;
+  padding: 0;
+  margin: 0 0 .5rem 0;
+}
 .text {
   color: var(--color-primary);
+}
+
+@media only screen and  (max-width: 800px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .nameTwo {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: .75rem;
+  }
+}
+@media only screen and  (max-height: 550px) {
+  .name {
+    font-size: 2.0rem;
+  }
+  .nameTwo {
+    font-size: 2.0rem;
+  }
+  .text {
+    font-size: .75rem;
+  }
 }

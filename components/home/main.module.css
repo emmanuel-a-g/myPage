@@ -1,5 +1,5 @@
 .middleScroll {
-  max-height: 90vh;
+  max-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   margin-top: 1%;
@@ -12,4 +12,9 @@
 .gap {
   width: 80%;
   max-width: 700px !important;
+}
+@media only screen and (max-width: 800px) {
+  .middleScroll {
+    max-height: 95vh;
+  }
 }

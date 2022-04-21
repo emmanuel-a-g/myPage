@@ -2,10 +2,13 @@
 import { useState, useEffect } from "react";
 import styles from "./apps.module.css";
 function Apps(props) {
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(null);
   const breakpoint = 700;
 
   useEffect(() => {
+    if (width === null) {
+      setWidth(window.innerWidth);
+    }
     const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
