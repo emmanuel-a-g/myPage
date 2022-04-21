@@ -2,9 +2,9 @@ import Hero from "../components/home/hero";
 import { Fragment } from "react";
 function HomePage() {
   return (
-    <Fragment>
+    <div>
       <Hero />
-    </Fragment>
+    </div>
   );
 }
 

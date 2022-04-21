@@ -4,11 +4,12 @@ import styles from "./hero.module.css";
 import Main from "./main";
 function Hero() {
   return (
-    <section className={styles.hero}>
-    <Aside className={styles.left}/>
-    <Main className={styles.middle}/>
-    <AsideRight className={styles.right}/>
-  </section>)
+    <div className={styles.hero}>
+      <Aside className={styles.left} />
+      <Main className={styles.middle} />
+      <AsideRight className={styles.right} />
+    </div>
+  );
 }
 
 export default Hero;

@@ -20,6 +20,6 @@
 
 @media only screen and (max-height: 550px){
   .theAside {
-    height: 100%;
+    height: 80%;
   }
 }

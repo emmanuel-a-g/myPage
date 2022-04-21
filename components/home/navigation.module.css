@@ -25,7 +25,9 @@
   display: inline;
   font-size: 1rem;
 }
-
+.navItem:hover {
+  cursor: pointer;
+}
 .number {
   color: var(--color-primary);
 }
