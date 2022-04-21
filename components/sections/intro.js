@@ -6,8 +6,7 @@ function Intro() {
       <h1 className={styles.name}>Emmanuel Garcia.</h1>
       <h1 className={styles.name}>I am fullstack web developer.</h1>
       <p className={styles.text}>
-        Emmanuel Garcia. I am a full-stack web developer! and always seek to
-        learn new technologies!
+        Emmanuel Garcia. I am a full-stack web developer!
       </p>
     </div>
   );
