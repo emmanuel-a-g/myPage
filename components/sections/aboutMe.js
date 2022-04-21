@@ -14,33 +14,30 @@ function AboutMe() {
             intriged that I learned JavaScript!
           </p>
           <p className={styles.text}>
-            Today I enjoy building apps and deploying them to the internet, I am
-            excited to learn more everyday and see what I can build individually
-            or in a team.
+            Today I enjoy building apps and deploying them to the web, I am
+            excited to learn new tech and see what I can build individually or
+            in a team.
           </p>
           <p className={styles.text}>
-            I am experienced in the MERN stack, (MongoDb, Express, React,
+            I am experienced in the MERN stack, (Mongodb, Express, React,
             Node.js) but also have experience using mySQL as well as Google's
             Firebase SDK.
           </p>
-          <p className={styles.text}>
-            Here are some of the technologies that I've been working with:
-          </p>
-          <div className={styles.technologies}>
-            <span className={styles.item}>Next.js</span>
-            <span className={styles.item}>JavaScript (ES6+)</span>
-            <span className={styles.item}>React</span>
-            <span className={styles.item}>Node.js</span>
-            <span className={styles.item}>MongoDb</span>
-            <span className={styles.item}>Express</span>
-          </div>
         </div>
         <div className={styles.right}>
           <img
             className={styles.image}
-            src="./hookEm.png"
+            src="./arturo.png"
             alt="A picture of Emmanuel garcia at graduation!"
           />
+        </div>
+        <div className={styles.technologies}>
+          <span className={styles.item}>Next.js</span>
+          <span className={styles.item}>JavaScript (ES6+)</span>
+          <span className={styles.item}>React</span>
+          <span className={styles.item}>Node.js</span>
+          <span className={styles.item}>MongoDb</span>
+          <span className={styles.item}>Express</span>
         </div>
       </div>
     </div>

@@ -19,6 +19,18 @@ body {
   --color-text-two: whitesmoke;
   background-color: var(--color-secondary);
   --image-two: url("/images/exponent.png");
+  --font-tiny: .50rem;
+  --font-small: .75rem;
+  --font-normal: 1rem;
+  --font-medium: 1.3rem;
+  --font-medium-plus: 1.6rem;
+  --font-big: 2rem;
+  --font-huge: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: var(--color-third);
+  }
 }
 
 button {
