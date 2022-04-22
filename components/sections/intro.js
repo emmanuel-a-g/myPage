@@ -7,7 +7,7 @@ function Intro() {
       <h1 className={styles.nameTwo}>I am fullstack web developer.</h1>
       <p className={styles.text}>
         Welcome to my hub! I'm glad you're here. I am currently open for new opportunities, please
-        feel free to contact me through the contact or by LinkedIn.
+        feel free to contact me through LinkedIn.
       </p>
     </div>
   );

@@ -1,9 +1,10 @@
 //make it re-usable for apps that you build.
 import { useState, useEffect } from "react";
 import styles from "./apps.module.css";
-function Apps(props) {
+function Apps({name, data}) {
   const [width, setWidth] = useState(null);
   const breakpoint = 700;
+  const { title, description, tech, github, theLink} = data;
 
   useEffect(() => {
     if (width === null) {
@@ -15,7 +16,7 @@ function Apps(props) {
   }, []);
   let theClass;
   let theContentBox;
-  if (props.name === "two") {
+  if (name === "two") {
     theClass = "two";
     theContentBox = styles.smallContentBoxTwo;
   } else {
@@ -39,26 +40,23 @@ function Apps(props) {
             className={styles.titleLink}
             href="https://linkedin.com/in/emmanuel-a-g"
           >
-            <h3 className={styles.title}>The Coolest Project ever</h3>
+            <h3 className={styles.title}>{title}</h3>
           </a>
-          <p className={styles.description}>
-            some super cool descript will go here eventually for now this is jus
-            text that will be used to fill up the place or so make up text
-          </p>
+          <p className={styles.description}>{description}</p>
           {width < breakpoint ? null : (
-            <span className={styles.tech}>React, Nodejs, AWS, MongoDb</span>
+            <span className={styles.tech}>{tech}</span>
           )}
           <div className={styles.links}>
             <a
               className={styles.anchor}
-              href="https://linkedin.com/in/emmanuel-a-g"
+              href={github}
               target="_blank"
             >
               <img src="./github.png" alt="github link to project" />
             </a>
             <a
               className={styles.anchor}
-              href="https://linkedin.com/in/emmanuel-a-g"
+              href={theLink}
               target="_blank"
             >
               <img

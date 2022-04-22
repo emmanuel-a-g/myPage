@@ -2,6 +2,9 @@ import styles from "./navigation.module.css";
 import { useMyContext } from "../context/myContext";
 function Navigation() {
   const { updateView } = useMyContext();
+  // <li className={styles.navItem} onClick={() => updateView(3)}>
+  // <span className={styles.number}>03.</span> Education
+  // </li>
   return (
     <nav className={styles.navigation}>
       <div className={styles.imageDiv}>
@@ -17,9 +20,6 @@ function Navigation() {
         </li>
         <li className={styles.navItem} onClick={() => updateView(2)}>
           <span className={styles.number}>02.</span> Apps
-        </li>
-        <li className={styles.navItem} onClick={() => updateView(3)}>
-          <span className={styles.number}>03.</span> Education
         </li>
         <li className={styles.navItem} onClick={() => updateView(4)}>
           <span className={styles.number}>04.</span> Contact

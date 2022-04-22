@@ -33,19 +33,41 @@
 }
 .form {
   display: flex;
-  width: 65%;
+  flex-direction: column;
+  width: 70%;
   justify-content: space-evenly;
+  align-items: center;
 }
 .input {
   border-radius: 5px;
+  border-color: aqua;
+  height: 30px;
+  margin: 0;
+  width: 260px;
+}
+/* .input:focus {} */
+
+.textArea {
+  resize: none;
+  border-radius: 5px;
+  border-color: aqua;
+  width: 260px;
 }
 .button {
   border-radius: 5px;
   padding: 8px;
-  background-color: red;
+  background-color: var(--color-violet);
   font-weight: bold;
 }
 .linkedIn {
-  background-color: red;
+  background-color: var(--color-violet);
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
