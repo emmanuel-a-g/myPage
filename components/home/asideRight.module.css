@@ -6,6 +6,7 @@
   align-items: flex-end;
   overflow: hidden;
   height: 99%;
+  background-color: inherit;
 }
 .myEmail {
   font-size: 1rem;

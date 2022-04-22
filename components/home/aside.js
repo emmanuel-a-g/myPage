@@ -1,7 +1,9 @@
-import styles from "./aside.module.css"
+import styles from "./aside.module.css";
+import { useMyContext} from "../context/myContext";
 function Aside() {
+  const { highContrastStatus } = useMyContext();
   return (
-    <aside className={styles.theAside}>
+    <aside className={highContrastStatus ? styles.theAsideContrast : styles.theAside}>
       <div className={styles.socialMedia}>check out:
         <a className={styles.anchor} href="https://github.com/emmanuel-a-g" target="_blank">
         <img src="./github.png" alt="github icon, click to open my github!"/>
