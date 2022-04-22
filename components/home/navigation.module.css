@@ -25,6 +25,7 @@
   display: inline;
   font-size: 1rem;
   font-weight: bold;
+  color: var(--color-light);
 }
 .navItem:hover {
   cursor: pointer;
@@ -66,6 +67,7 @@
   }
   .navItem {
     font-size: .75rem;
+    color: var(--color-dark);
   }
   .number {
     display: none;

@@ -19,11 +19,13 @@
   margin: 5px 0 0 5px;
   padding: 0;
 }
-/* @media (min-width: 768px) {
-  .notification {
-    width: 40rem;
-    left: calc(50% - 20rem);
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+@media (max-width: 700px) {
+  .myPortal {
+    font-size: .75rem;
   }
-} */
+}
+/* for notification in small screens */
+/* width: 40rem;
+left: calc(50% - 20rem);
+border-top-right-radius: 6px;
+border-top-left-radius: 6px; */
