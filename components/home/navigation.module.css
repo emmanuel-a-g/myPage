@@ -13,6 +13,21 @@
   background-color: var(--color-background);
   z-index: 3;
 }
+.navigationContrast {
+  width: 100%;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: 10% auto 60%;
+  padding: 0;
+  margin: 0;
+  max-height: 10vh;
+  min-height: none;
+  position: fixed;
+  top: 0;
+  background-color: var(--color-dark);
+  z-index: 3;
+}
 
 .navList {
   grid-column: 3 / span 1;
@@ -51,6 +66,14 @@
   padding: 10px;
   color: var(--color-light);
 }
+.buttonColor {
+  background-color: inherit;
+  border: 2px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--color-light);
+}
+
 @media only screen and (max-width: 800px) {
   .navigation {
     background-color: var(--color-primary);

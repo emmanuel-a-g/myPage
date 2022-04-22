@@ -7,7 +7,7 @@ import Work from "../sections/work";
 import Contact from "../sections/contact";
 import Education from "../sections/education";
 function Main() {
-  const { current } = useMyContext();
+  const { current, highContrastStatus } = useMyContext();
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
@@ -33,7 +33,7 @@ function Main() {
   // </div>
 
   return (
-    <div className={styles.middleScroll}>
+    <div className={highContrastStatus ? styles.middleScrollContrast : styles.middleScroll}>
       <div className={styles.gap}>
         <div className={styles.ref}>
           <Intro />
