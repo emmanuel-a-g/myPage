@@ -19,3 +19,10 @@
   height: 100%;
   outline: none;
 }
+
+@media only screen  and (max-width: 700px){
+  .iframeBox {
+    background-color: aqua;
+    width: 88%;
+  }
+}

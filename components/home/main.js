@@ -27,7 +27,10 @@ function Main() {
     } else {
       eduScroll();
     }
-  }, [current]);
+  }, [current]); 
+  // <div className={styles.ref} ref={eduRef}>
+  // <Education />
+  // </div>
 
   return (
     <div className={styles.middleScroll}>
@@ -40,9 +43,6 @@ function Main() {
         </div>
         <div className={styles.ref} ref={workRef}>
           <Work />
-        </div>
-        <div className={styles.ref} ref={eduRef}>
-          <Education />
         </div>
         <div className={styles.ref} ref={contactRef}>
           <Contact />

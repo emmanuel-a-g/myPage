@@ -42,18 +42,17 @@
   grid-template-rows: 1fr 1fr;
   align-items: center;
   column-gap: 5px;
-  row-gap: 5px;
+  row-gap: 10px;
 }
 .number {
   color: var(--color-primary);
 }
 .item {
   text-align: center;
-  color: var(--color-third);
-  background-color: var(--color-secondary-off);
+  color: var(--color-dark);
+  background-color: var(--color-light-grey);
   font-weight: bold;
   padding: 5% 5% 5% 5%;
-  border-radius: 5px;
   width: 50%;
   justify-self: center;
 }
@@ -66,7 +65,7 @@
   overflow-wrap: break-word;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
 @media only screen and (max-width: 750px) {

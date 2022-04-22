@@ -10,8 +10,8 @@
   min-height: none;
   position: fixed;
   top: 0;
-  background-color: var(--color-secondary);
-  z-index: 1;
+  background-color: var(--color-background);
+  z-index: 3;
 }
 
 .navList {
@@ -24,6 +24,7 @@
 .navItem {
   display: inline;
   font-size: 1rem;
+  font-weight: bold;
 }
 .navItem:hover {
   cursor: pointer;
@@ -47,17 +48,18 @@
   border: 2px solid var(--color-primary);
   border-radius: 5px;
   padding: 10px;
+  color: var(--color-light);
 }
 @media only screen and (max-width: 800px) {
   .navigation {
-    background-color: var(--color-third);
+    background-color: var(--color-primary);
     grid-template-columns: 10% 90%;
     min-height: 7vh;
   }
   .button {
     border: 1px solid var(--color-dark);
     background-color: var(--color-dark);
-    color: white;
+    color: var(--color-text);
   }
   .navList {
     grid-column: 2 / span 1;

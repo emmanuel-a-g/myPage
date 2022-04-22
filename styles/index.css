@@ -6,27 +6,26 @@ body {
   margin: 0 auto;
   max-height: 100vh;
   /* --color-secondary: #1878E7; */
+  --color-important: chartreuse;
   --color-text: rgb(255, 255, 255);
-  --color-primary: chartreuse;
-  --color-secondary: #1878E7;
-  --color-secondary-off: #154682;
+  /* primary aqua */
+  /* secondary chartreuse */
+  --color-primary: rgb(0, 255, 213);
+  --color-secondary: rgb(0, 212, 254);
   --color-third: aqua;
   --color-light-grey: #d9d9d9;
   --color-dark: black;
   --color-dark-grey: rgb(95, 94, 94);
   --color-light: white;
   --color-text: white; 
-  --color-text-two: whitesmoke;
+  --color-danger: rgb(116, 4, 4);
+  --color-space:  #003b59;
+  --color-violet: rgba(175, 8, 150, 0.9);
   /* background-color: var(--color-secondary); */
-  --color-background: var(--color-secondary);
+  /* color background #1878E7 light blue */
+  /* color background #154682 dark ugly blue */
+  --color-background: var(--color-space);
   --image-two: url("/images/exponent.png");
-  --font-tiny: .50rem;
-  --font-small: .75rem;
-  --font-normal: 1rem;
-  --font-medium: 1.3rem;
-  --font-medium-plus: 1.6rem;
-  --font-big: 2rem;
-  --font-huge: 3rem;
 }
 @media only screen and (max-width: 800px) {
   body {

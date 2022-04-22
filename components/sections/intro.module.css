@@ -5,24 +5,27 @@
   justify-content: center;
 }
 .hi {
-  color: var(--color-primary);
+  color: var(--color-light);
+  font-weight: bold;
   font-size: 1rem;
   margin: 0;
 }
 .name {
   color: var(--color-primary);
+  font-style: italic;
   font-size: 4rem;
   padding: 0;
   margin: 0 0 .5rem 0;
 }
 .nameTwo {
-  color: var(--color-dark);
+  color: var(--color-danger);
   font-size: 4rem;
   padding: 0;
   margin: 0 0 .5rem 0;
 }
 .text {
-  color: var(--color-primary);
+  color: var(--color-light);
+  font-weight: bold;
 }
 
 @media only screen and  (max-width: 800px) {
@@ -33,7 +36,7 @@
     font-size: 2.5rem;
   }
   .text {
-    font-size: .75rem;
+    font-size: .95rem;
   }
 }
 @media only screen and  (max-height: 550px) {
@@ -44,6 +47,6 @@
     font-size: 2.0rem;
   }
   .text {
-    font-size: .75rem;
+    font-size: .85rem;
   }
 }

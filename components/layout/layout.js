@@ -11,7 +11,7 @@ function Layout(props) {
     if (name) {
       let timer = setTimeout(() => {
         sayHiTo("");
-      }, 3000);
+      }, 3500);
       return () => {
         clearTimeout(timer);
       };
