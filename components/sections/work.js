@@ -4,7 +4,7 @@ function Work() {
   return (
     <div className={styles.work}>
       <h3 className={styles.title}>
-        <span className={styles.number}>02.</span> Work
+        <span className={styles.number}>02.</span> Apps
       </h3>
       <div className={styles.theGrid}>
           <Apps name="one"/>

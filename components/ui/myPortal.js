@@ -1,16 +1,16 @@
-import ReactDOM from 'react-dom';
-import classes from './myPortal.module.css';
+import ReactDOM from "react-dom";
+import classes from "./myPortal.module.css";
 
 function MyPortal(props) {
-  // const { title, message, status } = props;
+  const { name } = props;
 
-  return ReactDOM.createPortal((
+  return ReactDOM.createPortal(
     <div className={classes.myPortal}>
-      <h2>HELLO THIS IS MY PORTAL</h2>
-      <p>I will appear soon!</p>
-      <a href="http://www.twoamazon.com/" target="_blank">Visit amazon!</a>
-    </div>
-  ), document.getElementById("myPortal"));
+      <h3 className={classes.text}>{`Hi ${name}, from Emmanuel!`}</h3>
+      <h3>bye, now</h3>
+    </div>,
+    document.getElementById("myPortal")
+  );
 }
 
 export default MyPortal;

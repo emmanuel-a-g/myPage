@@ -7,6 +7,7 @@ export function useMyContext() {
 export function ContextProvider({ children }) {
   const [current, setView] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [name, setName] = useState("");
   
   useEffect(() => {
     console.log("Context starting...");
@@ -17,9 +18,14 @@ export function ContextProvider({ children }) {
     return setView(num);
   }
 
+  function sayHiTo(name) {
+    return setName(name); 
+  }
   const myValues = {
     current,
-    updateView
+    name,
+    updateView,
+    sayHiTo,
   }
 
   return (
