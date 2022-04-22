@@ -33,6 +33,7 @@
 }
 .image:hover {
   opacity: 1;
+  transform: scale(1.025) skewY(-2deg);
 }
 .technologies {
   grid-row: 2 / span 1;
