@@ -6,6 +6,7 @@
 }
 .title {
   font-size: 2rem;
+  color: var(--color-title);
 }
 .number {
   color: var(--color-primary);

@@ -6,6 +6,7 @@
 }
 .title {
   font-size: 2rem;
+  color: var(--color-title);
 }
 .number {
   color: var(--color-primary);
@@ -43,6 +44,7 @@
   border-color: aqua;
   height: 30px;
   margin: 0;
+  font-size: 36px;
   width: 260px;
 }
 /* .input:focus {} */
@@ -52,6 +54,7 @@
   border-radius: 5px;
   border-color: aqua;
   width: 260px;
+  font-size: 36px;
 }
 .button {
   border-radius: 5px;

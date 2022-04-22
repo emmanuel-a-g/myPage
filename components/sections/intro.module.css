@@ -26,6 +26,8 @@
 .text {
   color: var(--color-light);
   font-weight: bold;
+  width: 85%;
+  word-wrap: normal;
 }
 
 @media only screen and  (max-width: 800px) {

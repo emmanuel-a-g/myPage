@@ -1,20 +1,25 @@
 import styles from "./contact.module.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useMyContext } from "../context/myContext";
 
 function Contact() {
   const nameRef = useRef();
-  const emailRef =  useRef();
+  const emailRef = useRef();
   const textRef = useRef();
-  const {sayHiTo} = useMyContext();
+  const { sayHiTo } = useMyContext();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    let name = nameRef.current.value;
-    let email = emailRef.current.value;
-    let text = textRef.current.value;
     console.log(name, email, text);
-    sayHiTo(name);
+    sayHiTo(name)
+    setTimeout(() => {
+      setName("");
+      setEmail("");
+      setText("");
+    }, 1000);
   }
 
   return (
@@ -26,19 +31,44 @@ function Contact() {
         <h3 className={styles.hearIt}>I am open to new opportunites...</h3>
         <h4 className={styles.letsChat}>Let's chat?</h4>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input ref={nameRef} className={styles.input} type="text" placeholder="Name"/>
-          <br/>
-          <input ref={emailRef} className={styles.input} type="email" placeholder="Email"/>
-          <br/>
-          <textarea ref={textRef} className={styles.textArea} rows="4" placeholder="Message"/>
-          <br/>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br />
+          <input
+            className={styles.input}
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <textarea
+            className={styles.textArea}
+            rows="4"
+            placeholder="Message"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+          <br />
           <button className={styles.button}>Send!</button>
         </form>
-        <br/>
+        <br />
         <h4 className={styles.or}>or best</h4>
         <h4 className={styles.letsChat}>Contact me through LinkedIn below.</h4>
-        <a className={styles.linkedIn} href="https://linkedin.com/in/emmanuel-a-g" target="_blank">
-        <img src="./linked.png" alt="linkedIn icon, click to open my linkedIn!"/>
+        <a
+          className={styles.linkedIn}
+          href="https://linkedin.com/in/emmanuel-a-g"
+          target="_blank"
+        >
+          <img
+            src="./linked.png"
+            alt="linkedIn icon, click to open my linkedIn!"
+          />
         </a>
       </div>
     </div>
