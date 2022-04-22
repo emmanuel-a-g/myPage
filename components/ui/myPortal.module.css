@@ -10,13 +10,10 @@
   color: var(--color-third);
   position: fixed;
   height: 10vh;
-  top: 90vh;
+  top: 0vh;
   width: 100%;
-  z-index: 1;
+  z-index: 4;
   text-align: center;
-  /* left: 5%; */
-  /* border-top-right-radius: 0; */
-  /* border-top-left-radius: 0; */
 }
 .text {
   margin: 5px 0 0 5px;
