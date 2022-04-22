@@ -18,7 +18,10 @@ body {
   --color-dark-grey: rgb(95, 94, 94);
   --color-light: white;
   --color-text: white; 
-  --color-danger: rgb(116, 4, 4);
+  /* --color-danger: rgb(116, 4, 4); */
+  --color-danger: #380c0d;
+  /* batman #be0d0c; */
+  --color-batman: #be0d0c;
   --color-space:  #003b59;
   --color-violet: rgba(175, 8, 150, 0.9);
   /* background-color: var(--color-secondary); */

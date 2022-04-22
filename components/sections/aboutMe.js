@@ -9,10 +9,9 @@ function AboutMe() {
         <div className={styles.left}>
           <p className={styles.text}>
             Hello my name is Emmanuel and I am an web developer native to El
-            Paso, Texas. My coding journey began when I first jumped into
-            learning Python back in 2019 in which I wrote a small text game, and
-            from then I became so hooked that I decided to learn the most web
-            important language JavaScript! The rest is history.
+            Paso, Texas. My coding journey began when I first learned Python
+            back in 2019 with which I made a small text game, and from then I
+            became so hooked that I decided to learn JavaScript! The rest is history.
           </p>
           <p className={styles.text}>
             Today I enjoy building apps and deploying them to the web, I am
@@ -21,8 +20,7 @@ function AboutMe() {
           </p>
           <p className={styles.text}>
             I am experienced in the MERN stack, (Mongodb, Express, React,
-            Node.js) but also have experience using mySQL as well as Google's
-            Firebase SDK.
+            Node.js) but also have experience with FirebaseSDK, MySQL.
           </p>
         </div>
         <div className={styles.technologies}>

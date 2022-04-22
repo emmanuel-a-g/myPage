@@ -56,11 +56,11 @@
 .button {
   border-radius: 5px;
   padding: 8px;
-  background-color: var(--color-violet);
+  background-color: var(--color-batman);
   font-weight: bold;
 }
 .linkedIn {
-  background-color: var(--color-violet);
+  background-color: var(--color-batman);
   border-radius: 5px;
 }
 
