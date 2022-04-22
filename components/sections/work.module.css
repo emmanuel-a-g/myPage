@@ -17,6 +17,7 @@
 .title {
   font-size: 2rem;
   display: flex;
+  color: var(--color-title);
 }
 .number {
   color: var(--color-primary);

@@ -72,20 +72,22 @@
   margin: 0 0 5px 0;
 }
 .description {
-  color: var(--color-dark);
-  background-color: var(--color-light-grey);
-  border-radius: 2px;
+  color: var(--color-primary);
+  background-color: var(--color-dark);
+  font-weight: bold;
+  border-radius: 4px;
   align-self: center;
   width: 120%;
   text-align: center;
   margin-left: -20%;
   z-index: 1;
-  padding: 2px;
+  padding: 5px;
 }
 .tech {
   display: flex;
   justify-content: space-evenly;
   color: var(--color-light);
+  padding-left: 1.5%;
 }
 .links {
   justify-self: flex-end;
@@ -127,6 +129,7 @@
     text-align: center;
     margin-left: 0;
     z-index: 1;
+    padding: 2px;
   }
   .title {
     color: var(--color-third);

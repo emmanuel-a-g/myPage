@@ -26,7 +26,7 @@ function Navigation() {
         </li>
         <li className={styles.navItem}>
           <a
-            href="https://docs.google.com/document/u/1/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
+            href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
             target="_blank"
           >
             <button className={styles.button}>Resume</button>

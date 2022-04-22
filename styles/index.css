@@ -13,7 +13,7 @@ body {
   --color-primary: rgb(0, 255, 213);
   --color-secondary: rgb(0, 212, 254);
   --color-third: aqua;
-  --color-light-grey: #d9d9d9;
+  --color-light-grey: whitesmoke;
   --color-dark: black;
   --color-dark-grey: rgb(95, 94, 94);
   --color-light: white;
@@ -24,6 +24,7 @@ body {
   --color-batman: #be0d0c;
   --color-space:  #003b59;
   --color-violet: rgba(175, 8, 150, 0.9);
+  --color-title: #be0d0c;
   /* background-color: var(--color-secondary); */
   /* color background #1878E7 light blue */
   /* color background #154682 dark ugly blue */

@@ -33,7 +33,7 @@
 }
 .image:hover {
   opacity: 1;
-  transform: scale(1.025) skewY(-2deg);
+  transform: scale(1.025);
 }
 .technologies {
   grid-row: 2 / span 1;
@@ -56,11 +56,16 @@
   padding: 5% 5% 5% 5%;
   width: 50%;
   justify-self: center;
+  border-radius: 5px;
+}
+.item:hover {
+  transform: skewY(5deg);
 }
 .title {
   font-size: 2rem;
   padding: 0;
   margin: 0 0 5px 0;
+  color: var(--color-title);
 }
 .text {
   overflow-wrap: break-word;
