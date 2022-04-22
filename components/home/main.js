@@ -11,7 +11,7 @@ function Main() {
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
-  const eduRef = useState(null);
+  const eduRef = useRef(null);
   const aboutScroll = () => aboutRef.current.scrollIntoView();
   const workScroll = () => workRef.current.scrollIntoView();
   const eduScroll = () => eduRef.current.scrollIntoView();

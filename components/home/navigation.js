@@ -16,7 +16,7 @@ function Navigation() {
           <span className={styles.number}>01.</span> About
         </li>
         <li className={styles.navItem} onClick={() => updateView(2)}>
-          <span className={styles.number}>02.</span> Work
+          <span className={styles.number}>02.</span> Apps
         </li>
         <li className={styles.navItem} onClick={() => updateView(3)}>
           <span className={styles.number}>03.</span> Education
