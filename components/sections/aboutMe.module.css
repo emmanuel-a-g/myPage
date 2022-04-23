@@ -46,7 +46,7 @@
   row-gap: 10px;
 }
 .number {
-  color: var(--color-primary);
+  color: var(--color-tron);
 }
 .item {
   text-align: center;

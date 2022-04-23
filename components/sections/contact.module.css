@@ -9,11 +9,11 @@
   color: var(--color-title);
 }
 .number {
-  color: var(--color-primary);
+  color: var(--color-tron);
 }
 .contactMe {
   /* background-color: var(--color-light-grey); */
-  color: var(--color-third);
+  /* color: var(--color-third); */
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -41,10 +41,10 @@
 }
 .input {
   border-radius: 5px;
-  border-color: aqua;
+  border-color: #7DFDFE;
   height: 30px;
   margin: 0;
-  font-size: 36px;
+  font-size: 20px;
   width: 260px;
 }
 /* .input:focus {} */
@@ -52,9 +52,9 @@
 .textArea {
   resize: none;
   border-radius: 5px;
-  border-color: aqua;
+  border-color: #7DFDFE;
   width: 260px;
-  font-size: 36px;
+  font-size: 20px;
 }
 .button {
   border-radius: 5px;
@@ -72,5 +72,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .input {
+    font-size: 36px !important;
+  }
+  .textArea {
+    font-size: 36px !important;
   }
 }
