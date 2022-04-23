@@ -20,7 +20,7 @@
   color: var(--color-title);
 }
 .number {
-  color: var(--color-primary);
+  color: var(--color-tron);
 }
 
 @media only screen and (max-height: 700px) {

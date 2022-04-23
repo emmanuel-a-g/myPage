@@ -25,8 +25,8 @@ function Contact() {
         <span className={styles.number}>04.</span> Contact
       </h3>
       <div className={styles.contactMe}>
-        <h3 className={styles.hearIt} style={highContrastStatus? {color: "black"} : {color: "#00ffd5"}}>I am open to new opportunites...</h3>
-        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#00ffd5"}}>Let's chat?</h4>
+        <h3 className={styles.hearIt} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>I am open to new opportunites...</h3>
+        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>Let's chat?</h4>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.input}
@@ -55,8 +55,8 @@ function Contact() {
           <button className={styles.button}>Send!</button>
         </form>
         <br />
-        <h4 className={styles.or} style={highContrastStatus? {color: "black"} : {color: "#00ffd5"}}>or best</h4>
-        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#00ffd5"}}>Contact me through LinkedIn below.</h4>
+        <h4 className={styles.or} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>or best</h4>
+        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>Contact me through LinkedIn below.</h4>
         <a
           className={styles.linkedIn}
           href="https://linkedin.com/in/emmanuel-a-g"

@@ -69,7 +69,7 @@
   justify-self: flex-end;
 }
 .title {
-  color: var(--color-third);
+  /* color: var(--color-tron); */
   display: flex;
   margin: 0 0 5px 0;
 }
@@ -133,21 +133,21 @@
     z-index: 1;
     padding: 2px;
   }
-  .title {
+  /* .title {
     color: var(--color-third);
-  }
-  .featured {
+  } */
+  /* .featured {
     color: var(--color-light);
-  }
-  .tech {
+  } */
+  /* .tech {
     color: var(--color-light);
-  }
+  } */
   .links {
     justify-content: space-evenly;
     width: 30%;
   }
   .anchor {
     border-radius: 3px;
-    background-color: var(--color-primary);
+    background-color: var(--color-tron);
   }
 }

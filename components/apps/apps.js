@@ -43,9 +43,9 @@ function Apps({ name, data }) {
             className={styles.titleLink}
             href="https://linkedin.com/in/emmanuel-a-g"
           >
-            <h3 className={styles.title} style={highContrastStatus? {color: "black"} : {color: "#00ffd5"}}>{title}</h3>
+            <h3 className={styles.title} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>{title}</h3>
           </a>
-          <p className={styles.description} style={highContrastStatus? {color: "white"} : {color: "00ffd5"}}>{description}</p>
+          <p className={styles.description} style={highContrastStatus? {color: "white"} : {color: "#7DFDFE"}}>{description}</p>
           {width < breakpoint ? null : (
             <span className={styles.tech}>{tech}</span>
           )}

@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 .number {
-  color: var(--color-primary);
+  color: var(--color-tron);
 }
 
 .imageDiv {
@@ -46,14 +46,14 @@
 }
 .button {
   background-color: inherit;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-tron);
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
 }
 .buttonColor {
   background-color: inherit;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-tron);
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
@@ -62,7 +62,7 @@
 @media only screen and (max-width: 800px) {
   .navigation {
     /* background-color: var(--color-primary); */
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 15% 85%;
     min-height: 7vh;
   }
   /* .button {
@@ -75,7 +75,7 @@
   }
   .navItem {
     font-size: .75rem;
-    color: var(--color-dark);
+    color: var(--color-light);
   }
   .number {
     display: none;
