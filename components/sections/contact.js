@@ -22,16 +22,10 @@ function Contact() {
       if (!response.ok) {
         throw new Error(data.message || "Something went wrong");
       }
-      setNotification("success");
-      setEmail("");
-      setName("");
-      setText("");
+      sayHiTo(name);
     } catch (err) {
-      setNotification("error");
-      setError(err.message);
+      console.log("Error posting message: ", err.message);
     }
-    //activates notification
-    sayHiTo(name);
     setTimeout(() => {
       setName("");
       setEmail("");
