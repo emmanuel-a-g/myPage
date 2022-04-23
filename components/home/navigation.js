@@ -6,7 +6,7 @@ function Navigation() {
   // <span className={styles.number}>03.</span> Education
   // </li>
   return (
-    <nav className={highContrastStatus ? styles.navigationContrast : styles.navigation}>
+    <nav className={styles.navigation} style={highContrastStatus?{backgroundColor: "black"}:{backgroundColor: "#003b59"}}>
       <div className={styles.imageDiv}>
         <img
           className={styles.image}

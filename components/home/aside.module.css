@@ -8,16 +8,7 @@
   color: var(--color-primary);
   background-color: inherit;
 }
-.theAsideContrast {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 80%;
-  overflow: hidden;
-  color: var(--color-primary);
-  background-color: inherit;
-}
+
 .anchor {
   margin: 10px 0 0 0;
 }

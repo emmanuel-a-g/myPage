@@ -8,11 +8,12 @@ body {
   /* --color-secondary: #1878E7; */
   --color-important: chartreuse;
   --color-text: rgb(255, 255, 255);
+  --color-tron: #7DFDFE;
   /* primary aqua */
   /* secondary chartreuse */
-  --color-primary: rgb(0, 255, 213);
-  --color-secondary: rgb(0, 212, 254);
-  --color-third: aqua;
+  --color-primary: #00ffd5;
+  --color-secondary: #00d4fe;
+  --color-third: #00ffff;
   --color-light-grey: whitesmoke;
   --color-dark: black;
   --color-dark-grey: rgb(95, 94, 94);
