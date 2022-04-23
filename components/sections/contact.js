@@ -22,7 +22,7 @@ function Contact() {
   return (
     <div className={styles.contactBox}>
       <h3 className={styles.title}>
-        <span className={styles.number}>04.</span> Contact
+        <span className={styles.number}>03.</span> Contact
       </h3>
       <div className={styles.contactMe}>
         <h3 className={styles.hearIt} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>I am open to new opportunites...</h3>

@@ -8,10 +8,12 @@ import Contact from "../sections/contact";
 import Education from "../sections/education";
 function Main() {
   const { current, highContrastStatus } = useMyContext();
+  const introRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
   const contactRef = useRef(null);
   const eduRef = useRef(null);
+  const introScroll = () => introRef.current.scrollIntoView();
   const aboutScroll = () => aboutRef.current.scrollIntoView();
   const workScroll = () => workRef.current.scrollIntoView();
   const eduScroll = () => eduRef.current.scrollIntoView();
@@ -24,6 +26,8 @@ function Main() {
       workScroll();
     } else if (current === 4) {
       contactScroll();
+    } else if (current === 0) {
+      introScroll();
     } else {
       eduScroll();
     }
@@ -35,7 +39,7 @@ function Main() {
   return (
     <div className={highContrastStatus ? styles.middleScrollContrast : styles.middleScroll}>
       <div className={styles.gap}>
-        <div className={styles.ref}>
+        <div className={styles.ref} ref={introRef}>
           <Intro />
         </div>
         <div className={styles.ref} ref={aboutRef}>

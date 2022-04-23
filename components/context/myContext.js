@@ -5,7 +5,7 @@ export function useMyContext() {
   return useContext(MyContext);
 }
 export function ContextProvider({ children }) {
-  const [current, setView] = useState(1);
+  const [current, setView] = useState(0);
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState("");
   const [highContrastStatus, setHighContrast] = useState(false);

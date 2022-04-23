@@ -3,7 +3,6 @@ import { useMyContext } from '../context/myContext';
 
 function Intro() {
   const { highContrastStatus } = useMyContext();
-  console.log(highContrastStatus);
   return (
     <div className={styles.introMe}>
       <h5 className={styles.hi} style={highContrastStatus? {color: "black"} : {color: "white"}}>Hi, my name is</h5>

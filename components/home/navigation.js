@@ -12,6 +12,7 @@ function Navigation() {
           className={styles.image}
           src="./emmanuelCircle.png"
           alt="Picture of Emmanuel G"
+          onClick={() => updateView(0)}
         />
       </div>
       <ul className={styles.navList}>
@@ -22,7 +23,7 @@ function Navigation() {
           <span className={styles.number}>02.</span> Apps
         </li>
         <li className={styles.navItem} onClick={() => updateView(4)}>
-          <span className={styles.number}>04.</span> Contact
+          <span className={styles.number}>03.</span> Contact
         </li>
         <li className={styles.navItem}>
           <a
