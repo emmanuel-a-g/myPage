@@ -8,6 +8,8 @@
 /coverage
 
 # next.js
+.config
+next.config.js
 /.next/
 /out/
 

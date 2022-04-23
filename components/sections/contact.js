@@ -8,10 +8,24 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    console.log(name, email, text);
-    sayHiTo(name)
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        body: JSON.stringify({ email, name, message: text }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || "Something went wrong");
+      }
+      sayHiTo(name);
+    } catch (err) {
+      console.log("Error posting message: ", err.message);
+    }
     setTimeout(() => {
       setName("");
       setEmail("");
