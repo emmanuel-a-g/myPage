@@ -1,7 +1,5 @@
 .navigation {
   width: 100%;
-  grid-row: 1 / span 1;
-  grid-column: 1 / span 3;
   display: grid;
   grid-template-columns: 10% auto 60%;
   padding: 0;
@@ -62,16 +60,12 @@
 @media only screen and (max-width: 800px) {
   .navigation {
     /* background-color: var(--color-primary); */
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 13% 87%;
     min-height: 7vh;
   }
-  /* .button {
-    border: 1px solid var(--color-dark);
-    background-color: var(--color-dark);
-    color: var(--color-text);
-  } */
   .navList {
     grid-column: 2 / span 1;
+    padding: 0 0 0 15px;
   }
   .navItem {
     font-size: .75rem;
