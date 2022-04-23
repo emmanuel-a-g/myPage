@@ -9,7 +9,7 @@
 
 # next.js
 .config
- next.config.js
+next.config.js
 /.next/
 /out/
 
