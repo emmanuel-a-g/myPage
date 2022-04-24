@@ -3,12 +3,13 @@ import { MongoClient } from "mongodb";
 async function handler(req, res) {
   if (req.method === "POST") {
     const { email, name, message } = req.body;
-    if (!email || !email.includes("@") || !name || !message) {
+    if (!email || !email.includes("@") || !message) {
       res.status(422).json({ message: "Invalid input" });
       return;
     }
     //Store it in a database
     const date = new Date();
+    const locale = date.toLocaleDateString();
     const format = date.toUTCString();
     // convert date to a string in UTC timezone format:
     const mess = {
@@ -37,7 +38,7 @@ async function handler(req, res) {
     }
 
     client.close();
-    res.status(201).json({ message: "Success saved contact" });
+    res.status(201).json({ message: "Success saved contact", date: locale });
   }
 }
 

@@ -8,6 +8,7 @@ export function ContextProvider({ children }) {
   const [current, setView] = useState(0);
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState("");
+  const [date, setDate] = useState("");
   const [highContrastStatus, setHighContrast] = useState(false);
   
   useEffect(() => {
@@ -19,8 +20,9 @@ export function ContextProvider({ children }) {
     return setView(num);
   }
 
-  function sayHiTo(name) {
-    return setName(name); 
+  function sayHiTo(name, date) {
+    setDate(date);
+    return setName(name);
   }
 
   function handleHighContrast() {
@@ -31,6 +33,7 @@ export function ContextProvider({ children }) {
     current,
     name,
     highContrastStatus,
+    date,
     updateView,
     sayHiTo,
     handleHighContrast,

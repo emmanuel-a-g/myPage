@@ -18,12 +18,20 @@ function Apps({ name, data }) {
   }, []);
   let theClass;
   let theContentBox;
+  let imageBoxCurrent;
   if (name === "two") {
     theClass = "two";
     theContentBox = styles.smallContentBoxTwo;
+    imageBoxCurrent = styles.imageBoxTwo;
   } else {
     theClass = "one";
     theContentBox = styles.smallContentBox;
+    imageBoxCurrent = styles.imageBox;
+  }
+  if (highContrastStatus === true && name === "one") {
+    imageBoxCurrent = styles.imageBoxContrast;
+  } else if (highContrastStatus === true && name === "two") {
+    imageBoxCurrent = styles.imageBoxContrastTwo;
   }
   // <img src="./images/amazon.png" alt="Amazon clone app screenshot" />
   return (
@@ -31,9 +39,7 @@ function Apps({ name, data }) {
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
           <div
-            className={
-              theClass === "one" ? styles.imageBox : styles.imageBoxTwo
-            }
+            className={imageBoxCurrent}
             style={highContrastStatus? {filter : "none" } : null}
           ></div>
         )}
