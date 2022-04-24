@@ -29,11 +29,11 @@
   margin-left: 10%;
   height: auto;
   border-radius: 5px;
-  opacity: .6;
 }
 .image:hover {
-  opacity: 1;
   transform: scale(1.025);
+  transition: all 1s;
+  border-radius: 5px;
 }
 .technologies {
   grid-row: 2 / span 1;

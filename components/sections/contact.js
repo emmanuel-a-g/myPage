@@ -19,11 +19,15 @@ function Contact() {
         },
       });
       const data = await response.json();
+      const date = data.date;
+      console.log(date);
       if (!response.ok) {
         throw new Error(data.message || "Something went wrong");
+      } else {
+        sayHiTo(name, date);
       }
-      sayHiTo(name);
     } catch (err) {
+      sayHiTo("error");
       console.log("Error posting message: ", err.message);
     }
     setTimeout(() => {
@@ -39,8 +43,18 @@ function Contact() {
         <span className={styles.number}>03.</span> Contact
       </h3>
       <div className={styles.contactMe}>
-        <h3 className={styles.hearIt} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>I am open to new opportunites...</h3>
-        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>Let's chat?</h4>
+        <h3
+          className={styles.hearIt}
+          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+        >
+          I am open to new opportunites...
+        </h3>
+        <h4
+          className={styles.letsChat}
+          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+        >
+          Let's chat?
+        </h4>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.input}
@@ -52,6 +66,7 @@ function Contact() {
           <br />
           <input
             className={styles.input}
+            required
             type="email"
             placeholder="Email"
             value={email}
@@ -60,23 +75,43 @@ function Contact() {
           <br />
           <textarea
             className={styles.textArea}
+            required
             rows="4"
             placeholder="Message"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
           <br />
-          <button className={styles.button}>Send!</button>
+          <button
+            className={styles.button}
+            style={
+              highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+            }
+          >
+            Send!
+          </button>
         </form>
         <br />
-        <h4 className={styles.or} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>or best</h4>
-        <h4 className={styles.letsChat} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>Contact me through LinkedIn below.</h4>
+        <h4
+          className={styles.or}
+          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+        >
+          or best
+        </h4>
+        <h4
+          className={styles.letsChat}
+          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+        >Contact me through <a href="https://linkedin.com/in/emmanuel-a-g" className={styles.linkedLink} target="_blank">
+            LinkedIn
+          </a>
+        </h4>
         <a
           className={styles.linkedIn}
           href="https://linkedin.com/in/emmanuel-a-g"
           target="_blank"
         >
           <img
+            className={styles.logo}
             src="./linked.png"
             alt="linkedIn icon, click to open my linkedIn!"
           />

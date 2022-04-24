@@ -11,7 +11,7 @@ let exponent = {
   title: "Expwnent",
   description: "Expwnent is a web application for tournament organizers and players to meet and engage in epic battle with the game of their choice. Click below to make your first tournament !",
   tech: "React, React-Router, Node, Express, AWS, API",
-  github: " https://github.com/hratx-blue-ocean/pogchamp.",
+  github: " https://github.com/hratx-blue-ocean/pogchamp",
   theLink: "http://www.expwnent.com/"
 };
 function Work() {

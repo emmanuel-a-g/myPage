@@ -83,4 +83,7 @@
     max-height: none;
     min-height: 8vh;
   }
+  .buttonColor {
+    padding: 0px;
+  }
 }

@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { useMyContext } from "../context/myContext";
 
 function Layout(props) {
-  const {name, sayHiTo } = useMyContext();
+  const {name, sayHiTo, date } = useMyContext();
   useEffect(() => {
     if (name) {
       let timer = setTimeout(() => {
@@ -23,7 +23,7 @@ function Layout(props) {
     <Head>
     <title>Emmanuel Garcia</title>
     </Head>
-    {name && <MyPortal name={name}/>}
+    {name && <MyPortal name={name} date={date}/>}
     <Navigation className={styles.nav}/>
       <main className={styles.main}>
         {props.children}

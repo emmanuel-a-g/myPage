@@ -24,7 +24,18 @@
   -o-background-size: contain;
   border-radius: 3px;
   filter: drop-shadow(0 9px 5px var(--color-third));
-  height: 88%;
+  height: 90%;
+}
+.imageBoxContrast {
+  grid-column: 1 / span 1;
+  background: url(/images/amazon.png) center no-repeat;
+  background-size: contain !important;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  border-radius: 3px;
+  filter: drop-shadow(0 9px 5px var(--color-third));
+  height: 90%;
 }
 .imageBox:hover {
   background: url(/images/amazon.png) center no-repeat;
@@ -48,7 +59,18 @@
   -o-background-size: contain;
   border-radius: 3px;
   filter: drop-shadow(0 9px 5px var(--color-third));
-  height: 88%;
+  height: 95%;
+}
+.imageBoxContrastTwo {
+  grid-column: 1 / span 1;
+  background: var(--image-two) center no-repeat;
+  background-size: contain !important;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  border-radius: 3px;
+  filter: drop-shadow(0 9px 5px var(--color-third));
+  height: 95%;
 }
 .imageBoxTwo:hover {
   background: var(--image-two) center no-repeat;
@@ -133,15 +155,9 @@
     z-index: 1;
     padding: 2px;
   }
-  /* .title {
-    color: var(--color-third);
-  } */
-  /* .featured {
-    color: var(--color-light);
-  } */
-  /* .tech {
-    color: var(--color-light);
-  } */
+  .featured {
+    display: none;
+  }
   .links {
     justify-content: space-evenly;
     width: 30%;
