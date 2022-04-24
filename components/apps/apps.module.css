@@ -162,8 +162,8 @@
     justify-content: space-evenly;
     width: 30%;
   }
-  .anchor {
-    border-radius: 3px;
+  .anchor img {
+    border-radius: 50%;
     background-color: var(--color-tron);
   }
 }
