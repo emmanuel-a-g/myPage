@@ -1,7 +1,7 @@
 import styles from "./aboutMe.module.css";
 import { useMyContext } from "../context/myContext";
 function AboutMe() {
-  const { highContrastStatus } = useMyContext(); 
+  const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.aboutMe}>
       <h3 className={styles.title}>
@@ -9,18 +9,26 @@ function AboutMe() {
       </h3>
       <div className={styles.theGrid}>
         <div className={styles.left}>
-          <p className={styles.text} style={highContrastStatus? {color: "black"} : {color: "white"}}>
+          <p
+            className={styles.text}
+            style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          >
             Hello my name is Emmanuel and I am an web developer native to El
             Paso, Texas. My coding journey began when I first learned Python
-            back in 2019 with which I made a small text game, and from then I
-            became so hooked that I decided to learn JavaScript! The rest is history.
+            back in 2019 with which I made a small text game, from there I
+            decided to dive deep into web development! The rest is history.
           </p>
-          <p className={styles.text} style={highContrastStatus? {color: "black"} : {color: "white"}}>
-            Today I enjoy building apps and deploying them to the web, I am
-            excited to learn new tech and see what I can build individually or
-            in a team.
+          <p
+            className={styles.text}
+            style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          >
+            Today I enjoy building apps and deploying, I am excited to learn new
+            tech and see what I can build individually or in a team.
           </p>
-          <p className={styles.text} style={highContrastStatus? {color: "black"} : {color: "white"}}>
+          <p
+            className={styles.text}
+            style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          >
             I am experienced in the MERN stack, (Mongodb, Express, React,
             Node.js) but also have experience with FirebaseSDK, MySQL.
           </p>
