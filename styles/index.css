@@ -35,7 +35,7 @@ body {
   /* color background #1878E7 light blue */
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
-  --image-two: url("/images/exponent.png");
+  --image-two: url("/images/exponentMin.png");
 }
 @media only screen and (max-width: 800px) {
   body {
