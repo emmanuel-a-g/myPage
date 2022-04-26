@@ -8,3 +8,9 @@ function HomePage() {
 }
 
 export default HomePage;
+
+export function getStaticProps(props) {
+  return {
+    props: {}
+  }
+}
