@@ -25,7 +25,8 @@
   align-items: center;
 }
 .image {
-  width: 90%;
+  width: 280px;
+  max-width: 90%;
   margin-left: 10%;
   height: auto;
   border-radius: 5px;
