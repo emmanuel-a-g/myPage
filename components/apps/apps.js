@@ -38,20 +38,41 @@ function Apps({ name, data }) {
     <div>
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
-          <div
-            className={imageBoxCurrent}
-            style={highContrastStatus? {filter : "none" } : null}
-          ></div>
+          <a className={styles.anchorWrapper} href={theLink} target="_blank">
+            <div
+              className={imageBoxCurrent}
+              style={highContrastStatus ? { filter: "none" } : null}
+            ></div>
+          </a>
         )}
         <div className={width < breakpoint ? theContentBox : styles.contentBox}>
-          <h5 className={styles.featured} style={highContrastStatus? {color: "black"} : {color: "white"}}>Featured Project</h5>
+          <h5
+            className={styles.featured}
+            style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          >
+            Featured Project
+          </h5>
           <a
             className={styles.titleLink}
             href="https://linkedin.com/in/emmanuel-a-g"
           >
-            <h3 className={styles.title} style={highContrastStatus? {color: "black"} : {color: "#7DFDFE"}}>{title}</h3>
+            <h3
+              className={styles.title}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+              }
+            >
+              {title}
+            </h3>
           </a>
-          <p className={styles.description} style={highContrastStatus? {color: "white"} : {color: "#7DFDFE"}}>{description}</p>
+          <p
+            className={styles.description}
+            style={
+              highContrastStatus ? { color: "white" } : { color: "#7DFDFE" }
+            }
+          >
+            {description}
+          </p>
           {width < breakpoint ? null : (
             <span className={styles.tech}>{tech}</span>
           )}
