@@ -7,6 +7,8 @@ class MyDocument extends Document {
         <Head>
         <meta charSet="UTF-8"/>
         <meta name="description" content="Emmanuel's portolio 2.0."/>
+        <meta name="theme-color" content="#003b59" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/emmanuel.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

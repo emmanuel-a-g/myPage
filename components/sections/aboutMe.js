@@ -44,7 +44,9 @@ function AboutMe() {
         <div className={styles.right}>
           <img
             className={styles.image}
-            src="./arturo.png"
+            src="./images/arturo.png"
+            width="280"
+            height="302"
             alt="A picture of Emmanuel garcia at graduation!"
           />
         </div>

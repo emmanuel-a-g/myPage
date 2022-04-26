@@ -10,8 +10,10 @@ function Navigation() {
       <div className={styles.imageDiv}>
         <img
           className={styles.image}
-          src="./emmanuelCircle.png"
+          src="./images/emmanuelCircle.png"
           alt="Picture of Emmanuel G"
+          width="40"
+          height="40"
           onClick={() => updateView(0)}
         />
       </div>

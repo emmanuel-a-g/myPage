@@ -111,8 +111,10 @@ function Contact() {
           target="_blank"
         >
           <img
+            width="24"
+            height="24"
             className={styles.logo}
-            src="./linked.png"
+            src="./images/linked.png"
             alt="linkedIn icon, click to open my linkedIn!"
           />
         </a>
