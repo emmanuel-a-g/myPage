@@ -27,7 +27,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.emmanuelgarcia.dev/arturo-39.jpg"
+            content="https://www.emmanuelgarcia.dev/arturo39.png"
           />
           <meta property="og:url" content="https://www.emmanuelgarcia.dev/" />
           <meta name="twitter:card" content="summary_large_image" />
