@@ -23,6 +23,7 @@
   grid-row: 1 / span 1;
   display: flex;
   align-items: center;
+  height: 70%;
 }
 .image {
   width: 280px;
@@ -95,6 +96,7 @@
   .right {
     display: flex;
     justify-content: center;
+    height: 100%;
   }
   .technologies {
     display: flex;
@@ -116,14 +118,14 @@
     margin: 0;
   }
   .item {
-    padding: 0px;
+    padding: .025px;
     font-size: .50em;
   }
   .technologies {
     height: 50%;
   }
   .image {
-    max-width: 150px;
+    max-width: 200px;
     height: auto;
   }
 }
