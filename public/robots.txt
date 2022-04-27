@@ -1,0 +1,6 @@
+Sitemap: https://emmanuelgarcia.dev/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*
