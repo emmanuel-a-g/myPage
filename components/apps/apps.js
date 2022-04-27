@@ -38,7 +38,7 @@ function Apps({ name, data }) {
     <div>
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
-          <a className={styles.anchorWrapper} href={theLink} target="_blank">
+          <a className={styles.anchorWrapper} href={theLink} target="_blank" alt="Anchor for my application">
             <div
               className={imageBoxCurrent}
               style={highContrastStatus ? { filter: "none" } : null}
@@ -55,6 +55,7 @@ function Apps({ name, data }) {
           <a
             className={styles.titleLink}
             href="https://linkedin.com/in/emmanuel-a-g"
+            alt="link to Emmanuel's LinkedIn Profile"
           >
             <h3
               className={styles.title}
