@@ -46,6 +46,8 @@ function AboutMe() {
             className={styles.image}
             src="./arturo.png"
             alt="A picture of Emmanuel garcia at graduation!"
+            width="282"
+            height="302"
           />
         </div>
       </div>

@@ -114,6 +114,7 @@ function Contact() {
             className={styles.logo}
             src="./linked.png"
             alt="linkedIn icon, click to open my linkedIn!"
+            height="24" width="24"
           />
         </a>
       </div>

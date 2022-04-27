@@ -13,6 +13,7 @@ function Navigation() {
           src="./emmanuelCircle.png"
           alt="Picture of Emmanuel G"
           onClick={() => updateView(0)}
+          width="40" height="40"
         />
       </div>
       <ul className={styles.navList}>

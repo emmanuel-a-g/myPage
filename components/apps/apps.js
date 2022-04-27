@@ -79,12 +79,13 @@ function Apps({ name, data }) {
           )}
           <div className={styles.links}>
             <a className={styles.anchor} href={github} target="_blank">
-              <img src="./github.png" alt="github link to project" />
+              <img src="./github.png" alt="github link to project" width="24" height="24"/>
             </a>
             <a className={styles.anchor} href={theLink} target="_blank">
               <img
                 src="./link.png"
                 alt="link to checkout project in new tab window"
+                width="24" height="24"
               />
             </a>
           </div>
