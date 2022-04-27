@@ -5,12 +5,19 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        <meta charSet="UTF-8"/>
-        <meta name="description" content="Emmanuel's portolio 2.0."/>
-        <link rel="icon" href="/emmanuel.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet"/>
+          <link rel="icon" href="/favicon.ico" />
+          <meta charSet="UTF-8" />
+          <meta name="description" content="Emmanuel's portolio 2.0." />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
