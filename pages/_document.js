@@ -5,9 +5,11 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" href="/favicon.ico" />
           <meta charSet="UTF-8" />
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/favicon.png"/>
           <meta name="description" content="Emmanuel's portolio 2.0." />
+          <meta name="theme-color" content="#003b59"/>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
