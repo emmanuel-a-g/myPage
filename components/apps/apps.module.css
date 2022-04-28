@@ -96,8 +96,9 @@
   margin: 0 0 5px 0;
 }
 .description {
-  color: var(--color-primary);
-  background-color: var(--color-dark);
+  color: var(--color-black);
+  background-color: var(--color-light-grey);
+  opacity: .85;
   font-weight: bold;
   border-radius: 4px;
   align-self: center;
@@ -151,15 +152,15 @@
     min-height: 30vh;
   }
   .description {
-    color: var(--color-light);
-    background-color: var(--color-secondary-off);
+    /* background-color: var(--color-secondary-off); */
     border-radius: 2px;
     align-self: center;
-    width: 100%;
+    width: 98%;
     text-align: center;
-    margin-left: 0;
+    margin-left: 0%;
     z-index: 1;
     padding: 2px;
+    opacity: .60;
   }
   .featured {
     display: none;

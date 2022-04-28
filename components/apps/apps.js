@@ -68,9 +68,6 @@ function Apps({ name, data }) {
           </a>
           <p
             className={styles.description}
-            style={
-              highContrastStatus ? { color: "white" } : { color: "#7DFDFE" }
-            }
           >
             {description}
           </p>
