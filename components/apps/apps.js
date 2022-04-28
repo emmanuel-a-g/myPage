@@ -1,21 +1,10 @@
 //make it re-usable for apps that you build.
-import { useState, useEffect } from "react";
 import styles from "./apps.module.css";
 import { useMyContext } from "../context/myContext";
 function Apps({ name, data }) {
-  const [width, setWidth] = useState(null);
-  const { highContrastStatus } = useMyContext();
-  const breakpoint = 700;
+  const { highContrastStatus, width } = useMyContext();
   const { title, description, tech, github, theLink } = data;
-
-  useEffect(() => {
-    if (width === null) {
-      setWidth(window.innerWidth);
-    }
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  const breakpoint = 700;
   let theClass;
   let theContentBox;
   let imageBoxCurrent;

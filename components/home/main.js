@@ -1,11 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 import { useMyContext } from "../context/myContext";
 import styles from "./main.module.css";
 import AboutMe from "../sections/aboutMe";
 import Intro from "../sections/intro";
 import Work from "../sections/work";
 import Contact from "../sections/contact";
-import Education from "../sections/education";
+// import Education from "../sections/education";
+
 function Main() {
   const { current, highContrastStatus } = useMyContext();
   const introRef = useRef(null);
