@@ -1,5 +1,6 @@
 import Apps from "../apps/apps";
 import styles from "./work.module.css";
+import { useMyContext } from '../context/myContext';
 let amazonClone = {
   title: "Amazon Clone",
   description: "Amazon is one of the top companies for online shopping and this clone mirrors a similar user experience, check it out !",
@@ -15,9 +16,10 @@ let exponent = {
   theLink: "http://www.expwnent.com/"
 };
 function Work() {
+  const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.work}>
-      <h3 className={styles.title}>
+      <h3 className={styles.title} style={highContrastStatus? {color: "#be0d0c"} : {color: "#00ffd5"}}>
         <span className={styles.number}>02.</span> Apps
       </h3>
       <div className={styles.theGrid}>

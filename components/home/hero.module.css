@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 8% auto 8%;
   grid-template-rows: 1fr;
-  background-color: var(--color-dark);
+  background-color: var(--color-dark-grey);
   height: 100vh;
 }
 .left {

@@ -31,9 +31,10 @@
   margin-left: 10%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 2px 4px 27px -10px rgb(255, 255, 255);
 }
 .image:hover {
-  transform: scale(1.025);
+  transform: scale(1.1);
   transition: all 1s;
   border-radius: 5px;
 }
@@ -67,7 +68,7 @@
   font-size: 2rem;
   padding: 0;
   margin: 0 0 5px 0;
-  color: var(--color-title);
+  /* color: var(--color-tron); */
 }
 .text {
   overflow-wrap: break-word;

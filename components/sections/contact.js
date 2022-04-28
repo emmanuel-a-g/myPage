@@ -39,7 +39,7 @@ function Contact() {
 
   return (
     <div className={styles.contactBox}>
-      <h3 className={styles.title}>
+      <h3 className={styles.title} style={highContrastStatus? {color: "#be0d0c"} : {color: "#00ffd5"}}>
         <span className={styles.number}>03.</span> Contact
       </h3>
       <div className={styles.contactMe}>

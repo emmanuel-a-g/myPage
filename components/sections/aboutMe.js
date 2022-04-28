@@ -4,7 +4,7 @@ function AboutMe() {
   const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.aboutMe}>
-      <h3 className={styles.title}>
+      <h3 className={styles.title} style={highContrastStatus? {color: "#be0d0c"} : {color: "#00ffd5"}}>
         <span className={styles.number}>01.</span> About Me
       </h3>
       <div className={styles.theGrid}>
