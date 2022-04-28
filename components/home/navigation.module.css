@@ -49,12 +49,29 @@
   padding: 10px;
   color: var(--color-light);
 }
+.button:hover {
+  /* -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; */
+  box-shadow: 2px 4px 27px -10px var(--color-tron);
+  /* background: var(--color-tron); */
+  /* color: black; */
+}
+
 .buttonColor {
   background-color: inherit;
   border: 2px solid var(--color-tron);
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
+}
+.buttonColor:hover {
+  /* -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; */
+  box-shadow: 2px 4px 27px -10px var(--color-tron);
+  /* background: var(--color-tron); */
+  /* color: black; */
 }
 
 @media only screen and (max-width: 800px) {
@@ -68,14 +85,14 @@
     padding: 0 0 0 15px;
   }
   .navItem {
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: var(--color-light);
   }
   .number {
     display: none;
   }
 }
-@media only screen and (max-height: 550px){
+@media only screen and (max-height: 550px) {
   .button {
     padding: 0px;
   }
@@ -85,5 +102,17 @@
   }
   .buttonColor {
     padding: 0px;
+  }
+}
+@media (hover:none), (hover:on-demand) {
+  .button:hover{ 
+    box-shadow: none;
+    background: inherit;
+    color: var(--color-light);   
+  }
+  .buttonColor:hover{
+    box-shadow: none;
+    background: inherit;
+    color: var(--color-light); 
   }
 }
