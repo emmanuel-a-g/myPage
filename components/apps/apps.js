@@ -1,8 +1,10 @@
-//make it re-usable for apps that you build.
+import { useState, useEffect } from "react";
 import styles from "./apps.module.css";
 import { useMyContext } from "../context/myContext";
+//make it re-usable for apps that you build
 function Apps({ name, data }) {
-  const { highContrastStatus, width } = useMyContext();
+  const { highContrastStatus } = useMyContext();
+  const [width, setWidth ] = useState(null);
   const { title, description, tech, github, theLink } = data;
   const breakpoint = 700;
   let theClass;
@@ -22,6 +24,15 @@ function Apps({ name, data }) {
   } else if (highContrastStatus === true && name === "two") {
     imageBoxCurrent = styles.imageBoxContrastTwo;
   }
+  useEffect(() => {
+    if (width === null) {
+      setWidth(window.innerWidth);
+    }
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+
   // <img src="./images/amazon.png" alt="Amazon clone app screenshot" />
   return (
     <div>

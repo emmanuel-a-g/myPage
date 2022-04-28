@@ -10,7 +10,6 @@ export function ContextProvider({ children }) {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [highContrastStatus, setHighContrast] = useState(false);
-  const [width, setWidth] = useState();
   
   useEffect(() => {
     console.log("Context starting...");
@@ -30,20 +29,14 @@ export function ContextProvider({ children }) {
     return setHighContrast(prev => !prev);
   }
 
-  function updateWidth(width) {
-    return setWidth(width);
-  }
-
   const myValues = {
     current,
     name,
     highContrastStatus,
     date,
-    width,
     updateView,
     sayHiTo,
     handleHighContrast,
-    updateWidth
   }
 
   return (

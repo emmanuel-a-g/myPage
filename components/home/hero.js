@@ -1,18 +1,19 @@
 import { useMyContext } from "../context/myContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aside from "./aside";
 import AsideRight from "./asideRight";
 import styles from "./hero.module.css";
 import Main from "./main";
 
 function Hero() {
-  const { highContrastStatus, width, updateWidth } = useMyContext();
+  const { highContrastStatus } = useMyContext();
+  const [width, setWidth] = useState(null);
   const breakpoint = 700;
   useEffect(() => {
     if (width === null) {
-      updateWidth(window.innerWidth);
+      setWidth(window.innerWidth);
     }
-    const handleWindowResize = () => updateWidth(window.innerWidth);
+    const handleWindowResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
