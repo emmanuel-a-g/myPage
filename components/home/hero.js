@@ -8,7 +8,7 @@ import Main from "./main";
 function Hero() {
   const { highContrastStatus } = useMyContext();
   const [width, setWidth] = useState(null);
-  const breakpoint = 700;
+  const breakpoint = 500;
   useEffect(() => {
     if (width === null) {
       setWidth(window.innerWidth);
