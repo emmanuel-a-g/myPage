@@ -22,8 +22,8 @@ function AboutMe() {
             className={styles.text}
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
-            Today I enjoy building apps and deploying, I am excited to learn new
-            tech and see what I can build individually or in a team.
+            Today I enjoy building apps and deploying, I am always eager to learn new
+            tech and create cool apps with a team or individually.
           </p>
           <p
             className={styles.text}

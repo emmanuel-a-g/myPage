@@ -38,7 +38,12 @@ function Apps({ name, data }) {
     <div>
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
-          <a className={styles.anchorWrapper} href={theLink} target="_blank" title="Anchor to open up my app in new tab">
+          <a
+            className={styles.anchorWrapper}
+            href={theLink}
+            target="_blank"
+            title="Anchor to open up my app in new tab"
+          >
             <div
               className={imageBoxCurrent}
               style={highContrastStatus ? { filter: "none" } : null}
@@ -66,23 +71,32 @@ function Apps({ name, data }) {
               {title}
             </h3>
           </a>
-          <p
-            className={styles.description}
-          >
-            {description}
-          </p>
+          <p className={styles.description}>{description}</p>
           {width < breakpoint ? null : (
-            <span className={styles.tech} style={highContrastStatus ? { color: "black" } : {color: "white"}}>{tech}</span>
+            <span
+              className={styles.tech}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "white" }
+              }
+            >
+              {tech}
+            </span>
           )}
           <div className={styles.links}>
             <a className={styles.anchor} href={github} target="_blank">
-              <img src="./github.png" alt="github link to project" width="24" height="24"/>
+              <img
+                src="./github.png"
+                alt="github link to project"
+                width="24"
+                height="24"
+              />
             </a>
             <a className={styles.anchor} href={theLink} target="_blank">
               <img
                 src="./link.png"
                 alt="link to checkout project in new tab window"
-                width="24" height="24"
+                width="24"
+                height="24"
               />
             </a>
           </div>

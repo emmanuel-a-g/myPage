@@ -93,14 +93,14 @@
 }
 @media only screen and (max-height: 550px) {
   .button {
-    padding: 0px;
+    padding: 2px;
   }
   .navigation {
     max-height: none;
     min-height: 8vh;
   }
   .buttonColor {
-    padding: 0px;
+    padding: 2px;
   }
 }
 @media (hover:none), (hover:on-demand) {
