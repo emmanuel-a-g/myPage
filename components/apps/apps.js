@@ -38,7 +38,7 @@ function Apps({ name, data }) {
     <div>
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
-          <a className={styles.anchorWrapper} href={theLink} target="_blank" alt="Anchor for my application">
+          <a className={styles.anchorWrapper} href={theLink} target="_blank" title="Anchor to open up my app in new tab">
             <div
               className={imageBoxCurrent}
               style={highContrastStatus ? { filter: "none" } : null}
