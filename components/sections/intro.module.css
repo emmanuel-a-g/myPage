@@ -18,13 +18,11 @@
   margin: 0 0 .5rem 0;
 }
 .nameTwo {
-  /* color: var(--color-tron); */
   font-size: 4rem;
   padding: 0;
   margin: 0 0 .5rem 0;
 }
 .text {
-  /* color: var(--color-light); */
   font-weight: bold;
   width: 85%;
   word-wrap: normal;

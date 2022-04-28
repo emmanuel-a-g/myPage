@@ -110,7 +110,6 @@
 .tech {
   display: flex;
   justify-content: space-evenly;
-  color: var(--color-light);
   padding-left: 1.5%;
 }
 .links {

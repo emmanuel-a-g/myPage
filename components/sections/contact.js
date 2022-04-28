@@ -85,7 +85,7 @@ function Contact() {
           <button
             className={styles.button}
             style={
-              highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+              highContrastStatus ? { backgroundColor: "#5f5e5e" } : null
             }
           >
             Send!
@@ -105,18 +105,6 @@ function Contact() {
             LinkedIn
           </a>
         </h4>
-        <a
-          className={styles.linkedIn}
-          href="https://linkedin.com/in/emmanuel-a-g"
-          target="_blank"
-        >
-          <img
-            className={styles.logo}
-            src="./linked.png"
-            alt="linkedIn icon, click to open my linkedIn!"
-            height="24" width="24"
-          />
-        </a>
       </div>
     </div>
   );

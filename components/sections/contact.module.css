@@ -12,8 +12,6 @@
   color: var(--color-tron);
 }
 .contactMe {
-  /* background-color: var(--color-light-grey); */
-  /* color: var(--color-third); */
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -58,20 +56,16 @@
   font-size: 20px;
 }
 .button {
-  border-radius: 5px;
-  padding: 8px;
   background-color: inherit;
-  font-weight: bold;
-  color: var(--color-light);
-  border-color: var(--color-tron);
-}
-/* .linkedIn {
-  background-color: var(--color-batman);
+  border: 2px solid var(--color-tron);
   border-radius: 5px;
-} */
+  padding: 13px;
+  color: var(--color-light);
+}
 .logo {
   background-color: var(--color-tron);
   border-radius: 5px;
+  margin-bottom: -4px;
 }
 .linkedLink {
   text-decoration: none;

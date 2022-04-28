@@ -76,7 +76,6 @@
 
 @media only screen and (max-width: 800px) {
   .navigation {
-    /* background-color: var(--color-primary); */
     grid-template-columns: 13% 87%;
     min-height: 7vh;
   }

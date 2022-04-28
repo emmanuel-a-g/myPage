@@ -75,7 +75,7 @@ function Apps({ name, data }) {
             {description}
           </p>
           {width < breakpoint ? null : (
-            <span className={styles.tech}>{tech}</span>
+            <span className={styles.tech} style={highContrastStatus ? { color: "black" } : {color: "white"}}>{tech}</span>
           )}
           <div className={styles.links}>
             <a className={styles.anchor} href={github} target="_blank">
