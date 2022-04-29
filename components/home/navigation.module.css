@@ -39,17 +39,17 @@
   align-items: center;
 }
 .drawer span {
-  width: 80%;
+  background-color: var(--color-third);
+  width: 65%;
   font-size: 2rem;
-  color: white;
+  color: var(--color-dark);
   border-radius: 5px;
-  border: 1px solid var(--color-light);
+  border: 1px solid var(--color-dark);
   text-align: center;
-  /* box-shadow: 2px 4px 27px -10px var(--color-light); */
+  padding: 1%;
 }
 #specialSpan {
-  background-color: var(--color-batman);
-  width: 100%;
+  background-color: unset;
   text-align: center;
   border: none;
   border-radius: none;
@@ -147,7 +147,7 @@
   transition: 750ms;
 }
 .activeSide {
-  background-color: var(--color-batman);
+  background-color: var(--color-tron);
   width: 88%;
   height: 100vh;
   display: flex;
