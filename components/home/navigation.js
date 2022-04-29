@@ -88,7 +88,7 @@ function Navigation() {
               </li>
             </span>
             <span
-              style={{fontSize: "1.3rem", width: "40%", padding: "1px"}}
+              style={{fontSize: "1.3rem", width: "45%", padding: "1px"}}
               onClick={() =>
                 window.open(
                   "https://nextjs-blog-one-mu-75.vercel.app/",
