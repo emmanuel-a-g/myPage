@@ -51,42 +51,58 @@ function Navigation() {
     <div className={styles.flexMobileRight}>
       <ul className={styles.navListMobile}>
         <li className={styles.navItem}>
-        <button className={styles.buttonColor} onClick={handleHighContrast}>
-        HC
-        </button>
+          <button className={styles.buttonColor} onClick={handleHighContrast}>
+            HC
+          </button>
         </li>
         <li className={styles.hamburgerItem} onClick={handleSideBar}>
-          <img src="./menu.png" alt="Menu icon, open to expand" width="28" height="28"/>
-      </li>
-      <aside
-      className={sideBar ? styles.activeSide : styles.side}
-      onClick={handleSideBar}
-      >
-      <ul className={styles.drawer}>
-        <span onClick={() => handleSideAndScroll(1)}>
-          <li className={styles.navItemSide}>1. </li> About
-        </span>
-        <span onClick={() => handleSideAndScroll(2)}>
-          <li className={styles.navItemSide}>2. </li> Apps
-        </span>  
-        <span onClick={() => handleSideAndScroll(4)}>
-          <li className={styles.navItemSide}>3. </li> Contact
-        </span>  
-        <span id={styles.specialSpan}>
-          <li className={styles.navItemSide}>
-          <a
-          href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
-          target="_blank"
-          >
-          <button className={styles.buttonDrawer}>Resume</button>
-          </a>
-          </li>
-        </span>  
-        </ul>
+          <img
+            src="./menu.png"
+            alt="Menu icon, open to expand"
+            width="28"
+            height="28"
+          />
+        </li>
+        <aside
+          className={sideBar ? styles.activeSide : styles.side}
+          onClick={handleSideBar}
+        >
+          <ul className={styles.drawer}>
+            <span onClick={() => handleSideAndScroll(1)}>
+              <li className={styles.navItemSide}>1. </li> About
+            </span>
+            <span onClick={() => handleSideAndScroll(2)}>
+              <li className={styles.navItemSide}>2. </li> Apps
+            </span>
+            <span onClick={() => handleSideAndScroll(4)}>
+              <li className={styles.navItemSide}>3. </li> Contact
+            </span>
+            <span id={styles.specialSpan}>
+              <li className={styles.navItemSide}>
+                <a
+                  href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
+                  target="_blank"
+                >
+                  <button className={styles.buttonDrawer}>Resume</button>
+                </a>
+              </li>
+            </span>
+            <span
+              style={{fontSize: "1.3rem", width: "50%", padding: "1px"}}
+              onClick={() =>
+                window.open(
+                  "https://nextjs-blog-one-mu-75.vercel.app/",
+                  "_blank"
+                )
+              }
+            >
+            <img src="./link.png" width="22" height="22" alt="external link to my blog"/><li className={styles.navItemSide} style={{fontSize: "1.75rem"}}> Blog </li>2.0
+            </span>
+          </ul>
         </aside>
       </ul>
     </div>
-    );
+  );
   // <li className={styles.navItem} onClick={() => updateView(3)}>
   // <span className={styles.number}>03.</span> Education
   // </li>
