@@ -18,6 +18,43 @@
   justify-content: space-evenly;
   align-items: center;
 }
+.flexMobileRight {
+  display: flex;
+  justify-content: flex-end;
+}
+.navListMobile {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-right: 5%;
+}
+.drawer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.drawer span {
+  width: 80%;
+  font-size: 2rem;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid var(--color-light);
+  text-align: center;
+  /* box-shadow: 2px 4px 27px -10px var(--color-light); */
+}
+#specialSpan {
+  background-color: var(--color-batman);
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: none;
+  box-shadow: none;
+}
 
 .navItem {
   display: inline;
@@ -28,6 +65,20 @@
 .navItem:hover {
   cursor: pointer;
 }
+
+.hamburgerItem {
+  display: inline;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-light);
+}
+.navItemSide {
+  display: inline;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-dark);
+}
+
 .number {
   color: var(--color-tron);
 }
@@ -48,6 +99,16 @@
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
+}
+.buttonDrawer {
+  background-color: inherit;
+  border: 2px solid var(--color-light);
+  border-radius: 5px;
+  padding: 8px;
+  color: var(--color-dark);
+  box-shadow: 2px 4px 27px -10px var(--color-light);
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 .button:hover {
   /* -moz-transition: all 0.5s ease;
@@ -74,6 +135,29 @@
   /* color: black; */
 }
 
+.side {
+  background-color: var(--color-space);
+  width: 88%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 188%;
+  transition: 750ms;
+}
+.activeSide {
+  background-color: var(--color-batman);
+  width: 88%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 12%;
+  transition: 850ms;
+}
+
 @media only screen and (max-width: 800px) {
   .navigation {
     grid-template-columns: 13% 87%;
@@ -81,6 +165,10 @@
   }
   .navList {
     grid-column: 2 / span 1;
+    padding: 0 0 0 15px;
+  }
+  .navListMobile {
+    grid-column: 2 /span1;
     padding: 0 0 0 15px;
   }
   .navItem {
