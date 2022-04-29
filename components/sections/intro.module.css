@@ -39,6 +39,14 @@
     font-size: .95rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .introMe {
+    text-align: center;
+  }
+  .text {
+    width: 100%;
+  }
+}
 @media only screen and  (max-height: 550px) {
   .name {
     font-size: 2.0rem;

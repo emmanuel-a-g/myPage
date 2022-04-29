@@ -48,7 +48,7 @@
   /* box-shadow: 2px 4px 27px -10px var(--color-light); */
 }
 #specialSpan {
-  background-color: var(--color-batman);
+  background-color: unset;
   width: 100%;
   text-align: center;
   border: none;
