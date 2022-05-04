@@ -5,13 +5,12 @@
   justify-content: center;
 }
 .hi {
-  /* color: var(--color-light); */
   font-weight: bold;
   font-size: 1rem;
   margin: 0;
+  font-family: var(--font-text);
 }
 .name {
-  /* color: var(--color-primary); */
   font-style: italic;
   font-size: 4rem;
   padding: 0;
@@ -26,6 +25,7 @@
   font-weight: bold;
   width: 85%;
   word-wrap: normal;
+  font-family: var(--font-text);
 }
 
 @media only screen and  (max-width: 800px) {

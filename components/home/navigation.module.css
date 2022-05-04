@@ -10,6 +10,7 @@
   top: 0;
   background-color: var(--color-background);
   z-index: 3;
+  font-family: var(--font-text);
 }
 
 .navList {

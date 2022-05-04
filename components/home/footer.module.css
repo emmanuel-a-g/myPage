@@ -1,0 +1,8 @@
+.footer {
+  background-color: inherit;
+  min-height: 5vh;
+  text-align: center;
+}
+.footer p:hover {
+  cursor: pointer;
+}
