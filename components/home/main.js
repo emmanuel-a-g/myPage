@@ -5,6 +5,7 @@ import AboutMe from "../sections/aboutMe";
 import Intro from "../sections/intro";
 import Work from "../sections/work";
 import Contact from "../sections/contact";
+import Footer from "./footer";
 // import Education from "../sections/education";
 
 function Main() {
@@ -51,6 +52,9 @@ function Main() {
         </div>
         <div className={styles.ref} ref={contactRef}>
           <Contact />
+        </div>
+        <div className={styles.ref}>
+          <Footer/>
         </div>
       </div>
     </div>
