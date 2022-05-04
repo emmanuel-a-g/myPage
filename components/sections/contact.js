@@ -39,7 +39,10 @@ function Contact() {
 
   return (
     <div className={styles.contactBox}>
-      <h3 className={styles.title} style={highContrastStatus? {color: "#be0d0c"} : {color: "#00ffd5"}}>
+      <h3
+        className={styles.title}
+        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
+      >
         <span className={styles.number}>03.</span> Contact
       </h3>
       <div className={styles.contactMe}>
@@ -84,9 +87,7 @@ function Contact() {
           <br />
           <button
             className={styles.button}
-            style={
-              highContrastStatus ? { backgroundColor: "#5f5e5e" } : null
-            }
+            style={highContrastStatus ? { backgroundColor: "#5f5e5e" } : null}
           >
             Send!
           </button>
@@ -96,12 +97,19 @@ function Contact() {
           className={styles.or}
           style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
         >
-          or best
+          or
         </h4>
         <h4
           className={styles.letsChat}
           style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
-        >Contact me through <a href="https://linkedin.com/in/emmanuel-a-g" className={styles.linkedLink} target="_blank">
+        >
+          Contact me through{" "}
+          <a
+            href="https://linkedin.com/in/emmanuel-a-g"
+            className={styles.linkedLink}
+            style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+            target="_blank"
+          >
             LinkedIn
           </a>
         </h4>

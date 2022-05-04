@@ -1,5 +1,5 @@
 .contactBox {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,6 @@
 }
 .linkedLink {
   text-decoration: none;
-  color: var(--color-tron);
   text-decoration-line: underline;
 }
 
