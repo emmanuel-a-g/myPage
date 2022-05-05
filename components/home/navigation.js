@@ -29,8 +29,11 @@ function Navigation() {
       <li className={styles.navItem} onClick={() => updateView(2)}>
         <span className={styles.number}>02.</span> Apps
       </li>
+      <li className={styles.navItem} onClick={() => updateView(3)}>
+        <span className={styles.number}>03.</span> Blog
+      </li>
       <li className={styles.navItem} onClick={() => updateView(4)}>
-        <span className={styles.number}>03.</span> Contact
+        <span className={styles.number}>04.</span> Contact
       </li>
       <li className={styles.navItem}>
         <a
@@ -74,26 +77,11 @@ function Navigation() {
             <span onClick={() => handleSideAndScroll(2)}>
               <li className={styles.navItemSide}>2. </li> Apps
             </span>
-            <span onClick={() => handleSideAndScroll(4)}>
-              <li className={styles.navItemSide}>3. </li> Contact
+            <span onClick={() => handleSideAndScroll(3)}>
+              <li className={styles.navItemSide}>3. </li> Blog
             </span>
-            <span id={styles.specialSpan}>
-              <li className={styles.navItemSide}>
-                <a
-                  href="https://nextjs-blog-one-mu-75.vercel.app/"
-                  target="_blank"
-                >
-                  <button className={styles.buttonDrawer}>
-                    <img
-                      src="./link.png"
-                      width="22"
-                      height="22"
-                      alt="external link to my blog"
-                    />{" "}
-                    Blog
-                  </button>
-                </a>
-              </li>
+            <span onClick={() => handleSideAndScroll(4)}>
+              <li className={styles.navItemSide}>4. </li> Contact
             </span>
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
@@ -109,6 +97,24 @@ function Navigation() {
                       alt="external link to my blog"
                     />{" "}
                     Resume
+                  </button>
+                </a>
+              </li>
+            </span>
+            <span id={styles.specialSpan}>
+              <li className={styles.navItemSide}>
+                <a
+                  href="https://nextjs-blog-one-mu-75.vercel.app/"
+                  target="_blank"
+                >
+                  <button className={styles.buttonDrawer}>
+                    <img
+                      src="./link.png"
+                      width="22"
+                      height="22"
+                      alt="external link to my blog"
+                    />{" "}
+                    Blog
                   </button>
                 </a>
               </li>

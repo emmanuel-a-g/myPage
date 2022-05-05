@@ -5,6 +5,7 @@ import AboutMe from "../sections/aboutMe";
 import Intro from "../sections/intro";
 import Work from "../sections/work";
 import Contact from "../sections/contact";
+import Blog from "../sections/blog";
 import Footer from "./footer";
 // import Education from "../sections/education";
 
@@ -13,12 +14,14 @@ function Main() {
   const introRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
+  const blogRef = useRef(null);
   const contactRef = useRef(null);
-  const eduRef = useRef(null);
+  // const eduRef = useRef(null);
   const introScroll = () => introRef.current.scrollIntoView();
   const aboutScroll = () => aboutRef.current.scrollIntoView();
   const workScroll = () => workRef.current.scrollIntoView();
-  const eduScroll = () => eduRef.current.scrollIntoView();
+  // const eduScroll = () => eduRef.current.scrollIntoView();
+  const blogScroll = () => blogRef.current.scrollIntoView();
   const contactScroll = () => contactRef.current.scrollIntoView();
 
   useEffect(() => {
@@ -30,6 +33,8 @@ function Main() {
       contactScroll();
     } else if (current === 0) {
       introScroll();
+    } else if (current == 3) {
+      blogScroll();
     } else {
       eduScroll();
     }
@@ -50,6 +55,9 @@ function Main() {
         </div>
         <div className={styles.ref} ref={workRef}>
           <Work />
+        </div>
+        <div className={styles.ref} ref={blogRef}>
+          <Blog/>
         </div>
         <div className={styles.ref} ref={contactRef}>
           <Contact />
