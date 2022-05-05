@@ -27,7 +27,7 @@ function MyPortal() {
       <h3
         style={highContrastStatus ? { color: "#00ffff" } : { color: "black" }}
       >
-        {name === "error" ? "Please contact me through Linked In for now." : `Received message: ${date}! Thanks`}
+        {name === "error" ? "Please contact me through LinkedIn for now." : `Received message on: ${date}! Thanks`}
       </h3>
     </div>,
     document.getElementById("myPortal")

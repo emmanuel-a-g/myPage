@@ -89,7 +89,7 @@ function Contact() {
             className={styles.button}
             style={highContrastStatus ? { backgroundColor: "#5f5e5e" } : null}
           >
-            Send!
+            Send
           </button>
         </form>
         <br />
@@ -107,7 +107,9 @@ function Contact() {
           <a
             href="https://linkedin.com/in/emmanuel-a-g"
             className={styles.linkedLink}
-            style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+            style={
+              highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+            }
             target="_blank"
           >
             LinkedIn

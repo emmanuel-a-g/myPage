@@ -77,24 +77,39 @@ function Navigation() {
             <span onClick={() => handleSideAndScroll(4)}>
               <li className={styles.navItemSide}>3. </li> Contact
             </span>
-            <span
-            style={{fontSize: "1.3rem", padding: "3px"}}
-            onClick={() =>
-              window.open(
-                "https://nextjs-blog-one-mu-75.vercel.app/",
-                "_blank"
-              )
-            }
-          >
-          <img src="./link.png" width="22" height="22" alt="external link to my blog"/><li className={styles.navItemSide} style={{fontSize: "1.75rem"}}> Blog </li>2.0
-          </span>
+            <span id={styles.specialSpan}>
+              <li className={styles.navItemSide}>
+                <a
+                  href="https://nextjs-blog-one-mu-75.vercel.app/"
+                  target="_blank"
+                >
+                  <button className={styles.buttonDrawer}>
+                    <img
+                      src="./link.png"
+                      width="22"
+                      height="22"
+                      alt="external link to my blog"
+                    />{" "}
+                    Blog
+                  </button>
+                </a>
+              </li>
+            </span>
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
                 <a
                   href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
                   target="_blank"
                 >
-                  <button className={styles.buttonDrawer}>Resume</button>
+                  <button className={styles.buttonDrawer}>
+                    <img
+                      src="./link.png"
+                      width="22"
+                      height="22"
+                      alt="external link to my blog"
+                    />{" "}
+                    Resume
+                  </button>
                 </a>
               </li>
             </span>

@@ -15,27 +15,27 @@ function AboutMe() {
           >
             Hello my name is Emmanuel and I am an web developer native to El
             Paso, Texas. My coding journey began when I first learned Python
-            back in 2019 with which I made a small text game, from there I
-            decided to dive deep into web development! The rest is history.
+            back in 2019 with which I made a small game, from there I
+            decided to dive deep into web development! The rest is history as they say.
           </p>
           <p
             className={styles.text}
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
-            Today I enjoy building apps and deploying, I am always eager to learn new
-            tech and create cool apps with a team or individually.
+            Today I enjoy building apps and deploying. I am always eager to learn new
+            tech and create cool apps both in a team or individually.
           </p>
           <p
             className={styles.text}
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
             I am experienced in the MERN stack, (Mongodb, Express, React,
-            Node.js) but also have experience with FirebaseSDK, MySQL.
+            Node.js) but also have experience wit google's FirebaseSDK and MySQL.
           </p>
         </div>
         <div className={styles.technologies}>
           <span className={styles.item}>Next.js</span>
-          <span className={styles.item}>JavaScript (ES6+)</span>
+          <span className={styles.item}>JavaScript</span>
           <span className={styles.item}>React</span>
           <span className={styles.item}>Node.js</span>
           <span className={styles.item}>MongoDb</span>

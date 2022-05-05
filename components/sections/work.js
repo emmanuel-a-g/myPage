@@ -1,30 +1,34 @@
 import Apps from "../apps/apps";
 import styles from "./work.module.css";
-import { useMyContext } from '../context/myContext';
+import { useMyContext } from "../context/myContext";
 let amazonClone = {
   title: "Amazon Clone",
-  description: "Amazon is one of the top companies for online shopping and this clone mirrors a similar user experience, check it out !",
+  description:
+    "Amazon is one of the top companies for online shopping and this clone mirrors a similar user experience, check it out !",
   tech: "React, React-Router, Firebase, Axios, PM2, Material-UI, React Bootstrap",
   github: "https://github.com/TheThreeDevs/amazon-clone",
-  theLink: "http://www.twoamazon.com/"
+  theLink: "http://www.twoamazon.com/",
 };
 let exponent = {
   title: "Expwnent",
-  description: "Expwnent is a web application for tournament organizers and players to meet and engage in epic battle with the game of their choice. Click below to make your first tournament !",
+  description:
+    "Expwnent is a web application for tournament organizers and players to meet and engage in epic battle with the game of their choice. Click below to make your first tournament !",
   tech: "React, React-Router, Node, Express, AWS, API",
   github: " https://github.com/hratx-blue-ocean/pogchamp",
-  theLink: "http://www.expwnent.com/"
+  theLink: "http://www.expwnent.com/",
 };
 function Work() {
   const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.work}>
-      <h3 className={styles.title} style={highContrastStatus? {color: "#be0d0c"} : {color: "#00ffd5"}}>
-        <span className={styles.number}>02.</span> Apps
-      </h3>
+      <h3
+        className={styles.title}
+        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
+      >
+        <span className={styles.number}>02.&nbsp;</span>Apps</h3>
       <div className={styles.theGrid}>
-          <Apps name="one" data={amazonClone}/>
-          <Apps name="two" data={exponent}/>
+        <Apps name="one" data={amazonClone} />
+        <Apps name="two" data={exponent} />
       </div>
     </div>
   );

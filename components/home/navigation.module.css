@@ -46,7 +46,6 @@
   border-radius: 5px;
   border: 1px solid var(--color-light);
   text-align: center;
-  /* box-shadow: 2px 4px 27px -10px var(--color-light); */
 }
 #specialSpan {
   background-color: unset;
