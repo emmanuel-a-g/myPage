@@ -1,8 +1,7 @@
 import Navigation from "../home/navigation";
-import Head from "next/head";
 import styles from "./layout.module.css";
 import MyPortal from "../ui/myPortal";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useMyContext } from "../context/myContext";
 
 function Layout(props) {

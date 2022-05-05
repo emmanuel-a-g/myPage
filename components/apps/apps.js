@@ -59,8 +59,9 @@ function Apps({ name, data }) {
           </h5>
           <a
             className={styles.titleLink}
-            href="https://linkedin.com/in/emmanuel-a-g"
-            alt="link to Emmanuel's LinkedIn Profile"
+            href={theLink}
+            alt={`link to the ${title} website`}
+            target="_blank"
           >
             <h3
               className={styles.title}
