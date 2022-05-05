@@ -13,7 +13,7 @@ function Blog() {
         <span className={styles.number}>03.</span> Blog
       </h3>
       <div className={styles.theGrid}>
-        <div className={styles.blogPost}  style={highContrastStatus ? { borderColor: "black" } : { borderColor: "white" }}>
+        <div className={styles.blogPost}  style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
           <a
             href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
             target="_blank"
@@ -31,7 +31,7 @@ function Blog() {
             github.
           </div>
         </div>
-        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "white" }}>
+        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
           <a
             href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/getting-started-with-nextjs"
             target="_blank"
@@ -48,7 +48,7 @@ function Blog() {
             server-side rendering for great performance & delivery of apps!
           </div>
         </div>
-        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "white" }}>
+        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
           <a
             href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/exponent"
             target="_blank"
@@ -61,12 +61,11 @@ function Blog() {
             />
           </a>
           <div className={styles.caption}>
-            Exponent has many cool features, but the coolest one is that it
-            uses a third party API on the server side which hits multiple CRUD
+            Exponent has many cool features, but the coolest one is its usage of an API on the server side that hits multiple CRUD
             endpoints.
           </div>
         </div>
-        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "white" }}>
+        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
         <a href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/amazon" target="_blank">
           <img
             src="./images/amazonMin.png"
@@ -77,7 +76,7 @@ function Blog() {
           </a>
           <div className={styles.caption}>
             In our Amazon Clone, you can sign-in, sign-up, delete account,
-            search items, and even add to cart. Authentication was implemented with...
+            search items, and even add to cart. Auth, was implemented with...
           </div>
         </div>
       </div>
