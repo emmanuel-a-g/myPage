@@ -12,15 +12,13 @@
 .number {
   color: var(--color-tron);
 }
-
 .theGrid {
   margin-top: 25px;
   min-height: 70vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 35px;
+  row-gap:25px;
 }
 .blogPost {
   overflow: hidden;
@@ -30,10 +28,17 @@
   border-style: solid;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 380px;
+  justify-self: center;
+  max-width: 360px;
 }
-
+.postTitle {
+  text-align: left;
+  font-size: 1.3rem;
+  color: var(--color-dark);
+  margin: 0 0 5px 0;
+  padding: 4px 0 4px 5px;
+  border-bottom: 2px black solid;
+}
 .blogPost img {
   max-width: 100%;
   opacity: .65;
@@ -59,7 +64,6 @@
   .blogPost {
     max-width: 260px;
   }
-
   .blogPost img {
     max-width: 260px;
     height: auto;
@@ -68,5 +72,4 @@
     max-width: 260px;
     font-size: .85rem;
   }
-
 }

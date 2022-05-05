@@ -23,7 +23,7 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   border-radius: 3px;
-  filter: drop-shadow(0 9px 5px var(--color-third));
+  /* filter: drop-shadow(0 9px 5px var(--color-third)); */
   height: 90%;
 }
 .imageBoxContrast {
@@ -34,7 +34,7 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   border-radius: 3px;
-  filter: drop-shadow(0 9px 5px var(--color-third));
+  /* filter: drop-shadow(0 9px 5px var(--color-third)); */
   height: 90%;
 }
 .imageBox:hover {
@@ -58,7 +58,7 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   border-radius: 3px;
-  filter: drop-shadow(0 9px 5px var(--color-third));
+  /* filter: drop-shadow(0 9px 5px var(--color-third)); */
   height: 95%;
 }
 .imageBoxContrastTwo {
@@ -69,7 +69,7 @@
   -moz-background-size: contain;
   -o-background-size: contain;
   border-radius: 3px;
-  filter: drop-shadow(0 9px 5px var(--color-third));
+  /* filter: drop-shadow(0 9px 5px var(--color-third)); */
   height: 95%;
 }
 .imageBoxTwo:hover {

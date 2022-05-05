@@ -40,11 +40,11 @@
   }
 }
 @media only screen and (max-width: 500px) {
-  .introMe {
-    text-align: center;
-  }
   .text {
-    width: 100%;
+    width: 90%;
+  }
+  .introMe {
+    padding-left: 10px;
   }
 }
 @media only screen and  (max-height: 550px) {

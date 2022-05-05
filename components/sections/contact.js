@@ -43,7 +43,7 @@ function Contact() {
         className={styles.title}
         style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
       >
-        <span className={styles.number}>03.</span> Contact
+        <span className={styles.number}>04.</span> Contact
       </h3>
       <div className={styles.contactMe}>
         <h3
