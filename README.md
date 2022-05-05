@@ -186,9 +186,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Emmanuel's LinkedIn - [@twitter_handle](https://linkedin/in/emmanuel-a-g)
+Emmanuel's LinkedIn - [@linkedin-handle](https://www.linkedin.com/in/emmanuel-a-g/)
 
-Project Link: [https://github.com/emmanuel-a-g/myPage](https://github.com/emmanuel-a-g/myPage)
+Project Link: [@liveurl](https://emmanuelgarcia.dev)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
