@@ -28,4 +28,7 @@
   .middleScroll {
     max-height: 95vh;
   }
+  .middleScrollContrast {
+    max-height: 95vh;
+  }
 }
