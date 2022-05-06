@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .hi {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1rem;
   margin: 0;
   font-family: var(--font-text);
@@ -22,7 +22,7 @@
   margin: 0 0 .5rem 0;
 }
 .text {
-  font-weight: bold;
+  font-weight: normal;
   width: 85%;
   word-wrap: normal;
   font-family: var(--font-text);

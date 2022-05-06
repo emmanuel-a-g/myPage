@@ -14,16 +14,16 @@ function Blog() {
         <span className={styles.number}>03.</span> Blog
       </h3>
       <div className={styles.theGrid}>
-        <Fade top big cascade>
+        <Fade ssrFadeout top big cascade>
         <div className={styles.blogPost}  style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
           <a
             href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
             target="_blank"
           >
             <img
-              src="./images/githubProfile.png"
+              src="./images/githubMin.png"
               width="360"
-              height="210"
+              height="234"
               alt="an image of a blog post"
             />
           </a>
@@ -39,9 +39,9 @@ function Blog() {
             target="_blank"
           >
             <img
-              src="./images/lighthouse.png"
+              src="./images/lighthouseMin.png"
               width="360"
-              height="210"
+              height="206"
               alt="image of lighthouse peformance scores"
             />
           </a>

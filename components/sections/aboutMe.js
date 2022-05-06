@@ -46,12 +46,10 @@ function AboutMe() {
           </p>
         </div>
         <div className={styles.technologies}>
-          <Fade ssrFadeout left big>
+          <Fade ssrFadeout top big>
             <span className={styles.item}>Next.js</span>
             <span className={styles.item}>JavaScript</span>
             <span className={styles.item}>React</span>
-          </Fade>
-          <Fade ssrFadeout right big>
             <span className={styles.item}>Node.js</span>
             <span className={styles.item}>MongoDb</span>
             <span className={styles.item}>Express</span>

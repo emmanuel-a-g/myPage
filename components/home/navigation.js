@@ -1,6 +1,7 @@
 import styles from "./navigation.module.css";
 import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
+import { Fade } from "react-reveal";
 function Navigation() {
   const { updateView, handleHighContrast, highContrastStatus } = useMyContext();
   const [sideBar, setSideBar] = useState(false);
@@ -23,6 +24,7 @@ function Navigation() {
   }
   const desktop = (
     <ul className={styles.navList}>
+      <Fade ssrFadeout left big>
       <li className={styles.navItem} onClick={() => updateView(1)}>
         <span className={styles.number}>01.</span> About
       </li>
@@ -48,6 +50,7 @@ function Navigation() {
           HC
         </button>
       </li>
+      </Fade>
     </ul>
   );
   const mobile = (
