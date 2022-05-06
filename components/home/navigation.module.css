@@ -28,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 25%;
   margin-right: 5%;
 }
 .drawer {
@@ -116,23 +116,6 @@
   /* background: var(--color-tron); */
   /* color: black; */
 }
-
-.buttonColor {
-  background-color: inherit;
-  border: 2px solid var(--color-tron);
-  border-radius: 5px;
-  padding: 10px;
-  color: var(--color-light);
-}
-.buttonColor:hover {
-  /* -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; */
-  box-shadow: 2px 4px 27px -10px var(--color-tron);
-  /* background: var(--color-tron); */
-  /* color: black; */
-}
-
 .side {
   background-color: var(--color-space);
   width: 88%;

@@ -40,17 +40,21 @@ function Navigation() {
           <span className={styles.number}>04.</span> Contact
         </li>
         <li className={styles.navItem}>
+          <img
+            src={!highContrastStatus ? "./contC.png" : "./contrast.png" }
+            width={30}
+            height={30}
+            onClick={handleHighContrast}
+          />
+        </li>
+        <li className={styles.navItem}>
           <a
-            href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
+            href="https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf"
             target="_blank"
+            download={false}
           >
             <button className={styles.button}>Resume</button>
           </a>
-        </li>
-        <li className={styles.navItem}>
-          <button className={styles.buttonColor} onClick={handleHighContrast}>
-            HC
-          </button>
         </li>
       </Fade>
     </ul>
@@ -59,20 +63,22 @@ function Navigation() {
     <div className={styles.flexMobileRight}>
       <ul className={styles.navListMobile}>
         <Fade ssrFadeout left big>
-        <li className={styles.navItem}>
-        
-        <button className={styles.buttonColor} onClick={handleHighContrast}>
-        HC
-        </button>
-        </li>
-        <li className={styles.hamburgerItem} onClick={handleSideBar}>
-        <img
-        src="./menu.png"
-        alt="Menu icon, open to expand"
-        width="28"
-        height="28"
-        />
-        </li>
+          <li className={styles.navItem}>
+            <img
+              src={!highContrastStatus ? "./contC.png" : "./contrast.png" }
+              width={30}
+              height={30}
+              onClick={handleHighContrast}
+            />
+          </li>
+          <li className={styles.hamburgerItem} onClick={handleSideBar}>
+            <img
+              src="./menu.png"
+              alt="Menu icon, open to expand"
+              width="28"
+              height="28"
+            />
+          </li>
         </Fade>
         <aside
           className={sideBar ? styles.activeSide : styles.side}
@@ -94,7 +100,7 @@ function Navigation() {
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
                 <a
-                  href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
+                  href="https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf"
                   target="_blank"
                 >
                   <button className={styles.buttonDrawer}>
@@ -146,14 +152,14 @@ function Navigation() {
     >
       <div className={styles.imageDiv}>
         <Bounce ssrFadeout left>
-            <img
-              className={styles.image}
-              src="./emmanuelCircle.png"
-              alt="Picture of Emmanuel G"
-              onClick={() => updateView(0)}
-              width="40"
-              height="40"
-            />
+          <img
+            className={styles.image}
+            src="./emmanuelCircle.png"
+            alt="Picture of Emmanuel G"
+            onClick={() => updateView(0)}
+            width="40"
+            height="40"
+          />
         </Bounce>
       </div>
       {width > breakpoint ? desktop : mobile}
