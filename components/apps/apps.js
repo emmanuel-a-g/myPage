@@ -35,7 +35,6 @@ function Apps({ name, data }) {
 
   // <img src="./images/amazon.png" alt="Amazon clone app screenshot" />
   return (
-    <div>
       <div className={width < breakpoint ? styles.smallAppRec : styles.appRec}>
         {width < breakpoint ? null : (
           <a
@@ -103,7 +102,6 @@ function Apps({ name, data }) {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 55% 45%;
   grid-template-rows: 1fr;
-  max-width: 790px;
+  max-width: 730px;
 }
 .smallAppRec {
   display: grid;
