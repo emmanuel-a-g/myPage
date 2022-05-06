@@ -45,6 +45,7 @@ function Navigation() {
             width={30}
             height={30}
             onClick={handleHighContrast}
+            alt="Click icon to change contrast"
           />
         </li>
         <li className={styles.navItem}>
