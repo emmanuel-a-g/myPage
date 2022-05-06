@@ -34,9 +34,7 @@
   box-shadow: 2px 4px 27px -10px rgb(255, 255, 255);
 }
 .image:hover {
-  transform: scale(1.1);
-  transition: all 1s;
-  border-radius: 5px;
+  cursor: grab;
 }
 .technologies {
   grid-row: 2 / span 1;
@@ -62,9 +60,9 @@
   border-radius: 5px;
   font-family: var(--font-text);
 }
-.item:hover {
+/* .item:hover {
   transform: skewY(5deg);
-}
+} */
 .title {
   font-size: 2rem;
   padding: 0;

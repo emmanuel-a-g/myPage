@@ -1,5 +1,6 @@
 import styles from "./blog.module.css";
 import { useMyContext } from "../context/myContext";
+import { Fade } from "react-reveal";
 
 function Blog() {
   const { highContrastStatus } = useMyContext();
@@ -13,6 +14,7 @@ function Blog() {
         <span className={styles.number}>03.</span> Blog
       </h3>
       <div className={styles.theGrid}>
+        <Fade top big cascade>
         <div className={styles.blogPost}  style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
           <a
             href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
@@ -49,6 +51,7 @@ function Blog() {
             server-side rendering for amazing performance & delivery of apps!
           </div>
         </div>
+        </Fade>
       </div>
     </div>
   );
