@@ -1,7 +1,8 @@
 import styles from "./navigation.module.css";
 import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
+
 function Navigation() {
   const { updateView, handleHighContrast, highContrastStatus } = useMyContext();
   const [sideBar, setSideBar] = useState(false);
@@ -25,50 +26,53 @@ function Navigation() {
   const desktop = (
     <ul className={styles.navList}>
       <Fade ssrFadeout left big>
-      <li className={styles.navItem} onClick={() => updateView(1)}>
-        <span className={styles.number}>01.</span> About
-      </li>
-      <li className={styles.navItem} onClick={() => updateView(2)}>
-        <span className={styles.number}>02.</span> Apps
-      </li>
-      <li className={styles.navItem} onClick={() => updateView(3)}>
-        <span className={styles.number}>03.</span> Blog
-      </li>
-      <li className={styles.navItem} onClick={() => updateView(4)}>
-        <span className={styles.number}>04.</span> Contact
-      </li>
-      <li className={styles.navItem}>
-        <a
-          href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
-          target="_blank"
-        >
-          <button className={styles.button}>Resume</button>
-        </a>
-      </li>
-      <li className={styles.navItem}>
-        <button className={styles.buttonColor} onClick={handleHighContrast}>
-          HC
-        </button>
-      </li>
+        <li className={styles.navItem} onClick={() => updateView(1)}>
+          <span className={styles.number}>01.</span> About
+        </li>
+        <li className={styles.navItem} onClick={() => updateView(2)}>
+          <span className={styles.number}>02.</span> Apps
+        </li>
+        <li className={styles.navItem} onClick={() => updateView(3)}>
+          <span className={styles.number}>03.</span> Blog
+        </li>
+        <li className={styles.navItem} onClick={() => updateView(4)}>
+          <span className={styles.number}>04.</span> Contact
+        </li>
+        <li className={styles.navItem}>
+          <a
+            href="https://docs.google.com/document/d/e/2PACX-1vQ0gHRDABIHb4v7LB_LRJII3mfFYVUgIwTHyBGrzk7uOKYo1Pw_OsZKlkTIxKDadAOd6VpPLgU1eDLN/pub"
+            target="_blank"
+          >
+            <button className={styles.button}>Resume</button>
+          </a>
+        </li>
+        <li className={styles.navItem}>
+          <button className={styles.buttonColor} onClick={handleHighContrast}>
+            HC
+          </button>
+        </li>
       </Fade>
     </ul>
   );
   const mobile = (
     <div className={styles.flexMobileRight}>
       <ul className={styles.navListMobile}>
+        <Fade ssrFadeout left big>
         <li className={styles.navItem}>
-          <button className={styles.buttonColor} onClick={handleHighContrast}>
-            HC
-          </button>
+        
+        <button className={styles.buttonColor} onClick={handleHighContrast}>
+        HC
+        </button>
         </li>
         <li className={styles.hamburgerItem} onClick={handleSideBar}>
-          <img
-            src="./menu.png"
-            alt="Menu icon, open to expand"
-            width="28"
-            height="28"
-          />
+        <img
+        src="./menu.png"
+        alt="Menu icon, open to expand"
+        width="28"
+        height="28"
+        />
         </li>
+        </Fade>
         <aside
           className={sideBar ? styles.activeSide : styles.side}
           onClick={handleSideBar}
@@ -140,14 +144,16 @@ function Navigation() {
       }
     >
       <div className={styles.imageDiv}>
-        <img
-          className={styles.image}
-          src="./emmanuelCircle.png"
-          alt="Picture of Emmanuel G"
-          onClick={() => updateView(0)}
-          width="40"
-          height="40"
-        />
+        <Fade ssrFadeout>
+            <img
+              className={styles.image}
+              src="./emmanuelCircle.png"
+              alt="Picture of Emmanuel G"
+              onClick={() => updateView(0)}
+              width="40"
+              height="40"
+            />
+        </Fade>
       </div>
       {width > breakpoint ? desktop : mobile}
     </nav>

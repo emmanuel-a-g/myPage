@@ -1,6 +1,6 @@
 import styles from "./blog.module.css";
 import { useMyContext } from "../context/myContext";
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade"
 
 function Blog() {
   const { highContrastStatus } = useMyContext();

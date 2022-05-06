@@ -11,7 +11,6 @@
 .footer p {
   display: flex;
   justify-content: space-evenly;
-  font-weight: bold;
   text-decoration: underline;
 }
 
