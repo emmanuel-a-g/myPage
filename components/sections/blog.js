@@ -28,8 +28,7 @@ function Blog() {
           <div className={styles.caption}>
             <h4 className={styles.postTitle}>My Blog</h4>
             Visit my blog by clicking any of the blog images! There you can find
-            a more detailed description of the apps or you can visit my
-            github on left aside.
+            a more detailed description of the apps or just visit it!
           </div>
         </div>
         <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
