@@ -1,6 +1,7 @@
 import Apps from "../apps/apps";
 import styles from "./work.module.css";
 import { useMyContext } from "../context/myContext";
+import Fade from "react-reveal/Fade";
 let amazonClone = {
   title: "Amazon Clone",
   description:
@@ -21,14 +22,23 @@ function Work() {
   const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.work}>
-      <h3
-        className={styles.title}
-        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
-      >
-        <span className={styles.number}>02.&nbsp;</span>Apps</h3>
+      <Fade ssrFadeout top big>
+        <h3
+          className={styles.title}
+          style={
+            highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
+          }
+        >
+          <span className={styles.number}>02.&nbsp;</span>Apps
+        </h3>
+      </Fade>
       <div className={styles.theGrid}>
-        <Apps name="one" data={amazonClone} />
-        <Apps name="two" data={exponent} />
+        <Fade ssrFadeout left big>
+          <Apps name="one" data={amazonClone} />
+        </Fade>
+        <Fade ssrFadeout right big>
+          <Apps name="two" data={exponent} />
+        </Fade>
       </div>
     </div>
   );

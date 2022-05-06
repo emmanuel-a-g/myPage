@@ -1,56 +1,75 @@
 import styles from "./blog.module.css";
 import { useMyContext } from "../context/myContext";
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 
 function Blog() {
   const { highContrastStatus } = useMyContext();
 
   return (
     <div className={styles.theBlog}>
-      <h3
-        className={styles.title}
-        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
-      >
-        <span className={styles.number}>03.</span> Blog
-      </h3>
+      <Fade ssrFadeout top big>
+        <h3
+          className={styles.title}
+          style={
+            highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
+          }
+        >
+          <span className={styles.number}>03.</span> Blog
+        </h3>
+      </Fade>
       <div className={styles.theGrid}>
         <Fade ssrFadeout top big cascade>
-        <div className={styles.blogPost}  style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
-          <a
-            href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
-            target="_blank"
+          <div
+            className={styles.blogPost}
+            style={
+              highContrastStatus
+                ? { borderColor: "black" }
+                : { borderColor: "#00ffd5" }
+            }
           >
-            <img
-              src="./images/githubMin.png"
-              width="360"
-              height="234"
-              alt="an image of a blog post"
-            />
-          </a>
-          <div className={styles.caption}>
-            <h4 className={styles.postTitle}>My Blog</h4>
-            Visit my blog by clicking any of the blog images! There you can find
-            a more detailed description of the apps or just visit it!
+            <a
+              href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
+              target="_blank"
+            >
+              <img
+                src="./images/githubMin.png"
+                width="360"
+                height="234"
+                alt="an image of a blog post"
+              />
+            </a>
+            <div className={styles.caption}>
+              <h4 className={styles.postTitle}>My Blog</h4>
+              Visit my blog by clicking any of the blog images! There you can
+              find a more detailed description of the apps or just visit it!
+            </div>
           </div>
-        </div>
-        <div className={styles.blogPost} style={highContrastStatus ? { borderColor: "black" } : { borderColor: "#00ffd5" }}>
-          <a
-            href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/getting-started-with-nextjs"
-            target="_blank"
+          <div
+            className={styles.blogPost}
+            style={
+              highContrastStatus
+                ? { borderColor: "black" }
+                : { borderColor: "#00ffd5" }
+            }
           >
-            <img
-              src="./images/lighthouseMin.png"
-              width="360"
-              height="206"
-              alt="image of lighthouse peformance scores"
-            />
-          </a>
-          <div className={styles.caption}>
-            <h4 className={styles.postTitle}>Next.js</h4>
-            Next.js is incredibly fast, this is a snapshot of how we can utilize
-            server-side rendering for amazing performance & delivery of apps!
+            <a
+              href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/getting-started-with-nextjs"
+              target="_blank"
+            >
+              <img
+                src="./images/lighthouseMin.png"
+                width="360"
+                height="206"
+                alt="image of lighthouse peformance scores"
+              />
+            </a>
+            <div className={styles.caption}>
+              <h4 className={styles.postTitle}>Next.js</h4>
+              Next.js is incredibly fast, this is a snapshot of how we can
+              utilize server-side rendering for amazing performance & delivery
+              of apps!
+            </div>
           </div>
-        </div>
         </Fade>
       </div>
     </div>

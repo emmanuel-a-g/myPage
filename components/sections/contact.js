@@ -1,6 +1,7 @@
 import styles from "./contact.module.css";
 import { useState } from "react";
 import { useMyContext } from "../context/myContext";
+import Fade from "react-reveal/Fade";
 
 function Contact() {
   const { sayHiTo, highContrastStatus } = useMyContext();
@@ -39,12 +40,16 @@ function Contact() {
 
   return (
     <div className={styles.contactBox}>
-      <h3
-        className={styles.title}
-        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
-      >
-        <span className={styles.number}>04.</span> Contact
-      </h3>
+      <Fade ssrFadeout top big>
+        <h3
+          className={styles.title}
+          style={
+            highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
+          }
+        >
+          <span className={styles.number}>04.</span> Contact
+        </h3>
+      </Fade>
       <div className={styles.contactMe}>
         <h3
           className={styles.hearIt}
@@ -52,12 +57,16 @@ function Contact() {
         >
           I am open to new opportunites...
         </h3>
-        <h4
-          className={styles.letsChat}
-          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
-        >
-          Let's chat?
-        </h4>
+        <Fade ssrFadeout bottom big>
+          <h4
+            className={styles.letsChat}
+            style={
+              highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+            }
+          >
+            Let's chat?
+          </h4>
+        </Fade>
         <form className={styles.form} onSubmit={handleSubmit}>
           <input
             className={styles.input}

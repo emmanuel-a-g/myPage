@@ -2,6 +2,7 @@ import styles from "./aboutMe.module.css";
 import { useMyContext } from "../context/myContext";
 import Tada from "react-reveal/Tada";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 import { useState } from "react";
 function AboutMe() {
   const { highContrastStatus } = useMyContext();
@@ -12,12 +13,16 @@ function AboutMe() {
 
   return (
     <div className={styles.aboutMe}>
-      <h3
-        className={styles.title}
-        style={highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }}
-      >
-        <span className={styles.number}>01.</span> About Me
-      </h3>
+      <Fade ssrFadeout top big>
+        <h3
+          className={styles.title}
+          style={
+            highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
+          }
+        >
+          <span className={styles.number}>01.</span> About Me
+        </h3>
+      </Fade>
       <div className={styles.theGrid}>
         <div className={styles.left}>
           <p
@@ -45,16 +50,16 @@ function AboutMe() {
             MySQL.
           </p>
         </div>
-        <div className={styles.technologies}>
-          <Fade ssrFadeout top big>
+        <Zoom ssrFadeout left cascade>
+          <div className={styles.technologies}>
             <span className={styles.item}>Next.js</span>
             <span className={styles.item}>JavaScript</span>
             <span className={styles.item}>React</span>
             <span className={styles.item}>Node.js</span>
             <span className={styles.item}>MongoDb</span>
             <span className={styles.item}>Express</span>
-          </Fade>
-        </div>
+          </div>
+        </Zoom>
         <div className={styles.right}>
           <Tada ssrFadeout spy={clicks}>
             <img
@@ -63,7 +68,7 @@ function AboutMe() {
               alt="A picture of Emmanuel garcia at graduation!"
               width="282"
               height="302"
-              onClick={handleClick}
+              onMouseOver={handleClick}
             />
           </Tada>
         </div>

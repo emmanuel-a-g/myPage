@@ -2,6 +2,7 @@ import styles from "./navigation.module.css";
 import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 function Navigation() {
   const { updateView, handleHighContrast, highContrastStatus } = useMyContext();
@@ -144,7 +145,7 @@ function Navigation() {
       }
     >
       <div className={styles.imageDiv}>
-        <Fade ssrFadeout>
+        <Bounce ssrFadeout left>
             <img
               className={styles.image}
               src="./emmanuelCircle.png"
@@ -153,7 +154,7 @@ function Navigation() {
               width="40"
               height="40"
             />
-        </Fade>
+        </Bounce>
       </div>
       {width > breakpoint ? desktop : mobile}
     </nav>
