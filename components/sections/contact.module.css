@@ -60,7 +60,7 @@
 }
 .button {
   background-color: inherit;
-  border: 2px solid var(--color-tron);
+  border: 3px solid var(--color-primary);
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);

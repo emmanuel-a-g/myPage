@@ -14,8 +14,8 @@ function MyPortal() {
       className={classes.myPortal}
       style={
         highContrastStatus
-          ? { backgroundColor: "black" }
-          : { backgroundColor: "#00ffff" }
+          ? { backgroundColor: "#5f5e5e" }
+          : { backgroundColor: "#00ffd5" }
       }
     >
       <h3

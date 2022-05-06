@@ -63,7 +63,7 @@
 }
 .navItem:hover {
   cursor: pointer;
-  text-shadow: var(--color-tron) 1px 0 5px;
+  color: var(--color-tron);
 }
 
 .hamburgerItem {

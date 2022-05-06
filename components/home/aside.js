@@ -17,7 +17,7 @@ function Aside() {
             target="_blank"
           >
             <img
-              src="./github64x.png"
+              src="./githubC.png"
               alt="github icon, click to open my github!"
               width="28"
               height="28"
@@ -29,7 +29,7 @@ function Aside() {
             target="_blank"
           >
             <img
-              src="./linked64x.png"
+              src="./linkedC.png"
               alt="linkedIn icon, click to open my linkedIn!"
               width="28"
               height="28"

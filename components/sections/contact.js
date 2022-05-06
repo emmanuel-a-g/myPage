@@ -96,9 +96,9 @@ function Contact() {
           <br />
           <button
             className={styles.button}
-            style={highContrastStatus ? { backgroundColor: "#5f5e5e" } : null}
+            style={highContrastStatus ? { backgroundColor: "#5f5e5e", color: "white", borderColor: "#be0d0c" } : { backgroundColor: "inherit" }}
           >
-            Send
+            Send!
           </button>
         </form>
         <br />

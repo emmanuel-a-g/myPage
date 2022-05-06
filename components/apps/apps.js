@@ -76,7 +76,7 @@ function Apps({ name, data }) {
             <span
               className={styles.tech}
               style={
-                highContrastStatus ? { color: "black" } : { color: "white" }
+                highContrastStatus ? { color: "black" } : { color: "#00ffd5" }
               }
             >
               {tech}
