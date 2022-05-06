@@ -19,8 +19,8 @@ function Footer() {
       <p>
         <img
           src={highContrastStatus? "./up.png" : "./upC.png"}
-          width="24"
-          heigh="24"
+          width={24}
+          height={24}
           alt="Arrow image to scroll to top of page"
           onClick={handleScrollUp}
         />
