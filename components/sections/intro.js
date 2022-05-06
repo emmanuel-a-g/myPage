@@ -1,12 +1,10 @@
 import styles from "./intro.module.css";
 import { useMyContext } from "../context/myContext";
-import Fade from "react-reveal/Fade";
 
 function Intro() {
   const { highContrastStatus } = useMyContext();
   return (
     <div className={styles.introMe}>
-      <Fade ssrFadeout bottom big>
         <h5
           className={styles.hi}
           style={highContrastStatus ? { color: "black" } : { color: "white" }}
@@ -34,7 +32,6 @@ function Intro() {
           Welcome to my hub! I'm glad you're here. I am currently open for new
           opportunities, please feel free to contact me through LinkedIn.
         </p>
-      </Fade>
     </div>
   );
 }
