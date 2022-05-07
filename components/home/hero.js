@@ -23,7 +23,7 @@ function Hero() {
       className={width < breakpoint ? styles.heroFull : styles.hero}
       style={
         highContrastStatus
-          ? { backgroundColor: "#5f5e5e" }
+          ? { backgroundColor: "white" }
           : { backgroundColor: "#003b59" }
       }
     >

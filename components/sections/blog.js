@@ -41,7 +41,7 @@ function Blog() {
             <div className={styles.caption}>
               <h4 className={styles.postTitle}>My Blog</h4>
               Visit my blog by clicking any of the blog images! There you can
-              find a more detailed description of the apps or just visit it!
+              find a more detailed description of the apps!
             </div>
           </div>
           <div
@@ -65,9 +65,8 @@ function Blog() {
             </a>
             <div className={styles.caption}>
               <h4 className={styles.postTitle}>Next.js</h4>
-              Next.js is incredibly fast, this is a snapshot of how we can
-              utilize server-side rendering for amazing performance & delivery
-              of apps!
+              Next.js is incredibly fast, this snapshot shows how we can
+              utilize server-side rendering for amazing performance & time delivery of apps!
             </div>
           </div>
         </Fade>

@@ -9,7 +9,7 @@ function Aside() {
       style={highContrastStatus ? { color: "white" } : { color: "#7DFDFE" }}
     >
       <Fade ssrFadeout bottom big>
-        <div className={styles.socialMedia}>
+        <div className={styles.socialMedia} style={highContrastStatus ? {color: "black"} : {color: "#7DFDFE"}}>
           links:
           <a
             className={styles.anchor}
@@ -17,7 +17,7 @@ function Aside() {
             target="_blank"
           >
             <img
-              src="./githubC.png"
+              src={highContrastStatus? "./github64x.png" :"./githubC.png"}
               alt="github icon, click to open my github!"
               width="28"
               height="28"
@@ -29,7 +29,7 @@ function Aside() {
             target="_blank"
           >
             <img
-              src="./linkedC.png"
+              src={highContrastStatus?"./linked64x.png" :"./linkedC.png"}
               alt="linkedIn icon, click to open my linkedIn!"
               width="28"
               height="28"

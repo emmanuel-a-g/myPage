@@ -41,7 +41,7 @@ function Navigation() {
         </li>
         <li className={styles.navItem}>
           <img
-            src={!highContrastStatus ? "./contC.png" : "./contrast.png" }
+            src={"./contC.png"}
             width={30}
             height={30}
             onClick={handleHighContrast}
@@ -66,7 +66,7 @@ function Navigation() {
         <Fade ssrFadeout left big>
           <li className={styles.navItem}>
             <img
-              src={!highContrastStatus ? "./contC.png" : "./contrast.png" }
+              src={"./contC.png"}
               width={30}
               height={30}
               onClick={handleHighContrast}

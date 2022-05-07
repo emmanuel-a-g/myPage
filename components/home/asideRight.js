@@ -6,7 +6,7 @@ function AsideRight() {
   return (
     <div className={styles.asideRight}>
       <Fade ssrFadeout bottom big>
-      <p style={highContrastStatus ? {color: "white"} : {color: "#7DFDFE"}} className={styles.myEmail}>earturoga@gmail.com</p>
+        <p style={highContrastStatus ? {color: "black"} : {color: "#7DFDFE"}} className={styles.myEmail}>earturoga@gmail.com</p>
       </Fade>
     </div>
   )
