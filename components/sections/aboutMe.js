@@ -56,7 +56,7 @@ function AboutMe() {
             <span className={styles.item}>JavaScript</span>
             <span className={styles.item}>React</span>
             <span className={styles.item}>Node.js</span>
-            <span className={styles.item}>MongoDb</span>
+            <span className={styles.item}>Mongodb</span>
             <span className={styles.item}>Express</span>
           </div>
         </Zoom>
