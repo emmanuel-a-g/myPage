@@ -9,6 +9,8 @@ function Navigation() {
   const [sideBar, setSideBar] = useState(false);
   const [width, setWidth] = useState(null);
   const breakpoint = 500;
+  const pdfLocation =
+    "https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf";
   useEffect(() => {
     if (width === null) {
       setWidth(window.innerWidth);
@@ -49,11 +51,7 @@ function Navigation() {
           />
         </li>
         <li className={styles.navItem}>
-          <a
-            href="https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf"
-            target="_blank"
-            download={false}
-          >
+          <a href={pdfLocation} target="_blank" download={false}>
             <button className={styles.button}>Resume</button>
           </a>
         </li>
@@ -101,10 +99,7 @@ function Navigation() {
             </span>
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
-                <a
-                  href="https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf"
-                  target="_blank"
-                >
+                <a href={pdfLocation} target="_blank">
                   <button className={styles.buttonDrawer}>
                     <img
                       src="./link.png"
