@@ -23,6 +23,7 @@
   font-size: 1.5rem;
   text-align: center;
   font-family: var(--font-text);
+  margin: 15px;
 }
 .or {
   margin: 0;
@@ -34,6 +35,11 @@
   margin: 0;
   padding: 0;
 }
+.top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -41,26 +47,41 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.input {
-  border-radius: 5px;
-  border-color: #7DFDFE;
+.inputOne {
   height: 30px;
   margin: 0;
-  font-size: 20px;
-  width: 260px;
+  font-size: 22px;
+  grid-column: 1 / span 1;
+  background-color: inherit;
+  font-family: var(--font-text);
+  border-color: var(--color-primary);
+}
+.inputTwo {
+  height: 30px;
+  margin: 0;
+  font-size: 22px;
+  grid-column: 3 / span 1;
+  background-color: inherit;
+  font-family: var(--font-text);
+  border-color: var(--color-primary);
 }
 /* .input:focus {} */
-
 .textArea {
   resize: none;
-  border-radius: 5px;
-  border-color: #7DFDFE;
-  width: 260px;
-  font-size: 20px;
+  font-size: 22px;
+  background-color: inherit;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-text);
+  border-color: var(--color-primary);
+}
+.textArea:focus, .inputTwo:focus, .inputOne:focus{
+  outline: none;
 }
 .button {
   background-color: inherit;
-  border: 3px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
@@ -81,10 +102,10 @@
     align-items: center;
     justify-content: center;
   }
-  .input {
-    font-size: 36px !important;
+  .inputOne, .inputTwo {
+    font-size: 28px !important;
   }
   .textArea {
-    font-size: 36px !important;
+    font-size: 28px !important;
   }
 }
