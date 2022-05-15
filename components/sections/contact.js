@@ -68,37 +68,55 @@ function Contact() {
           </h4>
         </Fade>
         <form className={styles.form} onSubmit={handleSubmit}>
-          <input
-            className={styles.input}
-            type="text"
-            placeholder="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <br />
-          <input
-            className={styles.input}
-            required
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <div className={styles.top}>
+            <input
+              className={styles.inputOne}
+              type="text"
+              placeholder="Name"
+              value={name}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "white" }
+              }
+              onChange={(e) => setName(e.target.value)}
+            />
+            <input
+              className={styles.inputTwo}
+              required
+              type="email"
+              placeholder="Email"
+              value={email}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "white" }
+              }
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
           <br />
           <textarea
             className={styles.textArea}
             required
-            rows="4"
+            rows="6"
             placeholder="Message"
             value={text}
+            style={
+              highContrastStatus ? { color: "black" } : { color: "white" }
+            }
             onChange={(e) => setText(e.target.value)}
           />
           <br />
           <button
             className={styles.button}
-            style={highContrastStatus ? { backgroundColor: "#5f5e5e", color: "white", borderColor: "white" } : { backgroundColor: "inherit" }}
+            style={
+              highContrastStatus
+                ? {
+                    backgroundColor: "#5f5e5e",
+                    color: "white",
+                    borderColor: "white",
+                  }
+                : { backgroundColor: "inherit" }
+            }
           >
-            Send!
+            SEND
           </button>
         </form>
         <br />
