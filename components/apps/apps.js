@@ -71,7 +71,7 @@ function Apps({ name, data }) {
               {title}
             </h3>
           </a>
-          <p className={styles.description}>{description}</p>
+          <p className={styles.description} style={width < breakpoint ? {maxWidth: "100%"} : null}>{description}</p>
           {width < breakpoint ? null : (
             <span
               className={styles.tech}
