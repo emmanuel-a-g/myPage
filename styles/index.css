@@ -11,12 +11,9 @@ body {
   height: 100vh !important;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
-  /* --color-secondary: #1878E7; */
   --color-important: chartreuse;
   --color-text: rgb(255, 255, 255);
   --color-tron: #7DFDFE;
-  /* primary aqua */
-  /* secondary chartreuse */
   --color-primary: #00ffd5;
   --color-secondary: #00d4fe;
   --color-third: #00ffff;
@@ -25,13 +22,10 @@ body {
   --color-dark-grey: #5f5e5e;
   --color-light: white;
   --color-text: white; 
-  /* --color-danger: rgb(116, 4, 4); */
   --color-danger: #380c0d;
   --color-batman: #be0d0c;
   --color-space:  #003b59;
   --color-violet: rgba(175, 8, 150, 0.9);
-  /* background-color: var(--color-secondary); */
-  /* color background #1878E7 light blue */
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
   --image-two: url("/images/exponentMin.png");

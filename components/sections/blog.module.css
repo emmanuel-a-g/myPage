@@ -34,7 +34,6 @@
 .postTitle {
   text-align: left;
   font-size: 1.3rem;
-  color: var(--color-dark);
   margin: 0 0 5px 0;
   padding: 4px 0 4px 5px;
   border-bottom: 2px black solid;
@@ -46,11 +45,9 @@
 
 .caption {
   margin-top: -4px;
-  color: var(--color-dark);
   font-size: 1rem;
   font-family: var(--font-text);
   padding: 5px;
-  background-color: var(--color-light-grey);
   height: 100%;
   opacity: .80;
 }

@@ -9,6 +9,10 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <link rel="icon" href="/favicon.png" />
           <meta name="theme-color" content="#003b59" />
+          <meta
+            name="description"
+            content="Hi my name is Emmanuel Garcia, I am fullstack web developer and this is my portolio. I am originally from El Paso and I embarked in this journey back in 2019 when I learned Python... today you can find me diving into new and exciting tech!"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

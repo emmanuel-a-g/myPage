@@ -7,7 +7,7 @@ function HomePage(props) {
         <title>Emmanuel Garcia</title>
         <meta
           name="description"
-          content="Hi my name is Emmanuel Garcia, I am fullstack web developer and this is my portolio. I am originally from El Paso, Texas and I embarked in this journey back in 2019 when I learned Python..."
+          content="Hi my name is Emmanuel Garcia, I am fullstack web developer and this is my portolio. I am originally from El Paso and I embarked in this journey back in 2019 when I learned Python..."
         />
       </Head>
       <Hero />
