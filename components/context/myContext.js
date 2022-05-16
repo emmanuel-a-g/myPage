@@ -12,7 +12,7 @@ export function ContextProvider({ children }) {
   const [highContrastStatus, setHighContrast] = useState(false);
   
   useEffect(() => {
-    console.log("Context starting...");
+    console.log("App starting...");
     setLoading(false)
   }, [])
 
