@@ -52,7 +52,7 @@
   margin: 0;
   font-size: 22px;
   grid-column: 1 / span 1;
-  background-color: inherit;
+  background-color: inherit !important;
   font-family: var(--font-text);
   border-color: var(--color-primary);
 }
@@ -61,7 +61,7 @@
   margin: 0;
   font-size: 22px;
   grid-column: 3 / span 1;
-  background-color: inherit;
+  background-color: inherit !important;
   font-family: var(--font-text);
   border-color: var(--color-primary);
 }
@@ -78,6 +78,7 @@
 }
 .textArea:focus, .inputTwo:focus, .inputOne:focus{
   outline: none;
+  box-shadow: 2px 4px 20px -10px var(--color-primary);
 }
 .button {
   background-color: inherit;
@@ -85,6 +86,10 @@
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);
+}
+.button:focus, .button:hover {
+  outline: none;
+  box-shadow: 2px 4px 25px -10px var(--color-primary);
 }
 .logo {
   background-color: var(--color-tron);

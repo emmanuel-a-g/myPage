@@ -12,20 +12,20 @@ function Contact() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
+      let determineName = name === "" ? "Visitor" : name;
       const response = await fetch("/api/contact", {
         method: "POST",
-        body: JSON.stringify({ email, name, message: text }),
+        body: JSON.stringify({ email, name: determineName, message: text.trim()}),
         headers: {
           "Content-Type": "application/json",
         },
       });
       const data = await response.json();
       const date = data.date;
-      console.log(date);
       if (!response.ok) {
         throw new Error(data.message || "Something went wrong");
       } else {
-        sayHiTo(name, date);
+        sayHiTo(determineName, date);
       }
     } catch (err) {
       sayHiTo("error");

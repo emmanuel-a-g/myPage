@@ -27,7 +27,7 @@ function Navigation() {
     updateView(num);
   }
   const desktop = (
-    <ul className={styles.navList}>
+    <ul className={`${styles.navList} navBar`}>
       <Fade ssrFadeout left big>
         <li className={styles.navItem} onClick={() => updateView(1)}>
           <span className={styles.number}>01.</span> About
@@ -140,7 +140,7 @@ function Navigation() {
   // </li>
   return (
     <nav
-      className={styles.navigation}
+      className={`${styles.navigation} navBar`}
       style={
         highContrastStatus
           ? { backgroundColor: "#5f5e5e" }

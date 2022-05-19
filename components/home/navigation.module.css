@@ -112,7 +112,7 @@
   /* -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; */
-  box-shadow: 2px 4px 27px -10px var(--color-tron);
+  box-shadow: 2px 4px 20px -8px var(--color-tron);
   /* background: var(--color-tron); */
   /* color: black; */
 }

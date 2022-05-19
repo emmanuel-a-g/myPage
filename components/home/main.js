@@ -38,7 +38,6 @@ function Main() {
     } else {
       eduScroll();
     }
-    console.log(current);
   }, [current]); 
   // <div className={styles.ref} ref={eduRef}>
   // <Education />

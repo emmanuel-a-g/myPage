@@ -11,7 +11,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#003b59" />
           <meta
             name="description"
-            content="Hi my name is Emmanuel Garcia, I am fullstack web developer and this is my portolio. I am originally from El Paso and I embarked in this journey back in 2019 when I learned Python... today you can find me diving into new and exciting tech!"
+            content="Hi my name is Emmanuel Garcia, I am full-stack web developer and this is my portolio. I am originally from El Paso, TX and I embarked in my software engineering journey back in 2019... today you can find me diving into new and exciting tech!"
           />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -37,7 +37,7 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             property="og:description"
-            content="Hi my name is Emmanuel Garcia, I am a web developer and this is my portfolio"
+            content="Hi my name is Emmanuel Garcia, I am a web developer (software engineer) and this is my portfolio."
           />
           <meta property="og:site_name" content="Emmanuel Garcia" />
           <meta name="twitter:image:alt" content="A picture of Emmanuel" />
