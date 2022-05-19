@@ -40,11 +40,11 @@
   align-items: center;
 }
 .drawer span {
-  width: 56%;
+  width: 45%;
   font-size: 2rem;
-  color: var(--color-dark);
+  color: var(--color-light);
   border-radius: 5px;
-  border: 2px solid var(--color-light);
+  border: 2px solid var(--color-tron);
   text-align: center;
   box-shadow: 2px 4px 27px -10px var(--color-light);
 }
@@ -75,7 +75,7 @@
 .navItemSide {
   display: inline;
   font-size: 2rem;
-  color: var(--color-light);
+  color: var(--color-tron);
 }
 
 .number {
@@ -100,8 +100,8 @@
   color: var(--color-light);
 }
 .buttonDrawer {
-  background-color: inherit;
-  border: 2px solid var(--color-light);
+  background-color: white;
+  border: 2px solid var(--color-dark);
   border-radius: 5px;
   padding: 8px 10px 8px 10px;
   color: var(--color-dark);
@@ -118,24 +118,24 @@
 }
 .side {
   background-color: var(--color-space);
-  width: 88%;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 188%;
+  left: 200%;
   transition: 750ms;
 }
 .activeSide {
-  background-color: var(--color-batman);
-  width: 88%;
+  background-color: var(--color-space-dark);
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 12%;
+  left: 0%;
   transition: 850ms;
 }
 

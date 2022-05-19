@@ -25,6 +25,7 @@ body {
   --color-danger: #380c0d;
   --color-batman: #be0d0c;
   --color-space:  #003b59;
+  --color-space-dark:#022e44;
   --color-violet: rgba(175, 8, 150, 0.9);
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
