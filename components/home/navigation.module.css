@@ -33,7 +33,7 @@
 }
 .drawer {
   width: 100%;
-  height: 85%;
+  height: 87%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -77,11 +77,9 @@
   font-size: 2rem;
   color: var(--color-tron);
 }
-
 .number {
   color: var(--color-tron);
 }
-
 .imageDiv {
   grid-column: 1 / span 1;
   display: flex;
@@ -100,11 +98,11 @@
   color: var(--color-light);
 }
 .buttonDrawer {
-  background-color: white;
-  border: 2px solid var(--color-dark);
+  background-color: inherit;
+  border: 2px solid var(--color-tron);
   border-radius: 5px;
   padding: 8px 10px 8px 10px;
-  color: var(--color-dark);
+  color: var(--color-light);
   box-shadow: 2px 4px 27px -10px var(--color-light);
   font-size: 1.8rem;
 }
@@ -117,28 +115,27 @@
   /* color: black; */
 }
 .side {
-  background-color: var(--color-space);
-  width: 100%;
+  width: 88%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
   left: 200%;
+  border-radius: 5px;
   transition: 750ms;
 }
 .activeSide {
-  background-color: var(--color-space-dark);
-  width: 100%;
+  width: 88%;
   height: 100vh;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 0%;
+  left: 12%;
+  border-radius: 5px;
   transition: 850ms;
 }
-
 @media only screen and (max-width: 800px) {
   .navigation {
     grid-template-columns: 13% 87%;

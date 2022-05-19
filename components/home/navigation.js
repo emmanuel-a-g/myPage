@@ -82,9 +82,17 @@ function Navigation() {
         </Fade>
         <aside
           className={sideBar ? styles.activeSide : styles.side}
+          style={
+            highContrastStatus
+              ? { backgroundColor: "#be0d0c" }
+              : { backgroundColor: "black" }
+          }
           onClick={handleSideBar}
         >
           <ul className={styles.drawer}>
+            <span onClick={() => handleSideAndScroll(0)}>
+              <li className={styles.navItemSide}>0. </li> Intro
+            </span>
             <span onClick={() => handleSideAndScroll(1)}>
               <li className={styles.navItemSide}>1. </li> About
             </span>
@@ -102,10 +110,10 @@ function Navigation() {
                 <a href={pdfLocation} target="_blank">
                   <button className={styles.buttonDrawer}>
                     <img
-                      src="./link.png"
+                      src="./wdownload.png"
                       width="22"
                       height="22"
-                      alt="external link to my blog"
+                      alt="download resume"
                     />{" "}
                     Resume
                   </button>
@@ -120,10 +128,10 @@ function Navigation() {
                 >
                   <button className={styles.buttonDrawer}>
                     <img
-                      src="./link.png"
+                      src="./wlink.png"
                       width="22"
                       height="22"
-                      alt="external link to my blog"
+                      alt="link to blog"
                     />{" "}
                     Blog
                   </button>
