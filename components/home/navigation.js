@@ -108,8 +108,8 @@ function Navigation() {
                   <button className={styles.buttonDrawer}>
                     <img
                       src="./wdownload.png"
-                      width="22"
-                      height="22"
+                      width="24"
+                      height="24"
                       alt="download resume"
                     />{" "}
                     Resume

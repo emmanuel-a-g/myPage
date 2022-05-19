@@ -75,7 +75,7 @@ function Contact() {
               placeholder="Name"
               value={name}
               style={
-                highContrastStatus ? { color: "black" } : { color: "white" }
+                highContrastStatus ? { color: "black", borderColor: "black" } : { color: "white" }
               }
               onChange={(e) => setName(e.target.value)}
             />
@@ -86,7 +86,7 @@ function Contact() {
               placeholder="Email"
               value={email}
               style={
-                highContrastStatus ? { color: "black" } : { color: "white" }
+                highContrastStatus ? { color: "black", borderColor: "black" } : { color: "white" }
               }
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -99,7 +99,7 @@ function Contact() {
             placeholder="Message"
             value={text}
             style={
-              highContrastStatus ? { color: "black" } : { color: "white" }
+              highContrastStatus ? { color: "black", borderColor: "black" } : { color: "white" }
             }
             onChange={(e) => setText(e.target.value)}
           />

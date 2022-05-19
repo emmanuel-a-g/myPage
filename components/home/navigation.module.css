@@ -40,7 +40,7 @@
   align-items: center;
 }
 .drawer span {
-  width: 50%;
+  min-width: 52%;
   font-size: 2rem;
   color: var(--color-light);
   border-radius: 5px;

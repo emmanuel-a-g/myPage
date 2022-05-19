@@ -53,6 +53,7 @@
   font-size: 22px;
   grid-column: 1 / span 1;
   background-color: inherit !important;
+  border-width: 2px;
   font-family: var(--font-text);
   border-color: var(--color-primary);
 }
@@ -62,6 +63,7 @@
   font-size: 22px;
   grid-column: 3 / span 1;
   background-color: inherit !important;
+  border-width: 2px;
   font-family: var(--font-text);
   border-color: var(--color-primary);
 }
@@ -73,6 +75,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  border-width: 2px;
   font-family: var(--font-text);
   border-color: var(--color-primary);
 }
@@ -89,7 +92,7 @@
 }
 .button:focus, .button:hover {
   outline: none;
-  box-shadow: 2px 4px 25px -10px var(--color-primary);
+  box-shadow: 2px 4px 15px -8px var(--color-primary);
 }
 .logo {
   background-color: var(--color-tron);
