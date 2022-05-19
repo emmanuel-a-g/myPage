@@ -90,9 +90,6 @@ function Navigation() {
           onClick={handleSideBar}
         >
           <ul className={styles.drawer}>
-            <span onClick={() => handleSideAndScroll(0)}>
-              <li className={styles.navItemSide}>0. </li> Intro
-            </span>
             <span onClick={() => handleSideAndScroll(1)}>
               <li className={styles.navItemSide}>1. </li> About
             </span>
