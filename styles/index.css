@@ -30,7 +30,7 @@ body {
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
   --image-two: url("/images/exponentMin.png");
-  --image-one: url("/images/amazonMin.png")
+  --image-one: url("/images/amazonMin.png");
 }
 @media only screen and (max-width: 800px) {
   body {
