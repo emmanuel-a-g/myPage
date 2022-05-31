@@ -120,7 +120,7 @@ function Navigation() {
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
                 <a
-                  href="https://nextjs-blog-one-mu-75.vercel.app/"
+                  href="https://www.emmanuelarturo.com/"
                   target="_blank"
                 >
                   <button className={styles.buttonDrawer}>

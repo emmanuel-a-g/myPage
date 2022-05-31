@@ -28,7 +28,7 @@ function Blog() {
             }
           >
             <a
-              href="https://nextjs-blog-emmanuel-a-g.vercel.app/"
+              href="https://www.emmanuelarturo.com/"
               target="_blank"
             >
               <img
@@ -53,7 +53,7 @@ function Blog() {
             }
           >
             <a
-              href="https://nextjs-blog-emmanuel-a-g.vercel.app/posts/getting-started-with-nextjs"
+              href="https://www.emmanuelarturo.com/posts/getting-started-with-nextjs"
               target="_blank"
             >
               <img
