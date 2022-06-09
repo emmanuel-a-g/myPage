@@ -23,8 +23,8 @@ function Hero() {
       className={width < breakpoint ? styles.heroFull : styles.hero}
       style={
         highContrastStatus
-          ? { backgroundColor: "white", transition: "600ms" }
-          : { backgroundColor: "#003b59", transition: "600ms" }
+          ? { backgroundColor: "white", transition: "700ms" }
+          : { backgroundColor: "#003b59", transition: "700ms" }
       }
     >
       {width < breakpoint ? null : <Aside className={styles.left} />}
