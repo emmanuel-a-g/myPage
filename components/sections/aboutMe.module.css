@@ -23,10 +23,10 @@
   grid-row: 1 / span 1;
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 85%;
 }
 .image {
-  width: 280px;
+  width: 270px;
   max-width: 90%;
   margin-left: 10%;
   height: auto;
@@ -58,6 +58,7 @@
   justify-self: center;
   border-radius: 5px;
   font-family: var(--font-text);
+  font-size: 1rem;
 }
 /* .item:hover {
   transform: skewY(5deg);
@@ -75,9 +76,13 @@
 }
 
 @media only screen and (max-width: 750px) {
+  /* .aboutMe {
+    background-color: blueviolet;
+  } */
   .theGrid {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
+    min-height: 70vh;
   }
   .text {
     font-size: 1.05rem;
@@ -85,21 +90,24 @@
     text-align: center;
   }
   .item {
-    padding: 2px;
-    font-size: .8rem;
+    padding: 4px;
   }
   .left {
+    display: flex;
     width: 95%;
+    align-self: center;
+    font-size: 1.2rem;
+    margin-bottom: 3%;
   }
   .right {
     display: flex;
     justify-content: center;
-    height: 100%;
+    margin-top: 2%;
   }
   .technologies {
-    display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 10px 0 10px 0;
+    height: 40%;
   }
   .image {
     max-width: 230px;
@@ -107,20 +115,15 @@
     margin: 0;
   }
 }
-
-@media only screen and (max-width: 650px) { 
+@media only screen and (max-width: 400px) { 
   .text {
-    font-size: .95em;
+    font-size: .95rem;
     overflow-wrap: break-word;
     padding: 0;
     margin: 0;
   }
   .item {
-    padding: .025px;
-    font-size: .50em;
-  }
-  .technologies {
-    height: 50%;
+    font-size: 3vw;
   }
   .image {
     max-width: 200px;

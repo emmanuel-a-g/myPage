@@ -109,9 +109,9 @@ function Contact() {
             style={
               highContrastStatus
                 ? {
-                    backgroundColor: "#5f5e5e",
-                    color: "white",
-                    borderColor: "white",
+                    backgroundColor: "white",
+                    color: "black",
+                    borderColor: "black",
                   }
                 : { backgroundColor: "inherit" }
             }

@@ -29,10 +29,9 @@ function AboutMe() {
             className={styles.text}
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
-            Hello my name is Emmanuel and I am an web developer native to El
-            Paso, Texas. My coding journey began when I first learned Python
-            back in 2019 with which I made a small game, from there I decided to
-            dive deep into web development! The rest is history as they say.
+            Hello my name is Emmanuel and I am a full stack web developer from El
+            Paso, Texas. My coding journey began back in 2019 when I learned Python to build a small game.
+            That's when I decided to dive deep into app development! The rest is history as they say.
           </p>
           <p
             className={styles.text}
@@ -64,10 +63,10 @@ function AboutMe() {
           <Tada ssrFadeout spy={clicks}>
             <img
               className={styles.image}
-              src="./arturo39.png"
-              alt="A picture of Emmanuel garcia at graduation!"
-              width="282"
-              height="302"
+              src="./arturoE.jpg"
+              alt="A picture of Emmanuel at graduation!"
+              width="270"
+              height="300"
               onMouseOver={handleClick}
             />
           </Tada>
