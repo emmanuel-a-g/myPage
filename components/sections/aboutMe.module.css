@@ -24,7 +24,9 @@
   display: flex;
   align-items: center;
   height: 70%;
+  opacity: 0.7;
 }
+
 .image {
   width: 270px;
   max-width: 90%;
