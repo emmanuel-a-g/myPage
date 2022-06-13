@@ -122,7 +122,7 @@
   position: fixed;
   top: 0;
   left: 200%;
-  transition: 750ms;
+  transition: 700ms;
 }
 .activeSide {
   width: 88%;
@@ -132,7 +132,7 @@
   position: fixed;
   top: 0;
   left: 12%;
-  transition: 850ms;
+  transition: 400ms;
 }
 @media only screen and (max-width: 800px) {
   .navigation {

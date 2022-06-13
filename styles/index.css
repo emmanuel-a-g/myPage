@@ -18,15 +18,16 @@ body {
   --color-secondary: #00d4fe;
   --color-third: #00ffff;
   --color-light-grey: whitesmoke;
-  --color-dark: black;
-  --color-dark-grey: #5f5e5e;
+  --color-dark: #000000
+  /* --color-dark-grey: #5f5e5e; */
+  --color-dark-grey: grey;
   --color-light: white;
   --color-text: white; 
   --color-danger: #380c0d;
   --color-batman: #be0d0c;
   --color-space:  #003b59;
-  --color-space-dark:#022e44;
-  --color-violet: rgba(175, 8, 150, 0.9);
+  --color-space-dark:rgba(3, 47, 69, 0.902);
+  --color-violet: #af0896e6;
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
   --image-two: url("/images/exponentMin.png");

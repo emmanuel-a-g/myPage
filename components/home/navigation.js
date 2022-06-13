@@ -85,7 +85,7 @@ function Navigation() {
           style={
             highContrastStatus
               ? { backgroundColor: "#be0d0c" }
-              : { backgroundColor: "black" }
+              : { backgroundColor: "grey" }
           }
           onClick={handleSideBar}
         >
@@ -148,7 +148,7 @@ function Navigation() {
       className={`${styles.navigation} navBar`}
       style={
         highContrastStatus
-          ? { backgroundColor: "#5f5e5e", transition: "700ms" }
+          ? { backgroundColor: "grey", transition: "700ms" }
           : { backgroundColor: "#003b59", transition: "700ms" }
       }
     >
