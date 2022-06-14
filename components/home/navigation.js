@@ -148,8 +148,8 @@ function Navigation() {
       className={`${styles.navigation} navBar`}
       style={
         highContrastStatus
-          ? { backgroundColor: "grey", transition: "700ms" }
-          : { backgroundColor: "#003b59", transition: "700ms" }
+          ? { backgroundColor: "#808080e6", transition: "700ms" }
+          : { backgroundColor: "#003b59e6", transition: "700ms" }
       }
     >
       <div className={styles.imageDiv}>

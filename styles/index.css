@@ -30,6 +30,8 @@ body {
   --color-violet: #af0896e6;
   /* color background #154682 dark ugly blue */
   --color-background: var(--color-space);
+  /* --color-greyish: #808080e6; */
+  --color-background-ghost: #003b591c;
   --image-two: url("/images/exponentMin.png");
   --image-one: url("/images/amazonMin.png");
 }
