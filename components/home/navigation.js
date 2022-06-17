@@ -33,6 +33,9 @@ function Navigation() {
     () => handleSideBar();
     updateView(num);
   }
+  function handleMatrixToggle() {
+    matrixToggle();
+  }
   const desktop = (
     <ul className={`${styles.navList} navBar`}>
       <Fade ssrFadeout left big>
@@ -55,7 +58,7 @@ function Navigation() {
               name="matrixToggle"
               type="checkbox"
               checked={matrix && !highContrastStatus}
-              onChange={() => matrixToggle()}
+              onChange={() => handleMatrixToggle()}
               disabled={!!highContrastStatus}
             />
             <div className={styles.toggleFill}></div>
