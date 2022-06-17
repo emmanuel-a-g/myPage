@@ -11,6 +11,7 @@ function Navigation() {
     highContrastStatus,
     matrixToggle,
     matrix,
+    mobile: mobileStatus,
   } = useMyContext();
   const [sideBar, setSideBar] = useState(false);
   const [width, setWidth] = useState(null);
@@ -47,17 +48,17 @@ function Navigation() {
         <li className={styles.navItem} onClick={() => updateView(4)}>
           <span className={styles.number}>04.</span> Contact
         </li>
-        <li className={styles.navItem}>
+        <li className={styles.navItem} style={{display: mobileStatus? "none" : ""}}>
           <label className={styles.toggle}>
             <input
               className={styles.toggleInput}
               name="matrixToggle"
               type="checkbox"
               checked={matrix && !highContrastStatus}
-              onClick={() => matrixToggle()}
+              onChange={() => matrixToggle()}
               disabled={!!highContrastStatus}
             />
-            <div class={styles.toggleFill}></div>
+            <div className={styles.toggleFill}></div>
           </label>
         </li>
         <li className={styles.navItem}>

@@ -10,6 +10,7 @@ export function ContextProvider({ children }) {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [matrix, setMatrix] = useState(false);
+  const [mobile, setMobile] = useState(false);
   const [highContrastStatus, setHighContrast] = useState(false);
   
   useEffect(() => {
@@ -33,16 +34,22 @@ export function ContextProvider({ children }) {
   function matrixToggle() {
     return setMatrix(prev => !prev);
   }
+
+  function setMobileStatus() {
+    return setMobile(prev => !prev);
+  }
   const myValues = {
     current,
     name,
     highContrastStatus,
     date,
     matrix,
+    mobile,
     updateView,
     sayHiTo,
     handleHighContrast,
-    matrixToggle
+    matrixToggle,
+    setMobileStatus
   }
 
   return (

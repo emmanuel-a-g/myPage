@@ -3,7 +3,7 @@ import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
 
 function Intro() {
-  const { highContrastStatus, matrix } = useMyContext();
+  const { highContrastStatus, matrix, setMobileStatus } = useMyContext();
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
     if (
@@ -12,6 +12,7 @@ function Intro() {
       )
     ) {
       setMobile(true);
+      setMobileStatus(false);
     }
   }, []);
   // {matrix && !mobile && <div className={styles.overlay}></div>}
