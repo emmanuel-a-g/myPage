@@ -136,7 +136,7 @@
 }
 /* liked this color too */
 .smallContentBoxTwo {
-  background: linear-gradient(to bottom, rgba(175, 8, 150, 0.9), #0d0e0fd2),
+  background: linear-gradient(to bottom, rgba(9, 19, 207, 0.9), #0d0e0fd2),
     var(--image-two) center no-repeat;
   background-size: contain !important;
 }
