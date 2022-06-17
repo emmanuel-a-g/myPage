@@ -11,7 +11,6 @@
   z-index: 3;
   font-family: var(--font-text);
 }
-
 .navList {
   grid-column: 3 / span 1;
   display: flex;
@@ -55,7 +54,6 @@
   border-radius: none;
   box-shadow: none;
 }
-
 .navItem {
   display: inline;
   font-size: 1rem;
@@ -88,6 +86,9 @@
 .image {
   width: 40px;
   height: auto;
+}
+.image:hover {
+  cursor: pointer;
 }
 .button {
   background-color: inherit;

@@ -7,7 +7,7 @@
 }
 .video {
   width: auto;
-  left: -200px;
+  left: -180px;
   height: 100vh;
   object-fit: cover;
   position: absolute;
