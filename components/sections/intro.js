@@ -3,8 +3,16 @@ import { useMyContext } from "../context/myContext";
 
 function Intro() {
   const { highContrastStatus } = useMyContext();
+  // <video autoPlay loop muted className={styles.video}>
+  //   <source src="./matrixLoop.mp4" />
+  // </video>
+
   return (
     <div className={styles.introMe}>
+     <video autoPlay loop muted className={styles.video}>
+       <source src="./matrixLoop.mp4" />
+    </video>
+      <div className={styles.content}>
         <h5
           className={styles.hi}
           style={highContrastStatus ? { color: "black" } : { color: "white" }}
@@ -32,6 +40,7 @@ function Intro() {
           Welcome to my hub! I'm glad you're here. I am currently open for new
           opportunities, please feel free to contact me through LinkedIn.
         </p>
+      </div>
     </div>
   );
 }

@@ -22,7 +22,7 @@
 }
 .gap {
   width: 97%;
-  max-width: 850px !important;
+  max-width: 850px;
 }
 @media only screen and (max-width: 800px) {
   .middleScroll {
