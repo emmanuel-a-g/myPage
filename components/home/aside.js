@@ -21,7 +21,7 @@ function Aside() {
           >
             <img
               src={highContrastStatus ? "./github64x.png" : "./githubC.png"}
-              alt="github icon, click to open my github!"
+              alt="click to open my github!"
               width="28"
               height="28"
             />
@@ -33,7 +33,7 @@ function Aside() {
           >
             <img
               src={highContrastStatus ? "./linked64x.png" : "./linkedC.png"}
-              alt="linkedIn icon, click to open my linkedIn!"
+              alt="click to open my linkedIn!"
               width="28"
               height="28"
             />

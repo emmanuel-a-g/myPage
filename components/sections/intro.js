@@ -3,10 +3,9 @@ import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
 
 function Intro() {
-  const { highContrastStatus, matrix, matrixToggle } = useMyContext();
+  const { highContrastStatus, matrix } = useMyContext();
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
-    //check for mobile
     if (
       /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
         navigator.userAgent
@@ -15,15 +14,14 @@ function Intro() {
       setMobile(true);
     }
   }, []);
-
   return (
     <div className={styles.introMe}>
       {!highContrastStatus && !mobile && matrix && (
-        <video autoPlay loop muted className={styles.video}>
-          <source src="./matrixSpace.mp4" />
-        </video>
+        <video src="./matrixSpace.mp4" autoPlay loop muted className={styles.video}/>
       )}
-      <div className={styles.content} onClick={() => matrixToggle()}>
+      {matrix && !mobile && <div className={styles.overlay}></div>
+      }
+      <div className={styles.content}>
         <h5
           className={styles.hi}
           style={highContrastStatus ? { color: "black" } : { color: "white" }}

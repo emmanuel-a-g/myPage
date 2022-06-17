@@ -10,7 +10,6 @@
   left: -180px;
   height: 100vh;
   object-fit: cover;
-  position: absolute;
   border-radius: 5px;
   outline: 0px;
   border-bottom: 0.5px var(--color-primary) inset;
@@ -22,6 +21,11 @@
   justify-content: center;
   height: 100%;
   top: 0;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: .5;
 }
 .hi {
   font-weight: normal;

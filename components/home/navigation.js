@@ -5,7 +5,8 @@ import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 
 function Navigation() {
-  const { updateView, handleHighContrast, highContrastStatus } = useMyContext();
+  const { updateView, handleHighContrast, highContrastStatus, matrixToggle, matrix } =
+    useMyContext();
   const [sideBar, setSideBar] = useState(false);
   const [width, setWidth] = useState(null);
   const breakpoint = 500;
@@ -42,15 +43,28 @@ function Navigation() {
           <span className={styles.number}>04.</span> Contact
         </li>
         <li className={styles.navItem}>
-          <img
-            src={"./contC.png"}
-            width={30}
-            height={30}
-            onClick={handleHighContrast}
-            alt="Click icon to change contrast"
-          />
+          <label className={styles.toggle}>
+            <input
+              className={styles.toggleInput}
+              name="matrixToggle"
+              type="checkbox"
+              checked={matrix && !highContrastStatus}
+              onClick={() => matrixToggle()}
+              disabled={!!highContrastStatus}
+            />
+            <div class={styles.toggleFill}></div>
+          </label>
         </li>
         <li className={styles.navItem}>
+        <img
+          src={highContrastStatus?"./conW.png":"./contC.png"}
+          width={30}
+          height={30}
+          onClick={handleHighContrast}
+          alt="High contrast icon"
+        />
+      </li>
+      <li className={styles.navItem}>
           <a href={pdfLocation} target="_blank" download={false}>
             <button className={styles.button}>Resume</button>
           </a>
@@ -119,10 +133,7 @@ function Navigation() {
             </span>
             <span id={styles.specialSpan}>
               <li className={styles.navItemSide}>
-                <a
-                  href="https://www.emmanuelarturo.com/"
-                  target="_blank"
-                >
+                <a href="https://www.emmanuelarturo.com/" target="_blank">
                   <button className={styles.buttonDrawer}>
                     <img
                       src="./wlink.png"
@@ -148,7 +159,7 @@ function Navigation() {
       className={`${styles.navigation} navBar`}
       style={
         highContrastStatus
-          ? { backgroundColor: "#808080e6", transition: "700ms" }
+          ? { backgroundColor: "#808080fa", transition: "700ms" }
           : { backgroundColor: "#003b59e6", transition: "700ms" }
       }
     >

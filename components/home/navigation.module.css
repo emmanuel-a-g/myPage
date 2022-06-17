@@ -11,18 +11,19 @@
   z-index: 3;
   font-family: var(--font-text);
 }
+/* Main Div for Desktop */
 .navList {
   grid-column: 3 / span 1;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+/* Main Div for Mobile */
 .flexMobileRight {
   display: flex;
   justify-content: flex-end;
 }
 .navListMobile {
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +135,43 @@
   left: 12%;
   transition: 400ms;
 }
-@media only screen and (max-width: 800px) {
+.toggle {
+  --width: 50px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+  display: inline-block;
+  cursor: pointer;
+}
+.toggleInput {
+  display: none;
+}
+.toggleFill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: #dddddd;
+  transition: background 0.25s;
+}
+.toggleInput:checked ~ .toggleFill {
+  background: var(--color-primary);
+}
+.toggleFill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.25s;
+}
+.toggleInput:checked ~ .toggleFill::after {
+  transform: translateX(var(--height));
+}
+@media only screen and (max-width: 880px) {
   .navigation {
     grid-template-columns: 13% 87%;
     min-height: 7vh;
@@ -144,7 +181,7 @@
     padding: 0 0 0 15px;
   }
   .navListMobile {
-    grid-column: 2 /span1;
+    grid-column: 2 / span1;
     padding: 0 0 0 15px;
   }
   .navItem {
@@ -167,15 +204,15 @@
     padding: 2px;
   }
 }
-@media (hover:none), (hover:on-demand) {
-  .button:hover{ 
+@media (hover: none), (hover: on-demand) {
+  .button:hover {
     box-shadow: none;
     background: inherit;
-    color: var(--color-light);   
+    color: var(--color-light);
   }
-  .buttonColor:hover{
+  .buttonColor:hover {
     box-shadow: none;
     background: inherit;
-    color: var(--color-light); 
+    color: var(--color-light);
   }
 }

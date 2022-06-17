@@ -34,6 +34,7 @@ body {
   --color-background-ghost: #003b591c;
   --image-two: url("/images/exponentMin.png");
   --image-one: url("/images/amazonMin.png");
+  background-color: #003b59;
 }
 @media only screen and (max-width: 800px) {
   body {
