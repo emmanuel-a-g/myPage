@@ -1,14 +1,20 @@
 import styles from "./intro.module.css";
 import { useMyContext } from "../context/myContext";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Intro() {
   const { highContrastStatus } = useMyContext();
-
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    //check for mobile
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      setMobile(true);
+     }
+  }, [])
 
   return (
     <div className={styles.introMe}>
-     { !highContrastStatus && (<video autoPlay loop muted className={styles.video}>
+     { !highContrastStatus && !mobile && (<video autoPlay loop muted className={styles.video}>
        <source src="./matrixSpace.mp4" />
     </video>)}
       <div className={styles.content}>

@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  top: 0;
 }
 .hi {
   font-weight: normal;
