@@ -11,7 +11,7 @@ body {
   height: 100vh !important;
   /* mobile viewport bug fix */
   min-height: -webkit-fill-available;
-  --color-important: chartreuse;
+  --color-important: #7fff00;
   --color-text: rgb(255, 255, 255);
   --color-tron: #7DFDFE;
   --color-primary: #00ffd5;
@@ -19,18 +19,17 @@ body {
   --color-third: #00ffff;
   --color-light-grey: whitesmoke;
   --color-dark: #000000
-  /* --color-dark-grey: #5f5e5e; */
   --color-dark-grey: grey;
   --color-light: white;
   --color-text: white; 
   --color-danger: #380c0d;
   --color-batman: #be0d0c;
   --color-space:  #003b59;
-  --color-space-dark:rgba(3, 47, 69, 0.902);
+  --color-space-dark:#032f45e6;
   --color-violet: #af0896e6;
   /* color background #154682 dark ugly blue */
+  --color-grey-transparent: #808080fa;
   --color-background: var(--color-space);
-  /* --color-greyish: #808080e6; */
   --color-background-ghost: #003b591c;
   --image-two: url("/images/exponentMin.png");
   --image-one: url("/images/amazonMin.png");

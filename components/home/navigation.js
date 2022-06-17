@@ -84,7 +84,7 @@ function Navigation() {
         <Fade ssrFadeout left big>
           <li className={styles.navItem}>
             <img
-              src={"./contC.png"}
+              src={highContrastStatus ? "./conW.png" : "./contC.png"}
               width={30}
               height={30}
               onClick={handleHighContrast}
@@ -93,7 +93,7 @@ function Navigation() {
           </li>
           <li className={styles.hamburgerItem} onClick={handleSideBar}>
             <img
-              src="./menu.png"
+              src={highContrastStatus ? "./menuB.png" : "./menu.png"}
               alt="Menu icon, open to expand"
               width="28"
               height="28"
@@ -104,8 +104,8 @@ function Navigation() {
           className={sideBar ? styles.activeSide : styles.side}
           style={
             highContrastStatus
-              ? { backgroundColor: "#be0d0c" }
-              : { backgroundColor: "grey" }
+              ? { backgroundColor: "#be0d0ce6" }
+              : { backgroundColor: "#808080f7" }
           }
           onClick={handleSideBar}
         >
