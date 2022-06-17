@@ -12,6 +12,8 @@
   object-fit: cover;
   position: absolute;
   border-radius: 5px;
+  outline: 0px;
+  border-bottom: 0.5px var(--color-primary) inset;
 }
 .content {
   position: absolute;

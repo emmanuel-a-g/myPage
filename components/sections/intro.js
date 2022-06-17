@@ -1,17 +1,16 @@
 import styles from "./intro.module.css";
 import { useMyContext } from "../context/myContext";
+import { useState } from "react";
 
 function Intro() {
   const { highContrastStatus } = useMyContext();
-  // <video autoPlay loop muted className={styles.video}>
-  //   <source src="./matrixLoop.mp4" />
-  // </video>
+
 
   return (
     <div className={styles.introMe}>
-     <video autoPlay loop muted className={styles.video}>
-       <source src="./matrixLoop.mp4" />
-    </video>
+     { !highContrastStatus && (<video autoPlay loop muted className={styles.video}>
+       <source src="./matrixSpace.mp4" />
+    </video>)}
       <div className={styles.content}>
         <h5
           className={styles.hi}
