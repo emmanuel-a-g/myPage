@@ -3,13 +3,16 @@ import { useMyContext } from "../context/myContext";
 import Tada from "react-reveal/Tada";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function AboutMe() {
   const { highContrastStatus } = useMyContext();
   const [clicks, setClicks] = useState(0);
   function handleClick() {
     setClicks((prev) => prev + 1);
   }
+  useEffect(() => {
+    handleClick();
+  }, [])
 
   return (
     <div className={styles.aboutMe}>
@@ -29,9 +32,10 @@ function AboutMe() {
             className={styles.text}
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
-            Hello my name is Emmanuel and I am a full stack web developer from El
-            Paso, Texas. My coding journey began back in 2019 when I learned Python to build a small game.
-            That's when I decided to dive deep into app development! The rest is history as they say.
+            Hello my name is Emmanuel and I am a full stack web developer from
+            El Paso, Texas. My coding journey began back in 2019 when I learned
+            Python to build a small game. That's when I decided to dive deep
+            into app development! The rest is history as they say.
           </p>
           <p
             className={styles.text}
@@ -60,16 +64,16 @@ function AboutMe() {
           </div>
         </Zoom>
         <div className={styles.right}>
-          <Tada ssrFadeout spy={clicks}>
-            <img
-              className={styles.image}
-              src="./arturoPort.jpeg"
-              alt="Picture of Emmanuel"
-              width="270"
-              height="300"
-              onMouseOver={handleClick}
-            />
-          </Tada>
+            <Tada ssrFadeout spy={clicks}>
+              <img
+                className={styles.image}
+                src="./arturoPort.jpeg"
+                alt="Picture of Emmanuel"
+                width="270"
+                height="300"
+                onMouseOver={handleClick}
+              />
+            </Tada>
         </div>
       </div>
     </div>

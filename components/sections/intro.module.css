@@ -23,9 +23,13 @@
   top: 0;
 }
 .overlay {
-  height: 100%;
+  /* width: 90vw; */
+  /* left: -180px; */
+  /* height: 100%; */
+  position: absolute;
   width: 100%;
-  opacity: .5;
+  height: 99%;
+  background-color: rgba(0, 59, 89, 0.7);
 }
 .hi {
   font-weight: normal;

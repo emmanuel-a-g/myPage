@@ -110,7 +110,8 @@
 .button:hover {
   /* -moz-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; */
+  */
+  /* transition: all 0.5s ease; */
   box-shadow: 2px 4px 20px -8px var(--color-tron);
   /* background: var(--color-tron); */
   /* color: black; */
@@ -151,7 +152,7 @@
   height: var(--height);
   border-radius: var(--border-radius);
   background: #dddddd;
-  transition: background 0.25s;
+  transition: background 0.2s;
 }
 .toggleInput:checked ~ .toggleFill {
   background: var(--color-primary);
@@ -166,7 +167,7 @@
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: var(--border-radius);
-  transition: transform 0.25s;
+  transition: transform 0.2s;
 }
 .toggleInput:checked ~ .toggleFill::after {
   transform: translateX(var(--height));

@@ -5,8 +5,13 @@ import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 
 function Navigation() {
-  const { updateView, handleHighContrast, highContrastStatus, matrixToggle, matrix } =
-    useMyContext();
+  const {
+    updateView,
+    handleHighContrast,
+    highContrastStatus,
+    matrixToggle,
+    matrix,
+  } = useMyContext();
   const [sideBar, setSideBar] = useState(false);
   const [width, setWidth] = useState(null);
   const breakpoint = 500;
@@ -56,15 +61,15 @@ function Navigation() {
           </label>
         </li>
         <li className={styles.navItem}>
-        <img
-          src={highContrastStatus?"./conW.png":"./contC.png"}
-          width={30}
-          height={30}
-          onClick={handleHighContrast}
-          alt="High contrast icon"
-        />
-      </li>
-      <li className={styles.navItem}>
+          <img
+            src={highContrastStatus ? "./conW.png" : "./contC.png"}
+            width={30}
+            height={30}
+            onClick={handleHighContrast}
+            alt="High contrast icon"
+          />
+        </li>
+        <li className={styles.navItem}>
           <a href={pdfLocation} target="_blank" download={false}>
             <button className={styles.button}>Resume</button>
           </a>
@@ -160,7 +165,7 @@ function Navigation() {
       style={
         highContrastStatus
           ? { backgroundColor: "#808080fa", transition: "700ms" }
-          : { backgroundColor: "#003b59e6", transition: "700ms" }
+          : { backgroundColor: "#003b59d4", transition: "700ms" }
       }
     >
       <div className={styles.imageDiv}>

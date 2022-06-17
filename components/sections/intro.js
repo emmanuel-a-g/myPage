@@ -14,13 +14,12 @@ function Intro() {
       setMobile(true);
     }
   }, []);
+  // {matrix && !mobile && <div className={styles.overlay}></div>}
   return (
     <div className={styles.introMe}>
       {!highContrastStatus && !mobile && matrix && (
         <video src="./matrixSpace.mp4" autoPlay loop muted className={styles.video}/>
       )}
-      {matrix && !mobile && <div className={styles.overlay}></div>
-      }
       <div className={styles.content}>
         <h5
           className={styles.hi}

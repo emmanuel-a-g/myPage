@@ -1,6 +1,7 @@
 import styles from "./blog.module.css";
 import { useMyContext } from "../context/myContext";
 import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 function Blog() {
   const { highContrastStatus } = useMyContext();
@@ -18,7 +19,7 @@ function Blog() {
         </h3>
       </Fade>
       <div className={styles.theGrid}>
-        <Fade ssrFadeout top big cascade>
+        <Zoom ssrFadeout left>
           <div
             className={styles.blogPost}
             style={
@@ -27,10 +28,7 @@ function Blog() {
                 : { borderColor: "#00ffd5" }
             }
           >
-            <a
-              href="https://www.emmanuelarturo.com/"
-              target="_blank"
-            >
+            <a href="https://www.emmanuelarturo.com/" target="_blank">
               <img
                 src="./images/githubMin.png"
                 width="360"
@@ -38,12 +36,26 @@ function Blog() {
                 alt="an image of a blog post"
               />
             </a>
-            <div className={styles.caption} style={highContrastStatus ? {color: "black"} : {color: "white"}}>
-              <h4 className={styles.postTitle} style={highContrastStatus ? {color: "black"} : {color: "#7DFDFE"}}>My Blog</h4>
+            <div
+              className={styles.caption}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "white" }
+              }
+            >
+              <h4
+                className={styles.postTitle}
+                style={
+                  highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+                }
+              >
+                My Blog
+              </h4>
               Visit my blog by clicking any of the blog images! There you can
               find a more detailed description of the apps!
             </div>
           </div>
+        </Zoom>
+        <Zoom ssrFadeout right>
           <div
             className={styles.blogPost}
             style={
@@ -63,13 +75,26 @@ function Blog() {
                 alt="image of lighthouse peformance scores"
               />
             </a>
-            <div className={styles.caption} style={highContrastStatus ? {color: "black"} : {color: "white"}}>
-              <h4 className={styles.postTitle} style={highContrastStatus ? {color: "black"} : {color: "#7DFDFE"}}>Next.js</h4>
-              Next.js is incredibly fast, this snapshot shows how we can
-              utilize server-side rendering for amazing performance & time delivery of apps!
+            <div
+              className={styles.caption}
+              style={
+                highContrastStatus ? { color: "black" } : { color: "white" }
+              }
+            >
+              <h4
+                className={styles.postTitle}
+                style={
+                  highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+                }
+              >
+                Next.js
+              </h4>
+              Next.js is incredibly fast, this snapshot shows how we can utilize
+              server-side rendering for amazing performance & time delivery of
+              apps!
             </div>
           </div>
-        </Fade>
+        </Zoom>
       </div>
     </div>
   );
