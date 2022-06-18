@@ -9,7 +9,7 @@ export function ContextProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
-  const [matrix, setMatrix] = useState(false);
+  const [matrix, setMatrix] = useState(true);
   const [mobile, setMobile] = useState(false);
   const [highContrastStatus, setHighContrast] = useState(false);
   

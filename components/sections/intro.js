@@ -20,8 +20,8 @@ function Intro() {
     <div className={styles.introMe}>
       {!highContrastStatus && !mobile && matrix && (
         <video autoPlay loop muted className={styles.video} poster="./matrixSpace.jpg">
-          <source src="./matrixSpace.webm" type="video/webm"/>
           <source src="./matrixSpace.mp4" type="video/mp4"/>
+          <source src="./matrixSpace.webm" type="video/webm"/>
         </video>
       )}
       <div className={styles.content}>
