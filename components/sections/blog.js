@@ -21,7 +21,7 @@ function Blog() {
       <div className={styles.theGrid}>
         <Zoom ssrFadeout left>
           <div
-            className={styles.blogPost}
+            className={styles.blogPostOne}
             style={
               highContrastStatus
                 ? { borderColor: "black" }
@@ -31,8 +31,8 @@ function Blog() {
             <a href="https://www.emmanuelarturo.com/" target="_blank">
               <img
                 src="./images/githubMin.png"
-                width="360"
-                height="234"
+                width="320"
+                height="206"
                 alt="an image of a blog post"
               />
             </a>
@@ -57,7 +57,7 @@ function Blog() {
         </Zoom>
         <Zoom ssrFadeout right>
           <div
-            className={styles.blogPost}
+            className={styles.blogPostTwo}
             style={
               highContrastStatus
                 ? { borderColor: "black" }

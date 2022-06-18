@@ -136,9 +136,9 @@
   .aboutMe {
     max-height: auto;
   }
-  .theGrid {
+  /* .theGrid {
     min-height: 100%;
-  }
+  } */
   .title {
     margin: 0 0 15px 0;
   }
