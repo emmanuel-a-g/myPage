@@ -60,6 +60,7 @@
   padding: 5px;
   height: 100%;
   opacity: .80;
+  text-align: center;
 }
 @media only screen and (max-width: 650px) {
   .theGrid {
@@ -67,11 +68,19 @@
     flex-direction: column;
     align-items: center;
   }
-  .blogPost {
-    max-width: 260px;
+  .blogPostOne {
+    max-width: 250px;
+    margin-bottom: 10px;
   }
-  .blogPost img {
-    max-width: 260px;
+  .blogPostOne img {
+    max-width: 250px;
+    height: auto;
+  }
+  .blogPostTwo {
+    max-width: 250px;
+  }
+  .blogPostTwo img {
+    max-width: 250px;
     height: auto;
   }
   .caption {

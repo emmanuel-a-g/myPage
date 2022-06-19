@@ -133,16 +133,29 @@
 }
 
 @media only screen and (max-height: 700px) {
+  .theGrid {
+    min-height: 70vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 75% auto;
+  }
+  .image {
+    width: 210px;
+    max-width: 90%;
+    margin-left: 10%;
+    height: auto;
+    border-radius: 5px;
+  }
   .aboutMe {
     max-height: auto;
   }
-  /* .theGrid {
-    min-height: 100%;
-  } */
   .title {
     margin: 0 0 15px 0;
   }
   .text {
     font-size: .95rem;
+  }
+  .right {
+    height: 100%;
   }
 }
