@@ -6,10 +6,17 @@ function AsideRight() {
   return (
     <div className={styles.asideRight}>
       <Fade ssrFadeout bottom big>
-        <p style={highContrastStatus ? {color: "black"} : {color: "#7DFDFE"}} className={styles.myEmail}>earturoga@gmail.com</p>
+        <p
+          style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
+          className={styles.myEmail}
+        >
+          <a href="mailto:earturoga@gmail.com">
+          earturoga@gmail.com
+          </a>
+        </p>
       </Fade>
     </div>
-  )
+  );
 }
 
 export default AsideRight;

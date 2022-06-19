@@ -12,5 +12,8 @@
   font-size: 1rem;
   display: flex;
 }
-
+.myEmail > a {
+  color: unset;
+  text-decoration: none;
+}
 /* @media only screen and (max-width: 800px) {} */
