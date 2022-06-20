@@ -51,7 +51,10 @@ function Navigation() {
         <li className={styles.navItem} onClick={() => updateView(4)}>
           <span className={styles.number}>04.</span> Contact
         </li>
-        <li className={styles.navItem} style={{display: mobileStatus? "none" : ""}}>
+        <li
+          className={styles.navItem}
+          style={{ display: mobileStatus ? "none" : "" }}
+        >
           <label className={styles.toggle}>
             <input
               className={styles.toggleInput}
@@ -61,7 +64,16 @@ function Navigation() {
               onChange={() => handleMatrixToggle()}
               disabled={!!highContrastStatus}
             />
-            <div className={styles.toggleFill}></div>
+            <div className={styles.toggleFill}>
+              {matrix && !highContrastStatus && (
+                <img
+                  src="./neo.png"
+                  width="26"
+                  height="26"
+                  alt="Picture of Neo"
+                />
+              )}
+            </div>
           </label>
         </li>
         <li className={styles.navItem}>
