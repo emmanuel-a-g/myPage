@@ -176,18 +176,18 @@
 .toggleFillSpanOne {
   position: absolute;
   left: 3px;
-  bottom: 6px;
+  bottom: 7px;
   color: black;
-  font-size: 11px;
+  font-size: 9px;
   text-decoration: none;
   user-select: none;
 }
 .toggleFillSpan {
   color: black;
   position: absolute;
-  left: 26px;
-  bottom: 6px;
-  font-size: 11px;
+  left: 28px;
+  bottom: 7px;
+  font-size: 9px;
   text-decoration: none;
   user-select: none;
 }
