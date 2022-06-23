@@ -89,9 +89,6 @@
   width: 40px;
   height: auto;
 }
-.image:hover {
-  cursor: pointer;
-}
 .button {
   background-color: inherit;
   border: 2px solid var(--color-tron);

@@ -48,10 +48,10 @@ function Blog() {
                   highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
                 }
               >
-                My Blog
+                The Blog
               </h4>
               Visit my blog by clicking any of the blog images! There you can
-              find a more detailed description of the apps!
+              find a more detailed description of my applications.
             </div>
           </div>
         </Zoom>
@@ -91,7 +91,7 @@ function Blog() {
               </h4>
               Next.js is incredibly fast, this snapshot shows how we can utilize
               server-side rendering for amazing performance & time delivery of
-              apps!
+              apps.
             </div>
           </div>
         </Zoom>

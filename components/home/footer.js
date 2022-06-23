@@ -16,15 +16,6 @@ function Footer() {
   }
   return (
     <footer className={styles.footer}>
-      <p>
-        <img
-          src={highContrastStatus? "./up.png" : "./upC.png"}
-          width={24}
-          height={24}
-          alt="Arrow image to scroll to top of page"
-          onClick={handleScrollUp}
-        />
-      </p>
       <Flash ssrFadeout spy={hoverCount}>
         <p onMouseOver={handleHoverCount}>
           <a
@@ -39,6 +30,15 @@ function Footer() {
           </a>
         </p>
       </Flash>
+      <p>
+        <img
+          src={highContrastStatus? "./up.png" : "./upC.png"}
+          width={24}
+          height={24}
+          alt="Arrow image to scroll to top of page"
+          onClick={handleScrollUp}
+        />
+      </p>
     </footer>
   );
 }

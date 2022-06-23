@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 
 export const MyContext = React.createContext();
 export function useMyContext() {
@@ -9,14 +9,26 @@ export function ContextProvider({ children }) {
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
-  const [matrix, setMatrix] = useState(true);
+  const [matrix, setMatrix] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [highContrastStatus, setHighContrast] = useState(true);
+  const [highContrastStatus, setHighContrast] = useState(false);
+  const matrixRef = useRef(null);
   
   useEffect(() => {
     console.log("App starting...");
-    setLoading(false)
+    setLoading(false);
+    const timer = setTimeout(() => {
+      if (!matrixRef.current) {
+        console.log("matrix on.");
+        setMatrix(prev => !prev);
+      }
+    }, 4000);
+    return () => clearTimeout(timer);
   }, [])
+
+  useEffect(() => {
+    matrixRef.current = matrix;
+  }, [matrix]);
 
   function updateView(num) {
     return setView(num);

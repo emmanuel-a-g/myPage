@@ -33,9 +33,10 @@ function AboutMe() {
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
             Hello my name is Emmanuel and I am a full stack web developer from
-            El Paso, Texas. My coding journey began back in 2019 when I learned
-            Python. I build a small game and that's when I decided to dive deep
-            into software development! The rest is history as they say.
+            El Paso, Texas. My coding journey began back in 2019 when I picked up
+            Python. I enjoyed building a small game, and that's when I 
+            decided to dive deep into software development!
+            The rest is history.
           </p>
           <p
             className={styles.text}
