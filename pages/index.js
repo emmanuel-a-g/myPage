@@ -1,6 +1,6 @@
 import Hero from "../components/home/hero";
 import Head from "next/head";
-function HomePage(props) {
+function HomePage() {
   return (
     <div>
       <Head>
@@ -16,10 +16,3 @@ function HomePage(props) {
 }
 
 export default HomePage;
-export function getStaticProps() {
-  return {
-    props: {
-      message: "Hi from Emmanuel worker.",
-    },
-  };
-}
