@@ -15,11 +15,10 @@ export function ContextProvider({ children }) {
   const matrixRef = useRef(null);
   
   useEffect(() => {
-    console.log("App starting...");
+    console.log("Junbi..");
     setLoading(false);
     const timer = setTimeout(() => {
       if (!matrixRef.current) {
-        console.log("matrix on.");
         setMatrix(prev => !prev);
       }
     }, 4000);
