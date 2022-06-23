@@ -151,6 +151,7 @@
   border-radius: var(--border-radius);
   background: #dddddd;
   transition: background 0.2s;
+  overflow: hidden;
 }
 .toggleInput:checked ~ .toggleFill {
   background: var(--color-tron);
@@ -187,6 +188,13 @@
   font-size: 9px;
   text-decoration: none;
   user-select: none;
+}
+.neo {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -2px;
+  left: -5px;
+  border: none;
 }
 @media only screen and (max-width: 880px) {
   .navigation {

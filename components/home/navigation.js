@@ -65,7 +65,7 @@ function Navigation() {
               disabled={!!highContrastStatus}
             />
             <div className={styles.toggleFill}>
-              <span className={styles.toggleFillSpanOne}>ON</span>
+              <img src="./neo.png" className={styles.neo} width="24" height="24" alt="neo image"/>
               <span className={styles.toggleFillSpan}>OFF</span>
             </div>
           </label>
