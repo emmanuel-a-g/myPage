@@ -7,7 +7,7 @@ function MyPortal() {
   let message =
     name === "error"
       ? "Sorry message could not be send!"
-      : `Hi ${name}! - Emmanuel`;
+      : `Hi ${name}! Will reach back as soon as possible.`;
 
   return ReactDOM.createPortal(
     <div
@@ -27,7 +27,7 @@ function MyPortal() {
       <h3
         style={highContrastStatus ? { color: "#00ffff" } : { color: "black" }}
       >
-        {name === "error" ? "Please contact me through LinkedIn for now." : `Received message on ${date}!`}
+        {name === "error" ? "Please contact me through LinkedIn for now." : `Received message on ${date}! :)`}
       </h3>
     </div>,
     document.getElementById("myPortal")
