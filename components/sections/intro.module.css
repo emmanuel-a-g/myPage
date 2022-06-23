@@ -21,7 +21,6 @@
   justify-content: center;
   height: 100%;
   top: 0;
-  background-color: none;
 }
 .overlay {
   position: absolute;
@@ -32,7 +31,7 @@
 .hi {
   font-weight: normal;
   font-size: 1.05rem;
-  /* margin: 0; */
+  border-radius: 5px;
   font-family: var(--font-text);
 }
 .name {
@@ -49,9 +48,11 @@
 .text {
   font-size: 1.05rem;
   font-weight: normal;
-  width: 85%;
+  width: 75%;
   word-wrap: normal;
   font-family: var(--font-text);
+  /* background-color: #00436575; */
+  border-radius: 5px;
 }
 
 @media only screen and  (max-width: 800px) {

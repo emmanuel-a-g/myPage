@@ -11,7 +11,7 @@ export function ContextProvider({ children }) {
   const [date, setDate] = useState("");
   const [matrix, setMatrix] = useState(true);
   const [mobile, setMobile] = useState(false);
-  const [highContrastStatus, setHighContrast] = useState(false);
+  const [highContrastStatus, setHighContrast] = useState(true);
   
   useEffect(() => {
     console.log("App starting...");

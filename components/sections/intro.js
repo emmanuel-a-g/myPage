@@ -16,18 +16,29 @@ function Intro() {
     }
   }, []);
   // {matrix && !mobile && <div className={styles.overlay}></div>}
+  const backColor = matrix ? "#00436575" : "unset";
   return (
     <div className={styles.introMe}>
       {!highContrastStatus && !mobile && matrix && (
-        <video autoPlay loop muted className={styles.video} poster="./matrixSpace.jpg">
-          <source src="./matrixSpace.mp4" type="video/mp4"/>
-          <source src="./matrixSpace.webm" type="video/webm"/>
+        <video
+          autoPlay
+          loop
+          muted
+          className={styles.video}
+          poster="./matrixSpace.jpg"
+        >
+          <source src="./matrixSpace.mp4" type="video/mp4" />
+          <source src="./matrixSpace.webm" type="video/webm" />
         </video>
       )}
       <div className={styles.content}>
         <h5
           className={styles.hi}
-          style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          style={
+            highContrastStatus
+              ? { color: "black" }
+              : { color: "white" }
+          }
         >
           Hi, my name is
         </h5>
@@ -47,10 +58,14 @@ function Intro() {
         </h1>
         <p
           className={styles.text}
-          style={highContrastStatus ? { color: "black" } : { color: "white" }}
+          style={
+            highContrastStatus
+              ? { color: "black", backgroundColor: "unset" }
+              : { color: "white", backgroundColor: backColor }
+          }
         >
-          Welcome to my hub! I'm glad you're here. I am currently open for new
-          opportunities, please feel free to contact me through LinkedIn.
+          Welcome to my hub! I am currently open for new opportunities, please
+          feel free to contact me through LinkedIn.
         </p>
       </div>
     </div>
