@@ -30,9 +30,9 @@ function Blog() {
           >
             <a href="https://www.emmanuelarturo.com/" target="_blank">
               <img
-                src="./images/githubMin.png"
+                src="./images/githubNew.png"
                 width="320"
-                height="206"
+                height="208"
                 alt="an image of a blog post"
               />
             </a>
