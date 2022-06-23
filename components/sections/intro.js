@@ -54,7 +54,7 @@ function Intro() {
             highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
           }
         >
-          I am a full stack web developer.
+          I am a full stack <br/>software developer.
         </h1>
         <p
           className={styles.text}
