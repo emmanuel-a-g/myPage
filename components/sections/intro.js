@@ -45,7 +45,7 @@ function Intro() {
           className={styles.name}
           style={highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }}
         >
-          Emmanuel Garcia
+          Emmanuel Garcia,
         </h1>
         <h1
           className={styles.nameTwo}
@@ -53,7 +53,7 @@ function Intro() {
             highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
           }
         >
-          I am a full stack <br/>software developer.
+          full stack software developer.
         </h1>
         <p
           className={styles.text}
