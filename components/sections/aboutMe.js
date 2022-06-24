@@ -50,7 +50,7 @@ function AboutMe() {
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
             I am experienced in the MERN stack, (Mongodb, Express, React,
-            Node.js) but also have experience with google's FirebaseSDK and
+            Node.js) but also have experience with google's Firebase-SDK and
             MySQL.
           </p>
         </div>

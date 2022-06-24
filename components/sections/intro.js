@@ -33,11 +33,7 @@ function Intro() {
       <div className={styles.content}>
         <h5
           className={styles.hi}
-          style={
-            highContrastStatus
-              ? { color: "black" }
-              : { color: "white" }
-          }
+          style={highContrastStatus ? { color: "black" } : { color: "white" }}
         >
           Hi, my name is
         </h5>
@@ -57,14 +53,18 @@ function Intro() {
         </h1>
         <p
           className={styles.text}
-          style={
-            highContrastStatus
-              ? { color: "black" }
-              : { color: "white" }
-          }
+          style={highContrastStatus ? { color: "black" } : { color: "white" }}
         >
           Welcome to my hub! I am currently open for new opportunities, please
-          feel free to contact me through LinkedIn.
+          feel free to contact me through{" "}
+          <a
+            href="https://linkedin.com/in/emmanuel-a-g"
+            target="_blank"
+            className={styles.linkedIn}
+            title="linkedin link"
+          >
+            LinkedIn.
+          </a>
         </p>
       </div>
     </div>

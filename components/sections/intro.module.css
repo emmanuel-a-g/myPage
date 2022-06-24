@@ -54,7 +54,10 @@
   font-family: var(--font-text);
   border-radius: 5px;
 }
-
+.linkedIn {
+  text-decoration: none;
+  color: inherit;
+}
 @media only screen and  (max-width: 800px) {
   .hi {
     font-size: .95rem;
