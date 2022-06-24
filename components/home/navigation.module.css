@@ -91,7 +91,7 @@
 }
 .button {
   background-color: inherit;
-  border: 2px solid var(--color-tron);
+  border: 2px solid;
   border-radius: 5px;
   padding: 10px;
   color: var(--color-light);

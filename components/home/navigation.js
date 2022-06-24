@@ -66,7 +66,13 @@ function Navigation() {
               disabled={!!highContrastStatus}
             />
             <div className={styles.toggleFill}>
-              <img src="./neo.png" className={styles.neo} width="24" height="24" alt="neo image"/>
+              <img
+                src="./neo.png"
+                className={styles.neo}
+                width="24"
+                height="24"
+                alt="neo image"
+              />
               <span className={styles.toggleFillSpan}>OFF</span>
             </div>
           </label>
@@ -82,7 +88,16 @@ function Navigation() {
         </li>
         <li className={styles.navItem}>
           <a href={pdfLocation} target="_blank" download={false}>
-            <button className={styles.button}>Resume</button>
+            <button
+              className={styles.button}
+              style={
+                highContrastStatus
+                  ? { borderColor: "white" }
+                  : { borderColor: "#7DFDFE" }
+              }
+            >
+              Resume
+            </button>
           </a>
         </li>
       </Fade>
