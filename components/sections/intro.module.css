@@ -21,6 +21,7 @@
   justify-content: center;
   height: 100%;
   top: 0;
+  left: 10%;
 }
 .overlay {
   position: absolute;
@@ -51,7 +52,6 @@
   width: 75%;
   word-wrap: normal;
   font-family: var(--font-text);
-  /* background-color: #00436575; */
   border-radius: 5px;
 }
 
