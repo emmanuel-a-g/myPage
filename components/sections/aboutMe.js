@@ -68,10 +68,10 @@ function AboutMe() {
             <Tada ssrFadeout spy={clicks}>
               <img
                 className={styles.image}
-                src="./arturoPort.jpeg"
+                src="./hook300.jpg"
                 alt="Picture of Emmanuel"
                 width="270"
-                height="300"
+                height="316"
                 onMouseOver={handleClick}
               />
             </Tada>
