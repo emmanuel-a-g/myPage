@@ -26,7 +26,7 @@ function Navigation() {
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
-  let isSafari = window.safari !== undefined;
+  const isSafari = window.safari !== undefined;
   function handleSideBar() {
     setSideBar((prev) => !prev);
   }
@@ -67,12 +67,16 @@ function Navigation() {
             />
             <div className={styles.toggleFill}>
               <img
+                style={{ display: isSafari ? "none" : "initial" }}
                 src="./neo.png"
                 className={styles.neo}
                 width="24"
                 height="24"
                 alt="neo image"
               />
+              <span
+                style={{ display: isSafari ? "initial" : "none" }}
+                className={styles.toggleFillSpanOne}>ON</span>
               <span className={styles.toggleFillSpan}>OFF</span>
             </div>
           </label>
