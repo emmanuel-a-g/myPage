@@ -11,19 +11,7 @@
 .number {
   color: var(--color-primary);
 }
-.iframeBox {
-  width: 100%;
-  height: 75vh;
-}
-.theIframe {
-  width: 98%;
-  height: 100%;
-  outline: none;
-}
 
 @media only screen  and (max-width: 700px){
-  .iframeBox {
-    background-color: aqua;
-    width: 88%;
-  }
+
 }
