@@ -25,7 +25,7 @@ function Blog() {
             style={
               highContrastStatus
                 ? { borderColor: "black" }
-                : { borderColor: "#00ffd5" }
+                : { borderColor: "#7DFDFE" }
             }
           >
             <a href="https://www.emmanuelarturo.com/" target="_blank">
@@ -61,7 +61,7 @@ function Blog() {
             style={
               highContrastStatus
                 ? { borderColor: "black" }
-                : { borderColor: "#00ffd5" }
+                : { borderColor: "#7DFDFE" }
             }
           >
             <a

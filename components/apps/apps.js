@@ -65,7 +65,7 @@ function Apps({ name, data }) {
             <h3
               className={styles.title}
               style={
-                highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
+                highContrastStatus ? { color: "white" } : { color: "#7DFDFE" }
               }
             >
               {title}

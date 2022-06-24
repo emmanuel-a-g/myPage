@@ -114,8 +114,8 @@ function Navigation() {
           className={sideBar ? styles.activeSide : styles.side}
           style={
             highContrastStatus
-              ? { backgroundColor: "#be0d0ce6" }
-              : { backgroundColor: "#808080f7" }
+              ? { backgroundColor: "#be0d0c" }
+              : { backgroundColor: "#808080" }
           }
           onClick={handleSideBar}
         >

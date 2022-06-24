@@ -132,7 +132,7 @@
   position: fixed;
   top: 0;
   left: 12%;
-  transition: 400ms;
+  transition: 250ms;
 }
 .toggle {
   --width: 50px;
@@ -152,6 +152,7 @@
   background: #dddddd;
   transition: background 0.2s;
   overflow: hidden;
+  /* box-shadow: 2px 4px 15px -5px var(--color-tron); */
 }
 .toggleInput:checked ~ .toggleFill {
   background: var(--color-tron);
