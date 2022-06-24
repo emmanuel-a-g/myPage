@@ -63,6 +63,9 @@
   text-align: center;
 }
 @media only screen and (max-width: 850px) {
+  .theBlog {
+    min-height: 75vh;
+  }
   .theGrid {
     display: flex;
     flex-direction: column;
@@ -90,5 +93,13 @@
   }
   .postTitle {
     padding: 0;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .theGrid {
+    min-height: 75vh;
+  }
+  .blogPostOne {
+    margin-bottom: 13px;
   }
 }
