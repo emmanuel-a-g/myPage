@@ -26,6 +26,7 @@ function Navigation() {
     window.addEventListener("resize", handleWindowResize);
     return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
+  let isSafari = window.safari !== undefined;
   function handleSideBar() {
     setSideBar((prev) => !prev);
   }

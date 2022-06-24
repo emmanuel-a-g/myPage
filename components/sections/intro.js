@@ -16,7 +16,6 @@ function Intro() {
     }
   }, []);
   // {matrix && !mobile && <div className={styles.overlay}></div>}
-  const backColor = matrix && !mobile ? "#00436575" : "unset";
   return (
     <div className={styles.introMe}>
       {!highContrastStatus && !mobile && matrix && (
@@ -60,8 +59,8 @@ function Intro() {
           className={styles.text}
           style={
             highContrastStatus
-              ? { color: "black", backgroundColor: "unset" }
-              : { color: "white", backgroundColor: backColor }
+              ? { color: "black" }
+              : { color: "white" }
           }
         >
           Welcome to my hub! I am currently open for new opportunities, please
