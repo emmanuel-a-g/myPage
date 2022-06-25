@@ -52,7 +52,7 @@ function Apps({ name, data }) {
         <div className={width < breakpoint ? theContentBox : styles.contentBox}>
           <h5
             className={styles.featured}
-            style={highContrastStatus ? { color: "black" } : { color: "white" }}
+            style={highContrastStatus ? { color: "#be0d0c" } : { color: "white" }}
           >
             Featured Project
           </h5>
@@ -65,7 +65,7 @@ function Apps({ name, data }) {
             <h3
               className={styles.title}
               style={
-                highContrastStatus ? { color: "white" } : { color: "#7DFDFE" }
+                highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
               }
             >
               {title}
