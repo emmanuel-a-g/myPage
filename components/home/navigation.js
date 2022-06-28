@@ -3,6 +3,7 @@ import { useMyContext } from "../context/myContext";
 import { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
+import { useRouter } from "next/router";
 
 function Navigation() {
   const {
@@ -15,6 +16,7 @@ function Navigation() {
   } = useMyContext();
   const [sideBar, setSideBar] = useState(false);
   const [width, setWidth] = useState(null);
+  const router = useRouter();
   const breakpoint = 500;
   const pdfLocation =
     "https://github.com/emmanuel-a-g/resume/raw/main/Emmanuel_Garcia_pdf.pdf";
@@ -76,7 +78,10 @@ function Navigation() {
               />
               <span
                 style={{ display: isSafari ? "initial" : "none" }}
-                className={styles.toggleFillSpanOne}>ON</span>
+                className={styles.toggleFillSpanOne}
+              >
+                ON
+              </span>
               <span className={styles.toggleFillSpan}>OFF</span>
             </div>
           </label>
@@ -204,9 +209,9 @@ function Navigation() {
             className={styles.image}
             src="./emmanuelCircle.png"
             alt="Picture of Emmanuel G"
-            onClick={() => updateView(0)}
             width="40"
             height="40"
+            onClick={() => router.replace("/")}
           />
         </Bounce>
       </div>
