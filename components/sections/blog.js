@@ -47,6 +47,7 @@ function Blog() {
                 style={
                   highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
                 }
+                translate="no"
               >
                 The Blog
               </h4>
@@ -86,6 +87,7 @@ function Blog() {
                 style={
                   highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
                 }
+                translate="no"
               >
                 Next.js
               </h4>

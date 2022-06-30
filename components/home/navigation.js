@@ -202,6 +202,7 @@ function Navigation() {
           ? { backgroundColor: "#808080fa", transition: "700ms" }
           : { backgroundColor: "#003b59d4", transition: "700ms" }
       }
+      translate="no"
     >
       <div className={styles.imageDiv}>
         <Bounce ssrFadeout left>

@@ -12,7 +12,7 @@ function AboutMe() {
   }
   useEffect(() => {
     handleClick();
-  }, [])
+  }, []);
 
   return (
     <div className={styles.aboutMe}>
@@ -33,10 +33,9 @@ function AboutMe() {
             style={highContrastStatus ? { color: "black" } : { color: "white" }}
           >
             Hello my name is Emmanuel and I am a full stack web developer from
-            El Paso, Texas. My coding journey began back in 2019 when I picked up
-            Python. I enjoyed building a small game, and that's when I 
-            decided to dive deep into software development!
-            The rest is history.
+            El Paso, Texas. My coding journey began back in 2019 when I picked
+            up Python. I enjoyed building a small game, and that's when I
+            decided to dive deep into software development! The rest is history.
           </p>
           <p
             className={styles.text}
@@ -55,7 +54,7 @@ function AboutMe() {
           </p>
         </div>
         <Zoom ssrFadeout left cascade>
-          <div className={styles.technologies}>
+          <div className={styles.technologies} translate="no">
             <span className={styles.item}>Next.js</span>
             <span className={styles.item}>JavaScript</span>
             <span className={styles.item}>React</span>
@@ -65,16 +64,16 @@ function AboutMe() {
           </div>
         </Zoom>
         <div className={styles.right}>
-            <Tada ssrFadeout spy={clicks}>
-              <img
-                className={styles.image}
-                src="./hook300.jpg"
-                alt="Picture of Emmanuel"
-                width="270"
-                height="316"
-                onMouseOver={handleClick}
-              />
-            </Tada>
+          <Tada ssrFadeout spy={clicks}>
+            <img
+              className={styles.image}
+              src="./hook300.jpg"
+              alt="Picture of Emmanuel"
+              width="270"
+              height="316"
+              onMouseOver={handleClick}
+            />
+          </Tada>
         </div>
       </div>
     </div>

@@ -67,6 +67,7 @@ function Apps({ name, data }) {
               style={
                 highContrastStatus ? { color: "black" } : { color: "#7DFDFE" }
               }
+              translate="no"
             >
               {title}
             </h3>
@@ -78,6 +79,7 @@ function Apps({ name, data }) {
               style={
                 highContrastStatus ? { color: "black" } : { color: "#00ffd5" }
               }
+              translate="no"
             >
               {tech}
             </span>

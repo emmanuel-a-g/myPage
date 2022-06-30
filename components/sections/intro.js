@@ -44,6 +44,7 @@ function Intro() {
           Emmanuel Garcia,
         </h1>
         <h1
+          translate="no"
           className={styles.nameTwo}
           style={
             highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
