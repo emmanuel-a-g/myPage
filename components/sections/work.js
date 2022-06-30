@@ -28,6 +28,7 @@ function Work() {
           style={
             highContrastStatus ? { color: "#be0d0c" } : { color: "#00ffd5" }
           }
+          translate="no"
         >
           <span className={styles.number}>02.&nbsp;</span>Apps
         </h3>
